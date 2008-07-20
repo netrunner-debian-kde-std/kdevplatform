@@ -1,0 +1,55 @@
+Source: kdevplatform
+Section: libs
+Priority: optional
+Maintainer: Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>
+Uploaders: Xavier Vello <xavier.vello@gmail.com>
+Build-Depends: cdbs (>= 0.4.51), debhelper (>= 6), quilt, cmake (>= 2.4.5), kdelibs5-dev (>= 4:4.0.98)
+Standards-Version: 3.7.3
+Homepage: http://www.kdevelop.org/
+Vcs-Browser: http://svn.debian.org/wsvn/pkg-kde/branches/kde4/packages/kdevplatform
+Vcs-Svn: svn://svn.debian.org/pkg-kde/branches/kde4/packages/kdevplatform
+
+Package: kdevplatform
+Section: libs
+Architecture: any
+Depends: libkdevplatform1 (>= ${source:Version})
+Description: bla
+
+
+Package: libsublime1
+Section: libs
+Architecture: any
+Depends: ${shlibs:Depends}, kdelibs5 (>= 4:4.0.98)
+Description: bla
+
+Package: libsublime-dev
+Section: libdevel
+Architecture: any
+Depends: libsublime1 (= ${binary:Version}), ${sameVersionDep:kdelibs5-dev:libsublime1-Depends-kdelibs5}
+Description: bla
+
+Package: libsublime-dbg
+Section: libdevel
+Architecture: any
+Priority: extra
+Depends: libsublime1 (= ${binary:Version}), kdelibs5-dbg, libc6-dbg [amd64]
+Description: bla
+
+Package: libkdevplatform1
+Section: libs
+Architecture: any
+Depends: ${shlibs:Depends}, libsublime1 (>= ${source:Version}), kdelibs5 (>= 4:4.0.98)
+Description: bla
+
+Package: libkdevplatform-dev
+Section: libdevel
+Architecture: any
+Depends: libkdevplatform1 (= ${binary:Version}), ${sameVersionDep:kdelibs5-dev:libkdevplatform1-Depends-kdelibs5}
+Description: bla
+
+Package: libkdevplatform-dbg
+Section: libdevel
+Architecture: any
+Priority: extra
+Depends: libkdevplatform1 (= ${binary:Version}), libsublime-dbg (= ${binary:Version}), kdelibs5-dbg, libc6-dbg [amd64]
+Description: bla

@@ -1,0 +1,172 @@
+--- a/outputview/CMakeLists.txt
++++ b/outputview/CMakeLists.txt
+@@ -13,7 +13,7 @@
+     outputjob.cpp
+ )
+ kde4_add_library( kdevplatformoutputview SHARED ${outputviewinterfaces_LIB_SRCS} )
+-target_link_libraries(kdevplatformoutputview ${QT_QTCORE_LIBRARY} ${QT_QTGUI_LIBRARY} ${KDE4_KDECORE_LIBS} kdevplatforminterfaces  )
++target_link_libraries(kdevplatformoutputview ${QT_QTCORE_LIBRARY} ${QT_QTGUI_LIBRARY} ${KDE4_KDECORE_LIBS} kdevplatforminterfaces ${KDE4_KDEUI_LIBS} )
+ set_target_properties(kdevplatformoutputview PROPERTIES VERSION ${KDEVPLATFORM_LIB_VERSION} SOVERSION ${KDEVPLATFORM_LIB_SOVERSION})
+ install(TARGETS kdevplatformoutputview ${INSTALL_TARGETS_DEFAULT_ARGS} )
+ 
+--- a/plugins/bazaar/CMakeLists.txt
++++ b/plugins/bazaar/CMakeLists.txt
+@@ -39,6 +39,7 @@
+ 
+ 
+ target_link_libraries(kdevbzr
++${KDE4_KDEUI_LIBS} ${KDE4_KIO_LIBS} ${KDE4_KPARTS_LIBS} ${QT_QTGUI_LIBRARY}
+     ${KDE4_KDECORE_LIBS}
+     kdevplatformutil
+     kdevplatforminterfaces
+--- a/plugins/classbrowser/CMakeLists.txt
++++ b/plugins/classbrowser/CMakeLists.txt
+@@ -18,7 +18,7 @@
+ )
+ 
+ kde4_add_plugin(kdevclassbrowser ${kdevclassbrowser_PART_SRCS})
+-target_link_libraries(kdevclassbrowser kdevplatformlanguage kdevplatforminterfaces)
++target_link_libraries(kdevclassbrowser kdevplatformlanguage kdevplatforminterfaces ${KDE4_KDECORE_LIBS} ${KDE4_KDEUI_LIBS} ${KDE4_KTEXTEDITOR_LIBS} ${QT_QTGUI_LIBRARY})
+ 
+ install(TARGETS kdevclassbrowser DESTINATION ${PLUGIN_INSTALL_DIR})
+ 
+--- a/plugins/cvs/CMakeLists.txt
++++ b/plugins/cvs/CMakeLists.txt
+@@ -50,6 +50,8 @@
+ kde4_add_plugin(kdevcvs ${kdevcvs_PART_SRCS})
+ 
+ target_link_libraries(kdevcvs
++${KDE4_KIO_LIBS} ${KDE4_KPARTS_LIBS}
++${KDE4_KDEUI_LIBS} ${QT_QTGUI_LIBRARY}
+     ${KDE4_KDECORE_LIBS}
+     kdevplatformutil
+     kdevplatforminterfaces
+--- a/plugins/duchainviewer/CMakeLists.txt
++++ b/plugins/duchainviewer/CMakeLists.txt
+@@ -21,7 +21,7 @@
+ )
+ 
+ kde4_add_plugin(kdevduchainview ${kdevduchainview_PART_SRCS})
+-target_link_libraries(kdevduchainview kdevplatformlanguage kdevplatforminterfaces )
++target_link_libraries(kdevduchainview kdevplatformlanguage kdevplatforminterfaces ${KDE4_KDEUI_LIBS} ${KDE4_KTEXTEDITOR_LIBS} )
+ 
+ install(TARGETS kdevduchainview DESTINATION ${PLUGIN_INSTALL_DIR})
+ 
+--- a/plugins/execute/CMakeLists.txt
++++ b/plugins/execute/CMakeLists.txt
+@@ -16,7 +16,7 @@
+ )
+ 
+ kde4_add_plugin(kdevexecute ${kdevexecute_PART_SRCS})
+-target_link_libraries(kdevexecute kdevplatforminterfaces kdevplatformutil)
++target_link_libraries(kdevexecute kdevplatforminterfaces kdevplatformutil ${KDE4_KDECORE_LIBS} ${KDE4_KDEUI_LIBS} ${QT_QTGUI_LIBRARY})
+ 
+ install(TARGETS kdevexecute DESTINATION ${PLUGIN_INSTALL_DIR})
+ 
+--- a/plugins/filemanager/CMakeLists.txt
++++ b/plugins/filemanager/CMakeLists.txt
+@@ -13,7 +13,7 @@
+ )
+ 
+ kde4_add_plugin(kdevfilemanager ${kdevfilemanager_PART_SRCS})
+-target_link_libraries(kdevfilemanager ${KDE4_KDECORE_LIBS} ${KDE4_KFILE_LIBS} kdevplatforminterfaces)
++target_link_libraries(kdevfilemanager ${KDE4_KDECORE_LIBS} ${KDE4_KFILE_LIBS} kdevplatforminterfaces ${KDE4_KTEXTEDITOR_LIBS} )
+ 
+ install(TARGETS kdevfilemanager DESTINATION ${PLUGIN_INSTALL_DIR} )
+ 
+--- a/plugins/git/CMakeLists.txt
++++ b/plugins/git/CMakeLists.txt
+@@ -39,6 +39,7 @@
+ 
+ 
+ target_link_libraries(kdevgit
++${KDE4_KDEUI_LIBS} ${KDE4_KIO_LIBS} ${KDE4_KPARTS_LIBS} ${QT_QTGUI_LIBRARY}
+     ${KDE4_KDECORE_LIBS}
+     kdevplatformutil
+     kdevplatforminterfaces
+--- a/plugins/konsole/CMakeLists.txt
++++ b/plugins/konsole/CMakeLists.txt
+@@ -14,7 +14,7 @@
+ )
+ 
+ kde4_add_plugin(kdevkonsoleview ${kdevkonsoleview_PART_SRCS})
+-target_link_libraries(kdevkonsoleview ${KDE4_KDECORE_LIBS} kdevplatforminterfaces)
++target_link_libraries(kdevkonsoleview ${KDE4_KDECORE_LIBS} kdevplatforminterfaces ${KDE4_KPARTS_LIBS} ${KDE4_KDEUI_LIBS} )
+ 
+ install(TARGETS kdevkonsoleview DESTINATION ${PLUGIN_INSTALL_DIR} )
+ 
+--- a/plugins/mercurial/CMakeLists.txt
++++ b/plugins/mercurial/CMakeLists.txt
+@@ -39,6 +39,7 @@
+ 
+ 
+ target_link_libraries(kdevhg
++${KDE4_KDEUI_LIBS} ${KDE4_KIO_LIBS} ${KDE4_KPARTS_LIBS} ${QT_QTGUI_LIBRARY}
+     ${KDE4_KDECORE_LIBS}
+     kdevplatformutil
+     kdevplatforminterfaces
+--- a/plugins/problemreporter/CMakeLists.txt
++++ b/plugins/problemreporter/CMakeLists.txt
+@@ -23,7 +23,7 @@
+ )
+ 
+ kde4_add_plugin(kdevproblemreporter ${kdevproblemreporter_PART_SRCS})
+-target_link_libraries(kdevproblemreporter kdevplatformlanguage kdevplatforminterfaces)
++target_link_libraries(kdevproblemreporter kdevplatformlanguage kdevplatforminterfaces ${KDE4_KDECORE_LIBS} ${KDE4_KDEUI_LIBS} ${KDE4_KPARTS_LIBS} ${KDE4_KTEXTEDITOR_LIBS} ${QT_QTDBUS_LIBRARY} ${QT_QTGUI_LIBRARY})
+ 
+ install(TARGETS kdevproblemreporter DESTINATION ${PLUGIN_INSTALL_DIR})
+ 
+--- a/plugins/projectmanagerview/CMakeLists.txt
++++ b/plugins/projectmanagerview/CMakeLists.txt
+@@ -24,7 +24,7 @@
+ kde4_add_ui_files( kdevprojectmanagerview_PLUGIN_SRCS projectbuildsetwidget.ui )
+ 
+ kde4_add_plugin(kdevprojectmanagerview ${kdevprojectmanagerview_PLUGIN_SRCS})
+-target_link_libraries(kdevprojectmanagerview ${KDE4_KDECORE_LIBS} kdevplatforminterfaces kdevplatformproject ${KDE4_THREADWEAVER_LIBRARIES} )
++target_link_libraries(kdevprojectmanagerview ${KDE4_KDECORE_LIBS} kdevplatforminterfaces kdevplatformproject ${KDE4_THREADWEAVER_LIBRARIES} ${KDE4_KDEUI_LIBS} ${KDE4_KTEXTEDITOR_LIBS} )
+ 
+ install(TARGETS kdevprojectmanagerview DESTINATION ${PLUGIN_INSTALL_DIR} )
+ 
+--- a/plugins/subversion/CMakeLists.txt
++++ b/plugins/subversion/CMakeLists.txt
+@@ -84,6 +84,7 @@
+ kde4_add_plugin(kdevsubversion ${kdevsubversion_PART_SRCS} ${kdevsubversion_JOB_SRCS} ${kdevsubversion_WRAPPER_SRCS})
+ 
+ target_link_libraries(kdevsubversion
++${KDE4_KPARTS_LIBS}
+                     ${SUBVERSION_LIBRARIES}
+                     ${QT_QTDESIGNER_LIBRARY}
+                     ${KDE4_KDEUI_LIBS}
+--- a/plugins/teamwork/CMakeLists.txt
++++ b/plugins/teamwork/CMakeLists.txt
+@@ -76,7 +76,7 @@
+ kde4_add_ui_files(kdevteamwork_PART_SRCS ${kdevteamwork_UI} )
+ kde4_add_plugin(kdevteamwork ${kdevteamwork_PART_SRCS})
+ 
+-target_link_libraries(kdevteamwork ${KDE4_KDEUI_LIBS} ${KDE4_KHTML_LIBS} kdevplatforminterfaces network dynamictext diff2)
++target_link_libraries(kdevteamwork ${KDE4_KDEUI_LIBS} ${KDE4_KHTML_LIBS} kdevplatforminterfaces network dynamictext diff2 ${KDE4_KDE3SUPPORT_LIBRARY} ${KDE4_KTEXTEDITOR_LIBS})
+ 
+ install(TARGETS kdevteamwork DESTINATION ${PLUGIN_INSTALL_DIR} )
+ 
+--- a/project/CMakeLists.txt
++++ b/project/CMakeLists.txt
+@@ -17,7 +17,7 @@
+ 
+ 
+ kde4_add_library(kdevplatformproject SHARED ${kdevplatformproject_LIB_SRCS})
+-target_link_libraries(kdevplatformproject ${QT_QTDESIGNER_LIBRARY} kdevplatforminterfaces )
++target_link_libraries(kdevplatformproject ${QT_QTDESIGNER_LIBRARY} kdevplatforminterfaces ${KDE4_KDEUI_LIBS} ${KDE4_KIO_LIBS} )
+ set_target_properties(kdevplatformproject PROPERTIES VERSION ${KDEVPLATFORM_LIB_VERSION} SOVERSION ${KDEVPLATFORM_LIB_SOVERSION})
+ install(TARGETS kdevplatformproject ${INSTALL_TARGETS_DEFAULT_ARGS} )
+ 
+--- a/util/CMakeLists.txt
++++ b/util/CMakeLists.txt
+@@ -21,7 +21,7 @@
+ 
+ kde4_add_ui_files(kdevplatformutil_LIB_SRCS ${kdevplatformutil_LIB_US})
+ kde4_add_library(kdevplatformutil SHARED ${kdevplatformutil_LIB_SRCS})
+-target_link_libraries(kdevplatformutil ${KDE4_KDEUI_LIBS} kdevplatforminterfaces kdevplatformoutputview)
++target_link_libraries(kdevplatformutil ${KDE4_KDEUI_LIBS} kdevplatforminterfaces kdevplatformoutputview ${KDE4_KUTILS_LIBS} )
+ set_target_properties(kdevplatformutil PROPERTIES VERSION ${KDEVPLATFORM_LIB_VERSION} SOVERSION ${KDEVPLATFORM_LIB_SOVERSION})
+ install(TARGETS kdevplatformutil ${INSTALL_TARGETS_DEFAULT_ARGS} )
+ 
