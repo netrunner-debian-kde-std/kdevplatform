@@ -25,7 +25,7 @@ Description: bla
 Package: libsublime-dev
 Section: libdevel
 Architecture: any
-Depends: libsublime1 (= ${binary:Version}), ${sameVersionDep:kdelibs5-dev:libsublime1-Depends-kdelibs5}
+Depends: libsublime1 (= ${binary:Version}), ${sameVersionDep:kdelibs5-dev:libsublime1}
 Description: bla
 
 Package: libsublime-dbg
@@ -44,7 +44,7 @@ Description: bla
 Package: libkdevplatform-dev
 Section: libdevel
 Architecture: any
-Depends: libkdevplatform1 (= ${binary:Version}), ${sameVersionDep:kdelibs5-dev:libkdevplatform1-Depends-kdelibs5}
+Depends: libkdevplatform1 (= ${binary:Version}), ${sameVersionDep:kdelibs5-dev:libkdevplatform1}
 Description: bla
 
 Package: libkdevplatform-dbg
