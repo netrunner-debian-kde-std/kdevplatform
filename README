@@ -1,0 +1,3 @@
+This module is to enter KDE 4.2, but is not compilable today.
+
+Warning : revisions > 839874 require kdelibs5 > 4.1
