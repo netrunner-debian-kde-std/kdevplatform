@@ -1,1 +1,9 @@
-usr/include/*
+usr/include/kdevplatform/interfaces/*
+usr/include/kdevplatform/language/*
+usr/include/kdevplatform/outputview/*
+usr/include/kdevplatform/project/*
+usr/include/kdevplatform/shell/*
+usr/include/kdevplatform/util/*
+usr/include/kdevplatform/vcs/*
+usr/include/kdevplatform/veritas/*
+

@@ -1,6 +1,6 @@
-kdevplatform (0.91+svn834436-1) UNRELEASED; urgency=low
+kdevplatform (0.91+svn839874-1) UNRELEASED; urgency=low
 
   * Initial release. (Closes: #XXXXXX)
-  * 
+  * Warning : older versions require kdelibs > 4.1
 
  -- Xavier Vello <xavier.vello@gmail.com>  Fri, 18 Jul 2008 17:32:43 +0200
