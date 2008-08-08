@@ -6,4 +6,5 @@ usr/include/kdevplatform/shell/*
 usr/include/kdevplatform/util/*
 usr/include/kdevplatform/vcs/*
 usr/include/kdevplatform/veritas/*
-
+usr/lib/libkdevplatform*.so
+usr/share/kde4/apps/cmake/modules/FindKDevPlatform.cmake

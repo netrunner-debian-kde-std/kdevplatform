@@ -1,6 +1,7 @@
-kdevplatform (0.91+svn839874-1) UNRELEASED; urgency=low
+kdevplatform (0.91+svn839852-1) UNRELEASED; urgency=low
+
+  WARNING: since kdevplatform r839875, requirement is kdelibs/kross/core > 4.1
 
   * Initial release. (Closes: #XXXXXX)
-  * Warning : older versions require kdelibs > 4.1
 
  -- Xavier Vello <xavier.vello@gmail.com>  Fri, 18 Jul 2008 17:32:43 +0200
