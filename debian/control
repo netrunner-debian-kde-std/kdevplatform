@@ -24,7 +24,7 @@ Package: kdevplatform-bin
 Section: kde
 Architecture: any
 Depends: ${shlibs:Depends}, kdevplatform-data (= ${source:Version})
-Description: executables for the KDevelop platform
+Description: executables for the KDevelop framework
  This package contains common executables used by integrated development
  environments based on the KDevelop framework.
  .
