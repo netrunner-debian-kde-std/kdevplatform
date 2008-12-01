@@ -77,7 +77,7 @@ Package: libsublime1
 Section: libs
 Architecture: any
 Depends: ${shlibs:Depends}, kdelibs5 (>= 4:4.1.0)
-Description: sublime - An user interface library.
+Description: an user interface library
  sublime provides a user interface that supports multiple
  mainwindows, multiple dockwidgets, split views and areas
  .
@@ -87,7 +87,7 @@ Package: libsublime-dev
 Section: libdevel
 Architecture: any
 Depends: libsublime1 (= ${binary:Version}), ${sameVersionDep:kdelibs5-dev:libsublime1}
-Description: bla
+Description: development files for the sublime user interface library
  This package contains development files for building applications using
  libsublime.
  .
