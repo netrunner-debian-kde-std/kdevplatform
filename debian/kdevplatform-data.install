@@ -1,4 +1,6 @@
 usr/share/kde4/apps/kdev*/*.rc
-usr/share/kde4/services/kcm_kdev_*.desktop
+usr/share/kde4/services/kcm_kdev*.desktop
 usr/share/kde4/services/kdev*.desktop
 usr/share/kde4/servicetypes/kdevelopplugin.desktop
+usr/share/icons/hicolor/22x22/actions/run-clean.png
+usr/share/icons/hicolor/22x22/actions/run-install.png

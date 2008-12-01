@@ -1,0 +1,3 @@
+Debian modifications :
+----------------------
+  - teamwork plugin disabled (installs non-soversionned libraries, conflicts with libgnomevfs2-0)
