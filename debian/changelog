@@ -1,5 +1,7 @@
-kdevplatform (4:4.2~svn891239-1) UNRELEASED; urgency=low
+kdevplatform (0.9.83~svn891239-1) UNRELEASED; urgency=low
 
-  * Initial release (Closes: #nnnn) 
+  * First upload to kdetrunk
+    - svn snapshot
+    - disabled teamwork plugin
 
  -- Xavier Vello <xavier.vello@gmail.com>  Mon, 01 Dec 2008 01:46:07 +0100
