@@ -1,3 +1,10 @@
+kdevplatform (0.9.83~svn891916-1) UNRELEASED; urgency=low
+
+  * New snapshot
+    - teamwork plugin back with prefixed SOnames
+
+ -- Xavier Vello <xavier.vello@gmail.com>  Wed, 03 Dec 2008 12:12:49 +0100
+
 kdevplatform (0.9.83~svn891239-1) UNRELEASED; urgency=low
 
   * First upload to kdetrunk
