@@ -1,3 +1,5 @@
+usr/share/kde4/services/*
+usr/share/kde4/servicetypes/kdevelopplugin.desktop
 usr/lib/kde4/kcm_kdev*.so
 usr/lib/kde4/kdev*.so
-usr/lib/libkdevplatform*.so.*
+usr/lib/libkdev*.so.*

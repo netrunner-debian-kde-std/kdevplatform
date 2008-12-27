@@ -9,5 +9,4 @@ usr/include/kdevplatform/veritas
 usr/include/kdevplatform/kdevplatformversion.h
 usr/lib/libkdev*.so
 usr/share/kde4/apps/cmake/modules/FindKDevPlatform.cmake
-usr/lib/kdevplatform/KDevPlatformConfig.cmake                                
-usr/lib/kdevplatform/KDevPlatformConfigVersion.cmake 
+usr/lib/kdevplatform/*.cmake

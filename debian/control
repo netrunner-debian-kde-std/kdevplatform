@@ -6,8 +6,8 @@ Uploaders: Fathi Boudra <fabo@debian.org>, Jeremy Lainé <jeremy.laine@m4x.org>,
  Xavier Vello <xavier.vello@gmail.com>
 Build-Depends: cdbs (>= 0.4.51), debhelper (>= 6), quilt, cmake (>= 2.6),
  kdelibs5-dev (>= 4:4.1.80), libcommoncpp2-dev,
- libboost-serialization-dev, libboost-thread-dev,
- libsvn-dev
+ libboost-dev, libboost-serialization-dev, libboost-thread-dev,
+ libboost-iostreams-dev, libsvn-dev
 Standards-Version: 3.8.0
 Homepage: http://www.kdevelop.org/
 Vcs-Browser: http://svn.debian.org/wsvn/pkg-kde/branches/kde4.2/packages/kdevplatform
@@ -22,16 +22,15 @@ Description: KDevelop platform for KDE4
  This metapackage installs the KDevelop platform.
  It is needed by kdevelop4.
 
-# This package is empty since last svn snapshot update.
-#Package: kdevplatform-bin
-#Section: devel
-#Architecture: any
-#Depends: ${shlibs:Depends}, kdevplatform-data (= ${source:Version})
-#Description: executables for the KDevelop platform
-# This package contains common executables used by integrated development
-# environments based on the KDevelop platform.
-# .
-# This package is part of the KDevelop platform.
+Package: kdevplatform-bin
+Section: devel
+Architecture: any
+Depends: ${shlibs:Depends}, kdevplatform-data (= ${source:Version})
+Description: executables for the KDevelop platform
+ This package contains common executables used by integrated development
+ environments based on the KDevelop platform.
+ .
+ This package is part of the KDevelop platform.
 
 Package: kdevplatform-libs
 Section: libs
