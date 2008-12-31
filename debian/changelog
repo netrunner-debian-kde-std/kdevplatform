@@ -1,4 +1,4 @@
-kdevplatform (0.9.84+svn903697-1) UNRELEASED; urgency=low
+kdevplatform (0.9.84+svn903835-1) UNRELEASED; urgency=low
 
   * New svn snapshot.
   * TODO : need to figure out why teamwork plugin doesn't build
