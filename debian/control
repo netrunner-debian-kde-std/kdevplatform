@@ -2,12 +2,11 @@ Source: kdevplatform
 Section: libs
 Priority: optional
 Maintainer: Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>
-Uploaders: Fathi Boudra <fabo@debian.org>, Jeremy Lainé <jeremy.laine@m4x.org>,
- Xavier Vello <xavier.vello@gmail.com>
+Uploaders: Fathi Boudra <fabo@debian.org>, Jeremy Lainé <jeremy.laine@m4x.org>
 Build-Depends: cdbs (>= 0.4.51), debhelper (>= 6), quilt, cmake (>= 2.6),
- kdelibs5-dev (>= 4:4.1.80), libcommoncpp2-dev,
- libboost-dev, libboost-serialization-dev, libboost-thread-dev,
- libboost-iostreams-dev, libsvn-dev
+ kdelibs5-dev (>= 4:4.1.85), libcommoncpp2-dev,
+ libboost-serialization-dev, libboost-thread-dev,
+ libsvn-dev
 Standards-Version: 3.8.0
 Homepage: http://www.kdevelop.org/
 Vcs-Browser: http://svn.debian.org/wsvn/pkg-kde/branches/kde4.2/packages/kdevplatform
@@ -17,22 +16,23 @@ Package: kdevplatform
 Section: devel
 Architecture: all
 Depends: kdevplatform-bin (>= ${source:Version}),
- kdevplatform-libs (>= ${source:Version}), kdevplatform-data (>= ${source:Version})
+ kdevplatform1-libs (>= ${source:Version}), kdevplatform-data (>= ${source:Version})
 Description: KDevelop platform for KDE4
  This metapackage installs the KDevelop platform.
  It is needed by kdevelop4.
 
-Package: kdevplatform-bin
-Section: devel
-Architecture: any
-Depends: ${shlibs:Depends}, kdevplatform-data (= ${source:Version})
-Description: executables for the KDevelop platform
- This package contains common executables used by integrated development
- environments based on the KDevelop platform.
- .
- This package is part of the KDevelop platform.
+# This package is empty since last svn snapshot update.
+#Package: kdevplatform-bin
+#Section: devel
+#Architecture: any
+#Depends: ${shlibs:Depends}, kdevplatform-data (= ${source:Version})
+#Description: executables for the KDevelop platform
+# This package contains common executables used by integrated development
+# environments based on the KDevelop platform.
+# .
+# This package is part of the KDevelop platform.
 
-Package: kdevplatform-libs
+Package: kdevplatform1-libs
 Section: libs
 Architecture: any
 Depends: ${shlibs:Depends}, libsublime1 (>= ${source:Version})
@@ -54,8 +54,8 @@ Description: architecture-independent data for the KDevelop platform
 Package: kdevplatform-dev
 Section: libdevel
 Architecture: any
-Depends: kdevplatform-libs (= ${binary:Version}), ${sameVersionDep:kdelibs5-dev:kdevplatform-libs},
- libsublime-dev (>= ${source:Version}), 
+Depends: kdevplatform1-libs (= ${binary:Version}), ${sameVersionDep:kdelibs5-dev:kdevplatform1-libs},
+ libsublime-dev (>= ${source:Version})
 Description: development files for the KDevelop platform
  This package contains development files for building integrated development
  environments based on the KDevelop platform.
@@ -66,7 +66,7 @@ Package: kdevplatform-dbg
 Section: devel
 Architecture: any
 Priority: extra
-Depends: kdevplatform-libs (= ${binary:Version}), kdelibs5-dbg, libc6-dbg [amd64]
+Depends: kdevplatform1-libs (= ${binary:Version}), kdelibs5-dbg, libc6-dbg [amd64]
 Description: debugging symbols for the KDevelop platform
  This package contains the debugging symbols associated with kdevplatform.
  They will automatically be used by gdb for debugging kdevplatform-related

@@ -1,2 +1,2 @@
 10_private_libs_soversion.diff
-20-dont-build-examples.diff
+11_disable_examples_tests.diff

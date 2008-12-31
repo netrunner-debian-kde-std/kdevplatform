@@ -1,7 +1,7 @@
-kdevplatform (0.9.84+svn901843-2) UNRELEASED; urgency=low
+kdevplatform (0.9.84+svn903697-1) UNRELEASED; urgency=low
 
   * New svn snapshot.
-  * TODO : have soversion in -libs package name
   * TODO : need to figure out why teamwork plugin doesn't build
 
- -- Xavier Vello <xavier.vello@gmail.com>  Mon, 22 Dec 2008 00:27:29 +0100
+ -- Fathi Boudra <fabo@debian.org>  Wed, 31 Dec 2008 12:00:01 +0100
+
