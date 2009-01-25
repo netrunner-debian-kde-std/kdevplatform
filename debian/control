@@ -3,8 +3,8 @@ Section: libs
 Priority: optional
 Maintainer: Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>
 Uploaders: Fathi Boudra <fabo@debian.org>, Jeremy Lainé <jeremy.laine@m4x.org>
-Build-Depends: cdbs (>= 0.4.51), debhelper (>= 7), quilt, cmake (>= 2.6),
- kdelibs5-dev (>= 4:4.1.96), libcommoncpp2-dev,
+Build-Depends: cdbs (>= 0.4.51), debhelper (>= 7), quilt, cmake (>= 2.6.2), pkg-kde-tools (>= 0.4),
+ kdelibs5-dev (>= 4:4.2.0), libcommoncpp2-dev,
  libboost-iostreams-dev, libboost-serialization-dev,
  libsvn-dev
 Standards-Version: 3.8.0
