@@ -1,5 +1,114 @@
-This package was debianized by the Debian Qt/KDE Maintainers on
-Fri, 11 May 2007 17:23:33 +0200.
+This package was debianized by:
 
-The Debian packaging is (C) 2007-2008, Debian Qt/KDE Maintainers and
-is licensed under the GPL, see `/usr/share/common-licenses/GPL'.
+    Fathi Boudra <fabo@debian.org> on Sat, 07 Feb 2009 21:37:36 +0100
+
+It was downloaded from:
+
+    http://download.kde.org
+
+Upstream Authors:
+
+    Andreas Pakulat <apaku@gmx.de>
+    Hamish Rodda <rodda@kde.org>
+    David Nolden <david.nolden.kdevelop@art-master.de>
+    Alexander Dymo <adymo@kdevelop.org>
+    Manuel Breugelmans <mbr.nxi@gmail.com>
+    Roberto Raggi <roberto@kdevelop.org>
+    Robert Gruber <rgruber@users.sourceforge.net>
+    Adam Treat <treat@kde.org>
+    Dukju Ahn <dukjuahn@gmail.com>
+    Aleix Pol <aleixpol@gmail.com>
+    Evgeniy Ivanov <powerfox@kde.ru>
+    Matt Rogers <mattr@kde.org>
+    The RapidSvn Group. All Rights Reserved.
+    Harald Fernengel <harry@kdevelop.org>
+    Ernst Huber <qxrunner@systest.ch>
+    Matthew Woehlke <mw_triad@users.sourceforge.net>
+    Matthias Hoelzer-Kluepfel <hoelzer@kde.org>
+    Cédric Pasteur <cedric.pasteur@free.fr>
+    Bernd Gehrmann <bernd@kdevelop.org>
+    Mario Scalas <mario.scalas@libero.it>
+    Simon Hausmann <hausmann@kde.org>
+    Kris Wong <kris.p.wong@gmail.com>
+    Jens Dagerbo <jens.dagerbo@swipnet.se>
+    Jarosław Staniek <staniek@kde.org>
+    John Firebaugh <jfirebaugh@kde.org>
+    Falk Brettschneider <falkbr@kdevelop.org>
+    Peter Penz <peter.penz@gmx.at>
+    Christian Loose <christian.loose@hamburg.de>
+    Daniel Engelschalt <daniel.engelschalt@gmx.net>
+    Sandy Meier <smeier@kdevelop.org>
+    Martijn Klingens <klingens@kde.org>
+    Trolltech ASA. All Rights Reserved.
+    Vladimir Prus <ghost@cs.msu.su>
+    Google Inc. All Rights Reserved.
+    Fredrik Höglund <fredrik@kde.org>
+    Oswald Buddenhagen <ossi@kde.org>
+    Sascha Cunz <sascha@kdevelop.org>
+    Amilcar do Carmo Lucas <amilcar@kdevelop.org>
+    Ian Reinhart Geiser <ian@geiseri.com>
+    Silicon Graphics Computer Systems Inc.
+    Julian Rockey <linux@jrockey.com>
+    Hewlett-Packard Company
+    Free Software Foundation Inc.
+    Bernd Buschinski <b.buschinski@web.de>
+    Frerich Raabe <raabe@kde.org>
+
+Copyright:
+
+    KDevelop Platform consists of:
+     - interfaces
+     - language
+     - outputview
+     - plugins
+     - project
+     - shell
+     - sublime
+     - util
+     - vcs
+     - veritas
+
+KDevelop Platform Libraries License:
+
+    Unless something else is mentioned, KDevelop Platform Libraries
+    are licensed under the terms of the GNU Lesser General Public
+    License as published by the Free Software Foundation; either
+    version 2 of the License, or (at your option) any later version.
+
+    This package is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+    Lesser General Public License for more details.
+
+    You should have received a copy of the GNU Lesser General Public
+    License along with this package; if not, write to the Free Software
+    Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301 USA
+
+KDevelop Platform Plugins license:
+
+    Unless something else is mentioned, KDevelop Platform Plugins are licensed
+    under the terms of the GNU General Public License as published by
+    the Free Software Foundation; either version 2 of the License, or
+    (at your option) any later version.
+
+    This package is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this package; if not, write to the Free Software
+    Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301 USA
+
+On Debian systems, the complete texts of these licenses can be found in:
+    - GPL version 2:    `/usr/share/common-licenses/GPL-2'
+    - GPL version 3:    `/usr/share/common-licenses/GPL-3'
+    - LGPL version 2:   `/usr/share/common-licenses/LGPL-2',
+    - LGPL version 2.1: `/usr/share/common-licenses/LGPL-2.1'
+    - LGPL version 3:   `/usr/share/common-licenses/LGPL-3'
+
+The Debian packaging is:
+
+    Copyright (C) 2009, Fathi Boudra <fabo@debian.org>
+
+and is licensed under the GPL, see above.

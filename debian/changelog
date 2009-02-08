@@ -1,5 +1,5 @@
-kdevplatform (0.9.85+svn907317-1) UNRELEASED; urgency=low
+kdevplatform (0.9.91-1) experimental; urgency=low
 
-  * New svn snapshot.
+  * Initial release (Closes: #509432)
 
- -- Fathi Boudra <fabo@debian.org>  Wed, 31 Dec 2008 12:00:01 +0100
+ -- Fathi Boudra <fabo@debian.org>  Sun, 01 Feb 2009 18:11:05 +0100
