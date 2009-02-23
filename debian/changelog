@@ -1,5 +1,5 @@
-kdevplatform (0.91+svn843945-1) UNRELEASED; urgency=low
+kdevplatform (0.9.91-1) UNRELEASED; urgency=low
 
-  * Initial release (Closes: #nnnn)
+  * Initial release (Closes: #509432)
 
- -- Xavier Vello <xavier.vello@gmail.com>  Fri, 18 Jul 2008 17:32:43 +0200
+ -- Jeremy Lainé <jeremy.laine@m4x.org>  Mon, 23 Feb 2009 20:37:45 +0100

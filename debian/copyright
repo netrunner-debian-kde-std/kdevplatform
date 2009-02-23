@@ -1,5 +1,85 @@
 This package was debianized by the Debian Qt/KDE Maintainers on
-Fri, 11 May 2007 17:23:33 +0200.
+Mon, 23 Feb 2009 20:37:45 +0100
 
-The Debian packaging is (C) 2007-2008, Debian Qt/KDE Maintainers and
+It was downloaded from http://www.kdevelop.org/
+
+Upstream Authors:
+
+  Adam Treat <treat@kde.org>
+  Aleix Pol <aleixpol@gmail.com>
+  Alexander Dymo <adymo@kdevelop.org>
+  Amilcar do Carmo Lucas <amilcar@kdevelop.org>
+  Andreas Pakulat <apaku@gmx.de>
+  Bernd Buschinski <b.buschinski@web.de>
+  Bernd Gehrmann <bernd@kdevelop.org>
+  Cédric Pasteur <cedric.pasteur@free.fr>
+  Christian Loose <christian.loose@hamburg.de>
+  Daniel Engelschalt <daniel.engelschalt@gmx.net>
+  David Nolden <david.nolden.kdevelop@art-master.de>
+  Dukju Ahn <dukjuahn@gmail.com>
+  Ernst Huber <qxrunner@systest.ch>
+  Evgeniy Ivanov <powerfox@kde.ru>
+  Falk Brettschneider <falkbr@kdevelop.org>
+  Fredrik Höglund <fredrik@kde.org>
+  Frerich Raabe <raabe@kde.org>
+  Hamish Rodda <rodda@kde.org>
+  Harald Fernengel <harry@kdevelop.org>
+  Ian Reinhart Geiser <ian@geiseri.com>
+  Jaroslaw Staniek <staniek@kde.org>
+  Jens Dagerbo <jens.dagerbo@swipnet.se>
+  John Firebaugh <jfirebaugh@kde.org>
+  Julian Rockey <linux@jrockey.com>
+  Kris Wong <kris.p.wong@gmail.com>
+  Manuel Breugelmans <mbr.nxi@gmail.com>
+  Mario Scalas <mario.scalas@libero.it>
+  Martijn Klingens <klingens@kde.org>
+  Matthew Woehlke <mw_triad@users.sourceforge.net>
+  Matthias Hoelzer-Kluepfel <hoelzer@kde.org>
+  Matt Rogers <mattr@kde.org>
+  Oswald Buddenhagen <ossi@kde.org>
+  Peter Penz <peter.penz@gmx.at>
+  Robert Gruber <rgruber@users.sourceforge.net>
+  Roberto Raggi <roberto@kdevelop.org>
+  Sandy Meier <smeier@kdevelop.org>
+  Sascha Cunz <sascha@kdevelop.org>
+  Simon Hausmann <hausmann@kde.org>
+  Vladimir Prus <ghost@cs.msu.su>
+
+Copyright: 1999-2009 The KDevelop developers
+
+License, except for plugins:
+
+  This library is free software; you can redistribute it and/or
+  modify it under the terms of the GNU Lesser General Public
+  License as published by the Free Software Foundation; either
+  version 2 of the License, or (at your option) any later version.
+
+  This library is distributed in the hope that it will be useful,
+  but WITHOUT ANY WARRANTY; without even the implied warranty of
+  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+  Lesser General Public License for more details.
+
+  You should have received a copy of the GNU Lesser Public License with
+  the Debian GNU/Linux distribution in file /usr/share/common-licenses/LGPL;
+  if not, write to the Free Software Foundation, Inc., 51 Franklin St,
+  Fifth Floor, Boston, MA 02110-1301, USA.
+
+License for plugins:
+
+  This program is free software; you can redistribute it and/or modify
+  it under the terms of the GNU General Public License as published by
+  the Free Software Foundation; either version 2 of the License, or
+  (at your option) any later version.
+
+  This program is distributed in the hope that it will be useful,
+  but WITHOUT ANY WARRANTY; without even the implied warranty of
+  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+  GNU General Public License for more details.
+
+  You should have received a copy of the GNU General Public License with
+  the Debian GNU/Linux distribution in file /usr/share/common-licenses/GPL;
+  if not, write to the Free Software Foundation, Inc., 51 Franklin St,
+  Fifth Floor, Boston, MA 02110-1301, USA.
+
+The Debian packaging is (C) 2009, Debian Qt/KDE Maintainers and
 is licensed under the GPL, see `/usr/share/common-licenses/GPL'.
