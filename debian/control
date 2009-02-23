@@ -14,19 +14,8 @@ Vcs-Svn: svn://svn.debian.org/pkg-kde/branches/kde4/packages/kdevplatform
 Package: kdevplatform
 Section: kde
 Architecture: all
-Depends: kdevplatform-bin (>= ${source:Version})
 Description: bla
  FIXME: what does this package contain?
- .
- This package is part of the KDevelop framework.
-
-Package: kdevplatform-bin
-Section: kde
-Architecture: any
-Depends: ${shlibs:Depends}, kdevplatform-data (= ${source:Version})
-Description: executables for the KDevelop framework
- This package contains common executables used by integrated development
- environments based on the KDevelop framework.
  .
  This package is part of the KDevelop framework.
 
