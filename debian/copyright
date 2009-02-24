@@ -18,17 +18,51 @@ Upstream Authors:
 
 Copyright:
 
-    KDevelop Platform consists of:
-     - interfaces
-     - language
-     - outputview
-     - plugins
-     - project
-     - shell
-     - sublime
-     - util
-     - vcs
-     - veritas
+    © 2006-2009 Andreas Pakulat <apaku@gmx.de>
+    © 2003-2008 Hamish Rodda <rodda@kde.org>
+    © 2006-2009 David Nolden <david.nolden.kdevelop@art-master.de>
+    © 2003-2008 Alexander Dymo <adymo@kdevelop.org>
+    © 2008-2009 Manuel Breugelmans <mbr.nxi@gmail.com>
+    © 2002-2007 Roberto Raggi <roberto@kdevelop.org>
+    © 2007-2008 Robert Gruber <rgruber@users.sourceforge.net>
+    © 2003, 2005-2006 Adam Treat <treat@kde.org>
+    © 2007 Dukju Ahn <dukjuahn@gmail.com>
+    © 2007-2009 Aleix Pol <aleixpol@kde.org> <aleixpol@gmail.com>
+    © 2008 Evgeniy Ivanov <powerfox@kde.ru>
+    © 2006 Matt Rogers <mattr@kde.org>
+    © 2002-2008 The RapidSvn Group. All Rights Reserved.
+    © 2002-2003, 2008 Harald Fernengel <harry@kdevelop.org>
+    © 2006 Ernst Huber <qxrunner@systest.ch>
+    © 2007 Matthew Woehlke <mw_triad@users.sourceforge.net>
+    © 2001-2002 Matthias Hoelzer-Kluepfel <hoelzer@kde.org>
+    © 2008 Cédric Pasteur <cedric.pasteur@free.fr>
+    © 1999-2002 Bernd Gehrmann <bernd@kdevelop.org>
+    © 2003 Mario Scalas <mario.scalas@libero.it>
+    © 2002 Simon Hausmann <hausmann@kde.org>
+    © 2007, 2009 Kris Wong <kris.p.wong@gmail.com>
+    © 2003 Jens Dagerbo <jens.dagerbo@swipnet.se>
+    © 2004 Jarosław Staniek <staniek@kde.org>
+    © 2002-2003 John Firebaugh <jfirebaugh@kde.org>
+    © 2002-2003 Falk Brettschneider <falkbr@kdevelop.org>
+    © 2008 Peter Penz <peter.penz@gmx.at>
+    © 2002-2003 Christian Loose <christian.loose@hamburg.de>
+    © 2002 Daniel Engelschalt <daniel.engelschalt@gmx.net>
+    © 2001 Sandy Meier <smeier@kdevelop.org>
+    © 2002-2003 Martijn Klingens <klingens@kde.org>
+    © 1992-2008 Trolltech ASA. All Rights Reserved.
+    © 2007-2008 Vladimir Prus <ghost@cs.msu.su>
+    © 2005-2006 Google Inc. All Rights Reserved.
+    © 2007 Fredrik Höglund <fredrik@kde.org>
+    © 2007 Oswald Buddenhagen <ossi@kde.org>
+    © 2004-2005 Sascha Cunz <sascha@kdevelop.org>
+    © 2003 Amilcar do Carmo Lucas <amilcar@kdevelop.org>
+    © 2005 Ian Reinhart Geiser <ian@geiseri.com>
+    © 1996-1998 Silicon Graphics Computer Systems Inc.
+    © 2003 Julian Rockey <linux@jrockey.com>
+    © 1994 Hewlett-Packard Company
+    © 2001-2005 Free Software Foundation Inc.
+    © 2007 Bernd Buschinski <b.buschinski@web.de>
+    © 2005 Frerich Raabe <raabe@kde.org>
 
 KDevelop Platform Libraries License:
 
