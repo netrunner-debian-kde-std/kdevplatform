@@ -14,15 +14,16 @@ Vcs-Svn: svn://svn.debian.org/pkg-kde/branches/kde4/packages/kdevplatform
 Package: kdevplatform
 Section: kde
 Architecture: all
-Description: bla
- FIXME: what does this package contain?
+Depends: kdevplatform-libs (>= ${source:Version}), kdevplatform-data (>= ${source:Version})
+Description: KDevelop framework for KDE4
+ This metapackage installs the KDevelop framework.
  .
  This package is part of the KDevelop framework.
 
 Package: kdevplatform-libs
 Section: libs
 Architecture: any
-Depends: ${shlibs:Depends}, libsublime1 (>= ${source:Version}), kdelibs5 (>= 4:4.1.0)
+Depends: ${shlibs:Depends}, libsublime1 (>= ${source:Version})
 Description: shared libraries for the KDevelop framework
  This package contains shared libraries needed to run integrated development
  environments based on the KDevelop framework.
@@ -64,8 +65,9 @@ Package: libsublime1
 Section: libs
 Architecture: any
 Depends: ${shlibs:Depends}, kdelibs5 (>= 4:4.1.0)
-Description: bla
- FIXME: what does this package contain?
+Description: user interface library for the KDevelop framework
+ sublime provides a user interface that supports multiple main windows,
+ dock widgets, split views and areas.
  .
  This package is part of the KDevelop framework.
 
@@ -73,7 +75,7 @@ Package: libsublime-dev
 Section: libdevel
 Architecture: any
 Depends: libsublime1 (= ${binary:Version}), ${sameVersionDep:kdelibs5-dev:libsublime1}
-Description: bla
+Description: development files for the sublime user interface library
  This package contains development files for building applications using
  libsublime.
  .
