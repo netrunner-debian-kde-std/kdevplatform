@@ -15,10 +15,11 @@ Package: kdevplatform1-libs
 Section: libs
 Architecture: any
 Depends: ${shlibs:Depends}, libsublime1 (>= ${source:Version})
-Description: KDevelop platform for KDE4
- This package contains shared libraries and architecture-independent data files
- needed to run integrated development environments based on the KDevelop
- platform.
+Description: shared libraries for the KDevelop platform
+ This package contains shared libraries needed to run integrated development
+ environments based on the KDevelop platform.
+ .
+ This package is part of the KDevelop platform.
 
 Package: kdevplatform-dev
 Section: libdevel
