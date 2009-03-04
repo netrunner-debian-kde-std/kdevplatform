@@ -11,7 +11,7 @@ Homepage: http://www.kdevelop.org/
 Vcs-Browser: http://svn.debian.org/wsvn/pkg-kde/trunk/packages/kdevplatform
 Vcs-Svn: svn://svn.debian.org/pkg-kde/trunk/packages/kdevplatform
 
-Package: kdevplatform
+Package: kdevplatform1-libs
 Section: libs
 Architecture: any
 Depends: ${shlibs:Depends}, libsublime1 (>= ${source:Version})
@@ -23,7 +23,7 @@ Description: KDevelop platform for KDE4
 Package: kdevplatform-dev
 Section: libdevel
 Architecture: any
-Depends: kdevplatform (= ${binary:Version}), ${sameVersionDep:kdelibs5-dev:kdevplatform},
+Depends: kdevplatform1-libs (= ${binary:Version}), ${sameVersionDep:kdelibs5-dev:kdevplatform1-libs},
  libsublime-dev (>= ${source:Version})
 Description: development files for the KDevelop platform
  This package contains development files for building integrated development
@@ -35,7 +35,7 @@ Package: kdevplatform-dbg
 Section: devel
 Architecture: any
 Priority: extra
-Depends: kdevplatform (= ${binary:Version}), kdelibs5-dbg, libc6-dbg [amd64]
+Depends: kdevplatform1-libs (= ${binary:Version}), kdelibs5-dbg, libc6-dbg [amd64]
 Description: debugging symbols for the KDevelop platform
  This package contains the debugging symbols associated with kdevplatform.
  They will automatically be used by gdb for debugging kdevplatform-related
