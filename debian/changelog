@@ -1,3 +1,9 @@
+kdevplatform (0.9.91-2) UNRELEASED; urgency=low
+
+  * Rename kdevplatform to kdevplatform1-libs.
+
+ -- Jeremy Lainé <jeremy.laine@m4x.org>  Wed, 04 Mar 2009 16:44:16 +0000
+
 kdevplatform (0.9.91-1) experimental; urgency=low
 
   * Initial release (Closes: #509432)
