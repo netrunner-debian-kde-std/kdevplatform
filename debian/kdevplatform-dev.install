@@ -1,3 +1,4 @@
+usr/include/kdevplatform/debugger
 usr/include/kdevplatform/interfaces
 usr/include/kdevplatform/language
 usr/include/kdevplatform/outputview

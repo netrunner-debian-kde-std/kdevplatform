@@ -6,7 +6,7 @@ Uploaders: Fathi Boudra <fabo@debian.org>, Jeremy Lainé <jeremy.laine@m4x.org>
 Build-Depends: cdbs (>= 0.4.51), debhelper (>= 7), quilt, cmake (>= 2.6.2),
  pkg-kde-tools (>= 0.4), kdelibs5-dev (>= 4:4.2.0), libsvn-dev
 # libcommoncpp2-dev, libboost-iostreams-dev, libboost-serialization-dev
-Standards-Version: 3.8.0
+Standards-Version: 3.8.1
 Homepage: http://www.kdevelop.org/
 Vcs-Browser: http://svn.debian.org/wsvn/pkg-kde/trunk/packages/kdevplatform
 Vcs-Svn: svn://svn.debian.org/pkg-kde/trunk/packages/kdevplatform
@@ -33,7 +33,7 @@ Description: development files for the KDevelop platform
  This package is part of the KDevelop platform.
 
 Package: kdevplatform-dbg
-Section: devel
+Section: debug
 Architecture: any
 Priority: extra
 Depends: kdevplatform1-libs (= ${binary:Version}), kdelibs5-dbg, libc6-dbg [amd64]
