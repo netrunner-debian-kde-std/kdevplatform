@@ -1,6 +1,6 @@
-kdevplatform (0.9.91+svn956355-0r1) UNRELEASED; urgency=low
+kdevplatform (0.9.92-0r1) UNRELEASED; urgency=low
 
-  * SVN snapshot.
+  * New upstream release.
   * Bump Standards-Version to 3.8.1. No changes needed.
   * Move kdevplatform-dbg package to debug section.
   * Update debian/kdevplatform-dev.install: add debugger include files.
