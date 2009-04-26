@@ -3,7 +3,6 @@ kdevplatform (0.9.92-1) unstable; urgency=low
   * New upstream release.
   * Bump Standards-Version to 3.8.1. No changes needed.
   * Move kdevplatform-dbg package to debug section.
-  * Update debian/kdevplatform-dev.install: add debugger include files.
 
  -- Fathi Boudra <fabo@debian.org>  Mon, 20 Apr 2009 11:09:11 +0200
 
