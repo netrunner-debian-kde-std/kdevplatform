@@ -1,4 +1,4 @@
-kdevplatform (0.9.92-0r1) UNRELEASED; urgency=low
+kdevplatform (0.9.92-1) unstable; urgency=low
 
   * New upstream release.
   * Bump Standards-Version to 3.8.1. No changes needed.
