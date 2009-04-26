@@ -1,3 +1,9 @@
+kdevplatform (0.9.93-1) UNRELEASED; urgency=low
+
+  * Update debian/kdevplatform-dev.install: add debugger include files.
+
+ -- Fathi Boudra <fabo@debian.org>  Sun, 26 Apr 2009 19:39:22 +0200
+
 kdevplatform (0.9.92-1) unstable; urgency=low
 
   * New upstream release.
