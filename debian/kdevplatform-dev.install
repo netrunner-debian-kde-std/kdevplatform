@@ -1,5 +1,5 @@
 usr/include/kdevplatform/debugger
-usr/include/kdevplatform/execute/executepluginconstants.h
+usr/include/kdevplatform/execute
 usr/include/kdevplatform/interfaces
 usr/include/kdevplatform/kdevplatformversion.h
 usr/include/kdevplatform/language
