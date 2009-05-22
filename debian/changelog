@@ -1,6 +1,7 @@
 kdevplatform (0.9.93-1) UNRELEASED; urgency=low
 
   * Update debian/kdevplatform-dev.install: add debugger include files.
+  * Update debian/kdevplatform1-libs.install: add kdevcodegen licenses files.
   * Add liboost1.37-dev build dependency: It's needed to get the class browser
     plugin. We can't use boost 1.38 as it isn't supported yet.
 
