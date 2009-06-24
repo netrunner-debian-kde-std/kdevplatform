@@ -3,6 +3,7 @@ kdevplatform (0.9.94-1) unstable; urgency=low
   * New upstream release.
   * Replace liboost1.37-dev build dependency by libboost-serialization-dev.
     (Closes: #531111)
+  * Bump Standards-Version to 3.8.2 (no changes needed).
 
  -- Fathi Boudra <fabo@debian.org>  Mon, 15 Jun 2009 11:42:21 +0200
 
