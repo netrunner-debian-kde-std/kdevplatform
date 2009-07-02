@@ -30,7 +30,7 @@ usr/lib/libkdevplatformlanguage.so.*
 usr/lib/libkdevplatformoutputview.so.*
 usr/lib/libkdevplatformproject.so.*
 usr/lib/libkdevplatformshell.so.*
-usr/lib/libkdevplatformtestshell.so.*
+usr/lib/libkdevplatformtests.so.*
 usr/lib/libkdevplatformutil.so.*
 usr/lib/libkdevplatformvcs.so.*
 usr/lib/libkdevplatformveritas.so.*

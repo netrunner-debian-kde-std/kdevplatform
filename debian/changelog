@@ -1,3 +1,11 @@
+kdevplatform (0.9.95-1) UNRELEASED; urgency=low
+
+  * NOT RELEASED YET
+  * Update *.install files:
+    - libkdevplatformtestshell renamed to libkdevplatformtests.
+
+ -- Fathi Boudra <fabo@debian.org>  Thu, 02 Jul 2009 14:21:12 +0200
+
 kdevplatform (0.9.94-1) unstable; urgency=low
 
   * New upstream release.
