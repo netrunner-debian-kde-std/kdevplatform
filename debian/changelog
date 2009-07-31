@@ -1,10 +1,13 @@
-kdevplatform (0.9.95-1) UNRELEASED; urgency=low
+kdevplatform (1.0.0-1) UNRELEASED; urgency=low
 
   * NOT RELEASED YET
   * Update *.install files:
     - libkdevplatformtestshell renamed to libkdevplatformtests.
-  * Update debian/rules: add DEB_DH_MAKESHLIBS_ARGS_ALL := -V
-    to generate a shlibs file with current upstream version of the package.
+  * Update debain/control:
+    - add kdesdk-dev build dependency for kompart interface.
+  * Update debian/rules:
+    - add DEB_DH_MAKESHLIBS_ARGS_ALL := -V to generate a shlibs file with
+      current upstream version of the package.
 
  -- Fathi Boudra <fabo@debian.org>  Thu, 02 Jul 2009 14:21:12 +0200
 
