@@ -1,6 +1,7 @@
 #!/usr/bin/make -f
 
-DEB_DH_STRIP_ARGS := --keep-debug
-
 include /usr/share/pkg-kde-tools/qt-kde-team/1/debian-qt-kde.mk
+
+DEB_DH_MAKESHLIBS_ARGS_ALL := -V
+DEB_DH_STRIP_ARGS := --keep-debug
 
