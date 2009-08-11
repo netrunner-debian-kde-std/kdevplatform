@@ -36,7 +36,6 @@ usr/lib/libkdevplatformtests.so.*
 usr/lib/libkdevplatformutil.so.*
 usr/lib/libkdevplatformvcs.so.*
 usr/lib/libkdevplatformveritas.so.*
-usr/lib/libkdevteamwork_diff2.so
 usr/share/icons/hicolor/22x22/actions/run-clean.png
 usr/share/icons/hicolor/22x22/actions/run-install.png
 usr/share/kde4/apps/kdevappwizard/kdevappwizard.rc

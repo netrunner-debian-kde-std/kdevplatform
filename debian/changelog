@@ -1,12 +1,14 @@
-kdevplatform (0.9.94+svn1009970-1) unstable; urgency=low
+kdevplatform (0.9.94+svn1010055-1) unstable; urgency=low
 
-  * New snapshot from svn revision 1009970.
+  * New snapshot from svn revision 1010055.
   * Update *.install files:
     - libkdevplatformtestshell renamed to libkdevplatformtests.
-    - add new files (kdevopenwith, kdevpatchreview and libkdevteamwork_diff2).
+    - add new files (kdevopenwith and kdevpatchreview).
   * Update debian/rules:
     - add DEB_DH_MAKESHLIBS_ARGS_ALL := -V to generate a shlibs file with
       current upstream version of the package.
+    - use DEB_DBG_PACKAGE instead of DEB_DH_STRIP_ARGS. debug package should
+      be properly generated.
 
  -- Fathi Boudra <fabo@debian.org>  Tue, 11 Aug 2009 15:50:12 +0200
 
