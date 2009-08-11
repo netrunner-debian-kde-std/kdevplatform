@@ -3,6 +3,7 @@ kdevplatform (0.9.94+svn1009970-1) unstable; urgency=low
   * New snapshot from svn revision 1009970.
   * Update *.install files:
     - libkdevplatformtestshell renamed to libkdevplatformtests.
+    - add new files (kdevopenwith, kdevpatchreview and libkdevteamwork_diff2).
   * Update debian/rules:
     - add DEB_DH_MAKESHLIBS_ARGS_ALL := -V to generate a shlibs file with
       current upstream version of the package.
