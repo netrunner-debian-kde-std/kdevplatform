@@ -1,13 +1,13 @@
-kdevplatform (1.0.0-1) UNRELEASED; urgency=low
+kdevplatform (0.9.94+svn1009970-1) unstable; urgency=low
 
-  * NOT RELEASED YET
+  * New snapshot from svn revision 1009970.
   * Update *.install files:
     - libkdevplatformtestshell renamed to libkdevplatformtests.
   * Update debian/rules:
     - add DEB_DH_MAKESHLIBS_ARGS_ALL := -V to generate a shlibs file with
       current upstream version of the package.
 
- -- Fathi Boudra <fabo@debian.org>  Thu, 02 Jul 2009 14:21:12 +0200
+ -- Fathi Boudra <fabo@debian.org>  Tue, 11 Aug 2009 15:50:12 +0200
 
 kdevplatform (0.9.94-1) unstable; urgency=low
 
