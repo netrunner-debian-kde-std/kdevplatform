@@ -1,3 +1,10 @@
+kdevplatform (0.9.96-1) UNRELEASED; urgency=low
+
+  * New upstream release.
+  * Remove kdevplatform version fix.
+
+ -- Fathi Boudra <fabo@debian.org>  Tue, 25 Aug 2009 10:56:27 +0200
+
 kdevplatform (0.9.95-2) unstable; urgency=low
 
   * Add patch to fix kdevplatform version.
