@@ -11,10 +11,11 @@ usr/lib/kde4/kdevclassbrowser.so
 usr/lib/kde4/kdevcontextbrowser.so
 usr/lib/kde4/kdevcvs.so
 usr/lib/kde4/kdevdocumentswitcher.so
+usr/lib/kde4/kdevdocumentview.so
 usr/lib/kde4/kdevexecute.so
 usr/lib/kde4/kdevfilemanager.so
 usr/lib/kde4/kdevgenericmanager.so
-usr/lib/kde4/kdevgit.so
+usr/lib/kde4/kdevgrepview.so
 usr/lib/kde4/kdevkonsoleview.so
 usr/lib/kde4/kdevmercurial.so
 usr/lib/kde4/kdevopenwith.so
@@ -35,7 +36,6 @@ usr/lib/libkdevplatformshell.so.*
 usr/lib/libkdevplatformtests.so.*
 usr/lib/libkdevplatformutil.so.*
 usr/lib/libkdevplatformvcs.so.*
-usr/lib/libkdevplatformveritas.so.*
 usr/share/icons/hicolor/22x22/actions/run-clean.png
 usr/share/icons/hicolor/22x22/actions/run-install.png
 usr/share/kde4/apps/kdevappwizard/kdevappwizard.rc
@@ -46,8 +46,9 @@ usr/share/kde4/apps/kdevcontextbrowser/kdevcontextbrowser.rc
 usr/share/kde4/apps/kdevcvs/kdevcvs.rc
 usr/share/kde4/apps/kdevdebugger/kdevdebuggershellui.rc
 usr/share/kde4/apps/kdevdocumentswitcher/kdevdocumentswitcher.rc
+usr/share/kde4/apps/kdevdocumentview/kdevdocumentview.rc
 usr/share/kde4/apps/kdevfilemanager/kdevfilemanager.rc
-usr/share/kde4/apps/kdevgit/kdevgit.rc
+usr/share/kde4/apps/kdevgrepview/kdevgrepview.rc
 usr/share/kde4/apps/kdevmercurial/kdevmercurial.rc
 usr/share/kde4/apps/kdevpatchreview/kdevpatchreview.rc
 usr/share/kde4/apps/kdevproblemreporter/kdevproblemreporter.rc
@@ -68,10 +69,11 @@ usr/share/kde4/services/kdevclassbrowser.desktop
 usr/share/kde4/services/kdevcontextbrowser.desktop
 usr/share/kde4/services/kdevcvs.desktop
 usr/share/kde4/services/kdevdocumentswitcher.desktop
+usr/share/kde4/services/kdevdocumentview.desktop
 usr/share/kde4/services/kdevexecute.desktop
 usr/share/kde4/services/kdevfilemanager.desktop
 usr/share/kde4/services/kdevgenericmanager.desktop
-usr/share/kde4/services/kdevgit.desktop
+usr/share/kde4/services/kdevgrepview.desktop
 usr/share/kde4/services/kdevkonsoleview.desktop
 usr/share/kde4/services/kdevmercurial.desktop
 usr/share/kde4/services/kdevopenwith.desktop
