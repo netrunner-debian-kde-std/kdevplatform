@@ -1,10 +1,13 @@
-kdevplatform (0.9.96-1) UNRELEASED; urgency=low
+kdevplatform (0.9.96-1) unstable; urgency=low
 
   * New upstream release.
+  * Add 01_kdevplatform_r1044088.diff patch.
   * Remove kdevplatform version fix.
   * Update installed plugins. Some plugins were removed upstream.
+  * Add Replaces against kdevelop and kdevelop-data (<< 4:3.9.96-1).
+    Some files were move from these packages to kdevplatform1-libs.
 
- -- Fathi Boudra <fabo@debian.org>  Tue, 25 Aug 2009 10:56:27 +0200
+ -- Fathi Boudra <fabo@debian.org>  Thu, 12 Nov 2009 15:29:14 +0100
 
 kdevplatform (0.9.95-2) unstable; urgency=low
 

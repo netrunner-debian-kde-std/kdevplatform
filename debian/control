@@ -3,8 +3,8 @@ Section: libs
 Priority: optional
 Maintainer: Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>
 Uploaders: Fathi Boudra <fabo@debian.org>, Jeremy Lainé <jeremy.laine@m4x.org>
-Build-Depends: cdbs (>= 0.4.51), debhelper (>= 7), quilt, cmake (>= 2.6.2),
- pkg-kde-tools (>= 0.4), kdelibs5-dev (>= 4:4.3.0),
+Build-Depends: cdbs (>= 0.4.51), debhelper (>= 7.3.16), quilt, cmake (>= 2.6.2),
+ pkg-kde-tools (>= 0.5), kdelibs5-dev (>= 4:4.3.2),
  libsvn-dev, libboost-serialization-dev
 # libcommoncpp2-dev, libboost-iostreams-dev
 Standards-Version: 3.8.3
@@ -16,6 +16,7 @@ Package: kdevplatform1-libs
 Section: libs
 Architecture: any
 Depends: ${shlibs:Depends}, libsublime1 (>= ${source:Version})
+Replaces: kdevelop (<< 4:3.9.96-1), kdevelop-data (<< 4:3.9.96-1)
 Description: shared libraries for the KDevelop platform
  This package contains shared libraries needed to run integrated development
  environments based on the KDevelop platform.
