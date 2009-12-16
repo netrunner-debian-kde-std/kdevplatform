@@ -1,6 +1,8 @@
-kdevplatform (0.9.97-1) UNRELEASED; urgency=low
+kdevplatform (0.9.97-1) unstable; urgency=low
 
   * New upstream release.
+  * Drop 01_kdevplatform_r1044088.diff patch.
+  * Update installed plugins: mercurial plugin removed.
 
  -- Fathi Boudra <fabo@debian.org>  Sat, 12 Dec 2009 20:46:47 +0100
 

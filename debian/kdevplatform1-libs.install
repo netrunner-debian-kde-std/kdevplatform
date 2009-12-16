@@ -17,7 +17,6 @@ usr/lib/kde4/kdevfilemanager.so
 usr/lib/kde4/kdevgenericmanager.so
 usr/lib/kde4/kdevgrepview.so
 usr/lib/kde4/kdevkonsoleview.so
-usr/lib/kde4/kdevmercurial.so
 usr/lib/kde4/kdevopenwith.so
 usr/lib/kde4/kdevpatchreview.so
 usr/lib/kde4/kdevproblemreporter.so
@@ -49,11 +48,11 @@ usr/share/kde4/apps/kdevdocumentswitcher/kdevdocumentswitcher.rc
 usr/share/kde4/apps/kdevdocumentview/kdevdocumentview.rc
 usr/share/kde4/apps/kdevfilemanager/kdevfilemanager.rc
 usr/share/kde4/apps/kdevgrepview/kdevgrepview.rc
-usr/share/kde4/apps/kdevmercurial/kdevmercurial.rc
 usr/share/kde4/apps/kdevpatchreview/kdevpatchreview.rc
 usr/share/kde4/apps/kdevproblemreporter/kdevproblemreporter.rc
 usr/share/kde4/apps/kdevprojectmanagerview/kdevprojectmanagerview.rc
 usr/share/kde4/apps/kdevquickopen/kdevquickopen.rc
+usr/share/kde4/apps/kdevsession/kdevsessionui.rc
 usr/share/kde4/apps/kdevsourceformatter/kdevsourceformatter.rc
 usr/share/kde4/apps/kdevstandardoutputview/kdevstandardoutputview.rc
 usr/share/kde4/services/kcm_kdev_bgsettings.desktop
@@ -75,7 +74,6 @@ usr/share/kde4/services/kdevfilemanager.desktop
 usr/share/kde4/services/kdevgenericmanager.desktop
 usr/share/kde4/services/kdevgrepview.desktop
 usr/share/kde4/services/kdevkonsoleview.desktop
-usr/share/kde4/services/kdevmercurial.desktop
 usr/share/kde4/services/kdevopenwith.desktop
 usr/share/kde4/services/kdevpatchreview.desktop
 usr/share/kde4/services/kdevproblemreporter.desktop
