@@ -1,8 +1,11 @@
-kdevplatform (0.9.97-2) UNRELEASED; urgency=low
+kdevplatform (0.9.98-1) UNRELEASED; urgency=low
 
+  * New upstream release.
+
+  [ Modestas Vainius ]
   * Fix Vcs-Browser URL.
 
- -- Modestas Vainius <modax@debian.org>  Wed, 23 Dec 2009 01:16:07 +0200
+ -- Fathi Boudra <fabo@debian.org>  Thu, 11 Feb 2010 16:48:26 +0100
 
 kdevplatform (0.9.97-1) unstable; urgency=low
 
