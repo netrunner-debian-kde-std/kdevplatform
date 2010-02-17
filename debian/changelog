@@ -1,6 +1,15 @@
-kdevplatform (0.9.98-1) UNRELEASED; urgency=low
+kdevplatform (0.9.98-1) unstable; urgency=low
 
   * New upstream release.
+
+  [ Fathi Boudra ]
+  * Update debian/control:
+    - bump build dependencies version (debhelper and pkg-kde-tools).
+    - bump Standards-Version to 3.8.4 (no changes needed).
+  * Update debian/kdevplatform1-libs.install file.
+  * Update debian/kdevplatform-dev.install file.
+  * Update debian/rules: pass -DCMAKE_SKIP_RPATH=ON
+    to workaround FindKDE4Internal.cmake default rpath value.
 
   [ Modestas Vainius ]
   * Fix Vcs-Browser URL.

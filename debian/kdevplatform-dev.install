@@ -9,6 +9,7 @@ usr/include/kdevplatform/shell
 usr/include/kdevplatform/tests
 usr/include/kdevplatform/util
 usr/include/kdevplatform/vcs
+usr/include/kdevplatform/genericprojectmanager
 usr/lib/cmake/kdevplatform/KDevPlatformConfig.cmake
 usr/lib/cmake/kdevplatform/KDevPlatformConfigVersion.cmake
 usr/lib/cmake/kdevplatform/KDevPlatformMacros.cmake
@@ -23,4 +24,3 @@ usr/lib/libkdevplatformshell.so
 usr/lib/libkdevplatformtests.so
 usr/lib/libkdevplatformutil.so
 usr/lib/libkdevplatformvcs.so
-usr/share/kde4/apps/cmake/modules/FindKDevPlatform.cmake
