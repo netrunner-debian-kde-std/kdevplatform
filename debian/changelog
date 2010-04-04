@@ -1,3 +1,9 @@
+kdevplatform (0.10.0-1) unstable; urgency=low
+
+  * New upstream release.
+
+ -- Fathi Boudra <fabo@debian.org>  Sun, 04 Apr 2010 11:43:31 +0200
+
 kdevplatform (0.9.99-1) unstable; urgency=low
 
   * New upstream release.
