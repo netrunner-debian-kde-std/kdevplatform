@@ -1,6 +1,7 @@
 kdevplatform (0.10.0-1) unstable; urgency=low
 
   * New upstream release.
+  * Switch to dpkg-source 3.0 (quilt) format.
 
  -- Fathi Boudra <fabo@debian.org>  Sun, 04 Apr 2010 11:43:31 +0200
 

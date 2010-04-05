@@ -13,7 +13,6 @@ Vcs-Browser: http://svn.debian.org/wsvn/pkg-kde/trunk/packages/kdevplatform/#_tr
 Vcs-Svn: svn://svn.debian.org/pkg-kde/trunk/packages/kdevplatform
 
 Package: kdevplatform1-libs
-Section: libs
 Architecture: any
 Depends: ${shlibs:Depends}, libsublime1 (>= ${source:Version})
 Replaces: kdevelop (<< 4:3.9.96-1), kdevelop-data (<< 4:3.9.96-1)
@@ -47,7 +46,6 @@ Description: debugging symbols for the KDevelop platform
  This package is part of the KDevelop platform.
 
 Package: libsublime1
-Section: libs
 Architecture: any
 Depends: ${shlibs:Depends}, kdelibs5 (>= 4:4.2.0)
 Description: an user interface library

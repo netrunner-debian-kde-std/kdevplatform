@@ -1,3 +1,5 @@
+Description: disable examples and tests.
+
 --- a/sublime/CMakeLists.txt
 +++ b/sublime/CMakeLists.txt
 @@ -1,6 +1,4 @@
