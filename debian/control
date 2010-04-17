@@ -76,7 +76,7 @@ Description: Catalan (ca) localization files for the KDevelop platform
  .
  This package is part of the KDevelop platform.
 
-Package: kdevplatform-l10n-cavelencia
+Package: kdevplatform-l10n-cavalencia
 Section: localization
 Architecture: all
 Recommends: kde-l10n-cavalencia
