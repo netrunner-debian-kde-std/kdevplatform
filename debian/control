@@ -142,6 +142,17 @@ Description: Estonian (et) localization files for the KDevelop platform
  .
  This package is part of the KDevelop platform.
 
+Package: kdevplatform-l10n-fi
+Section: localization
+Architecture: all
+Recommends: kde-l10n-fi
+Provides: kdevplatform-l10n
+Description: Finnish (fi) localization files for the KDevelop platform
+ This package contains the Finnish translations for applications using
+ the KDevelop platform.
+ .
+ This package is part of the KDevelop platform.
+
 Package: kdevplatform-l10n-fr
 Section: localization
 Architecture: all
@@ -186,6 +197,17 @@ Description: Low Saxon (nds) localization files for the KDevelop platform
  .
  This package is part of the KDevelop platform.
 
+Package: kdevplatform-l10n-nl
+Section: localization
+Architecture: all
+Recommends: kde-l10n-nl
+Provides: kdevplatform-l10n
+Description: Dutch (nl) localization files for the KDevelop platform
+ This package contains the Dutch translations for applications using
+ the KDevelop platform.
+ .
+ This package is part of the KDevelop platform.
+
 Package: kdevplatform-l10n-pt
 Section: localization
 Architecture: all
@@ -208,6 +230,17 @@ Description: Brazilian Portugese (pt_BR) localization files for the KDevelop pla
  .
  This package is part of the KDevelop platform.
 
+Package: kdevplatform-l10n-sl
+Section: localization
+Architecture: all
+Recommends: kde-l10n-sl
+Provides: kdevplatform-l10n
+Description: Slovenian (sl) localization files for the KDevelop platform
+ This package contains the Slovenian translations for applications using
+ the KDevelop platform.
+ .
+ This package is part of the KDevelop platform.
+
 Package: kdevplatform-l10n-sv
 Section: localization
 Architecture: all
@@ -215,6 +248,17 @@ Recommends: kde-l10n-sv
 Provides: kdevplatform-l10n
 Description: Swedish (sv) localization files for the KDevelop platform
  This package contains the Swedish translations for applications using
+ the KDevelop platform.
+ .
+ This package is part of the KDevelop platform.
+
+Package: kdevplatform-l10n-th
+Section: localization
+Architecture: all
+Recommends: kde-l10n-th
+Provides: kdevplatform-l10n
+Description: Thai (th) localization files for the KDevelop platform
+ This package contains the Thai translations for applications using
  the KDevelop platform.
  .
  This package is part of the KDevelop platform.

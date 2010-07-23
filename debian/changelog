@@ -1,6 +1,10 @@
 kdevplatform (1.0.1-1) unstable; urgency=low
 
   * New upstream release.
+
+  [ Fathi Boudra ]
+  * Add localization packages: Finnish (fi), Dutch (nl), Slovenian (sl) and
+    Thai (th).
   * Update debian/control:
     - bump Standards-Version to 3.9.0 (no changes needed).
     - comment turkish localization package, not shipped in this release.
