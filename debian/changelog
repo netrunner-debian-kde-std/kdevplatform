@@ -1,8 +1,13 @@
-kdevplatform (1.0.1-1) UNRELEASED; urgency=low
+kdevplatform (1.0.1-1) unstable; urgency=low
 
   * New upstream release.
+  * Update debian/control:
+    - bump Standards-Version to 3.9.0 (no changes needed).
+    - comment turkish localization package, not shipped in this release.
+  * Update debian/rules: remove workaround for FindKDE4Internal.cmake default
+    rpath value, fixed in kdelibs5-dev 4.4.1.
 
- -- Jeremy Lainé <jeremy.laine@m4x.org>  Tue, 20 Jul 2010 10:48:00 +0200
+ -- Fathi Boudra <fabo@debian.org>  Thu, 22 Jul 2010 20:36:46 +0300
 
 kdevplatform (1.0.0-1) unstable; urgency=low
 
