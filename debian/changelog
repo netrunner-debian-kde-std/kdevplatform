@@ -7,6 +7,9 @@ kdevplatform (1.0.1-1) unstable; urgency=low
   * Update debian/rules: remove workaround for FindKDE4Internal.cmake default
     rpath value, fixed in kdelibs5-dev 4.4.1.
 
+  [ Sune Vuorela ]
+  * Remove hardcoded dependency in libsublime1 on kdelibs5.
+
  -- Fathi Boudra <fabo@debian.org>  Thu, 22 Jul 2010 20:36:46 +0300
 
 kdevplatform (1.0.0-1) unstable; urgency=low

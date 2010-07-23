@@ -48,7 +48,7 @@ Description: debugging symbols for the KDevelop platform
 
 Package: libsublime1
 Architecture: any
-Depends: ${shlibs:Depends}, kdelibs5 (>= 4:4.4.1)
+Depends: ${shlibs:Depends}
 Description: an user interface library
  sublime provides a user interface that supports multiple
  mainwindows, multiple dockwidgets, split views and areas
