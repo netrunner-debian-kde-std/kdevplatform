@@ -38,7 +38,7 @@ Package: kdevplatform-dbg
 Section: debug
 Architecture: any
 Priority: extra
-Depends: kdevplatform1-libs (= ${binary:Version}), kdelibs5-dbg, libc6-dbg [amd64]
+Depends: kdevplatform1-libs (= ${binary:Version}), libsublime1 (= ${binary:Version}), kdelibs5-dbg, libc6-dbg [amd64]
 Description: debugging symbols for the KDevelop platform
  This package contains the debugging symbols associated with kdevplatform.
  They will automatically be used by gdb for debugging kdevplatform-related
