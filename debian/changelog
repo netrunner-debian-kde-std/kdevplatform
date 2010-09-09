@@ -2,6 +2,7 @@ kdevplatform (1.0.1-2) UNRELEASED; urgency=low
 
   * Add libsublime1 debugging symbols. Closes: #593636
   * Add debian/watch file to track upstream versions.
+  * Update Vcs-* fields to point to Git instead of SVN.
 
  -- Nicolás Alvarez <nicolas.alvarez@gmail.com>  Sun, 12 Sep 2010 19:24:04 -0300
 
