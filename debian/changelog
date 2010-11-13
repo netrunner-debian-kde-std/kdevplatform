@@ -5,6 +5,9 @@ kdevplatform (1.1.0-0r1) UNRELEASED; urgency=low
   * Add debian/watch file to track upstream versions.
   * Update Vcs-* fields to point to Git instead of SVN.
 
+  [ George Kiagiadakis ]
+  * Add myself to uploaders.
+
  -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Sat, 13 Nov 2010 13:46:24 +0200
 
 kdevplatform (1.0.1-1) unstable; urgency=low
