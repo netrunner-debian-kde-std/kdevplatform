@@ -1,10 +1,11 @@
-kdevplatform (1.0.1-2) UNRELEASED; urgency=low
+kdevplatform (1.1.0-0r1) UNRELEASED; urgency=low
 
+  [ Nicolás Alvarez ]
   * Add libsublime1 debugging symbols. Closes: #593636
   * Add debian/watch file to track upstream versions.
   * Update Vcs-* fields to point to Git instead of SVN.
 
- -- Nicolás Alvarez <nicolas.alvarez@gmail.com>  Sun, 12 Sep 2010 19:24:04 -0300
+ -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Sat, 13 Nov 2010 13:46:24 +0200
 
 kdevplatform (1.0.1-1) unstable; urgency=low
 
