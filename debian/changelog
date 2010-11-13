@@ -16,6 +16,7 @@ kdevplatform (1.1.0-0r1) UNRELEASED; urgency=low
   * Rename packages due to soname bump:
     - kdevplatform1-libs -> kdevplatform2-libs
     - libsublime1 -> libsublime2
+  * Bump Standards-Version to 3.9.1 (no changes needed).
 
  -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Sat, 13 Nov 2010 13:46:24 +0200
 
