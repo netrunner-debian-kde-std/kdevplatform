@@ -6,7 +6,7 @@ Uploaders: Fathi Boudra <fabo@debian.org>, Jeremy Lainé <jeremy.laine@m4x.org>,
  George Kiagiadakis <kiagiadakis.george@gmail.com>
 Build-Depends: cdbs (>= 0.4.51), debhelper (>= 7.4.15), cmake (>= 2.8.0),
  pkg-kde-tools (>= 0.9.0), kdelibs5-dev (>= 4:4.4.1),
- libsvn-dev, libboost-serialization-dev
+ libsvn-dev, libboost-serialization-dev, libqjson-dev
 # libcommoncpp2-dev, libboost-iostreams-dev
 Standards-Version: 3.9.0
 Homepage: http://www.kdevelop.org/

@@ -12,6 +12,7 @@ kdevplatform (1.1.0-0r1) UNRELEASED; urgency=low
   * Update installed files.
   * Add new localization package for Hungarian (hu).
   * Bump pkg-kde-tools dependency to version 0.9.0 for building without quilt.
+  * Add build dependency on libqjson-dev for building the reviewboard plugin.
 
  -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Sat, 13 Nov 2010 13:46:24 +0200
 
