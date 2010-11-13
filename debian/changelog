@@ -10,6 +10,7 @@ kdevplatform (1.1.0-0r1) UNRELEASED; urgency=low
   * Drop quilt from build-depends; not needed for src format 3.0.
   * Disable the german localization package; not shipped in this release.
   * Update installed files.
+  * Add new localization package for Hungarian (hu).
 
  -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Sat, 13 Nov 2010 13:46:24 +0200
 

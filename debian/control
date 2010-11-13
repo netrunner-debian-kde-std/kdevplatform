@@ -176,6 +176,17 @@ Description: Galician (gl) localization files for the KDevelop platform
  .
  This package is part of the KDevelop platform.
 
+Package: kdevplatform-l10n-hu
+Section: localization
+Architecture: all
+Recommends: kde-l10n-hu
+Provides: kdevplatform-l10n
+Description: Hungarian (hu) localization files for the KDevelop platform
+ This package contains the Hungarian translations for applications using
+ the KDevelop platform.
+ .
+ This package is part of the KDevelop platform.
+
 Package: kdevplatform-l10n-it
 Section: localization
 Architecture: all
