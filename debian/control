@@ -100,16 +100,16 @@ Description: Danish (da) localization files for the KDevelop platform
  .
  This package is part of the KDevelop platform.
 
-#Package: kdevplatform-l10n-de
-#Section: localization
-#Architecture: all
-#Recommends: kde-l10n-de
-#Provides: kdevplatform-l10n
-#Description: German (de) localization files for the KDevelop platform
-# This package contains the German translations for applications using
-# the KDevelop platform.
-# .
-# This package is part of the KDevelop platform.
+Package: kdevplatform-l10n-de
+Section: localization
+Architecture: all
+Recommends: kde-l10n-de
+Provides: kdevplatform-l10n
+Description: German (de) localization files for the KDevelop platform
+ This package contains the German translations for applications using
+ the KDevelop platform.
+ .
+ This package is part of the KDevelop platform.
 
 Package: kdevplatform-l10n-engb
 Section: localization
@@ -155,16 +155,16 @@ Description: Finnish (fi) localization files for the KDevelop platform
  .
  This package is part of the KDevelop platform.
 
-Package: kdevplatform-l10n-fr
-Section: localization
-Architecture: all
-Recommends: kde-l10n-fr
-Provides: kdevplatform-l10n
-Description: French (fr) localization files for the KDevelop platform
- This package contains the French translations for applications using
- the KDevelop platform.
- .
- This package is part of the KDevelop platform.
+#Package: kdevplatform-l10n-fr
+#Section: localization
+#Architecture: all
+#Recommends: kde-l10n-fr
+#Provides: kdevplatform-l10n
+#Description: French (fr) localization files for the KDevelop platform
+# This package contains the French translations for applications using
+# the KDevelop platform.
+# .
+# This package is part of the KDevelop platform.
 
 Package: kdevplatform-l10n-gl
 Section: localization
@@ -177,16 +177,16 @@ Description: Galician (gl) localization files for the KDevelop platform
  .
  This package is part of the KDevelop platform.
 
-Package: kdevplatform-l10n-hu
-Section: localization
-Architecture: all
-Recommends: kde-l10n-hu
-Provides: kdevplatform-l10n
-Description: Hungarian (hu) localization files for the KDevelop platform
- This package contains the Hungarian translations for applications using
- the KDevelop platform.
- .
- This package is part of the KDevelop platform.
+#Package: kdevplatform-l10n-hu
+#Section: localization
+#Architecture: all
+#Recommends: kde-l10n-hu
+#Provides: kdevplatform-l10n
+#Description: Hungarian (hu) localization files for the KDevelop platform
+# This package contains the Hungarian translations for applications using
+# the KDevelop platform.
+# .
+# This package is part of the KDevelop platform.
 
 Package: kdevplatform-l10n-it
 Section: localization
