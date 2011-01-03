@@ -2,5 +2,6 @@
 
 include /usr/share/pkg-kde-tools/qt-kde-team/1/debian-qt-kde.mk
 
-DEB_DBG_PACKAGE_kdevplatform1-libs := kdevplatform-dbg
+DEB_DBG_PACKAGE_kdevplatform2-libs := kdevplatform-dbg
+DEB_DBG_PACKAGE_libsublime2 := kdevplatform-dbg
 DEB_DH_MAKESHLIBS_ARGS_ALL := -V

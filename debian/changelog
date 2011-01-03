@@ -1,3 +1,25 @@
+kdevplatform (1.1.0-0r1) UNRELEASED; urgency=low
+
+  [ Nicolás Alvarez ]
+  * Add libsublime1 debugging symbols. Closes: #593636
+  * Add debian/watch file to track upstream versions.
+  * Update Vcs-* fields to point to Git instead of SVN.
+
+  [ George Kiagiadakis ]
+  * Add myself to uploaders.
+  * Drop quilt from build-depends; not needed for src format 3.0.
+  * Disable the german localization package; not shipped in this release.
+  * Update installed files.
+  * Add new localization package for Hungarian (hu).
+  * Bump pkg-kde-tools dependency to version 0.9.0 for building without quilt.
+  * Add build dependency on libqjson-dev for building the reviewboard plugin.
+  * Rename packages due to soname bump:
+    - kdevplatform1-libs -> kdevplatform2-libs
+    - libsublime1 -> libsublime2
+  * Bump Standards-Version to 3.9.1 (no changes needed).
+
+ -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Sat, 13 Nov 2010 13:46:24 +0200
+
 kdevplatform (1.0.1-1) unstable; urgency=low
 
   * New upstream release.
