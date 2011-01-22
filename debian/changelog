@@ -6,6 +6,9 @@ kdevplatform (1.1.90-0r1) UNRELEASED; urgency=low
     - kdevplatform2-libs -> kdevplatform3-libs
     - libsublime2 -> libsublime3
   * Update install files
+  * Disable Galacian localization package; not shipped in this release
+  * Disable Finnish localization package; not shipped in this release
+  * Enable French localization package
 
  -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Sun, 02 Jan 2011 13:46:24 +0200
 
