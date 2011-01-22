@@ -1,3 +1,14 @@
+kdevplatform (1.1.90-0r1) UNRELEASED; urgency=low
+
+  [ Andreas Cord-Landwehr ]
+  * New Upstream Release
+  * Rename packages due to soname bump:
+    - kdevplatform2-libs -> kdevplatform3-libs
+    - libsublime2 -> libsublime3
+  * Update install files
+
+ -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Sun, 02 Jan 2011 13:46:24 +0200
+
 kdevplatform (1.1.1-0r1) UNRELEASED; urgency=low
 
   [ Nicolás Alvarez ]
