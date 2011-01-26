@@ -199,6 +199,17 @@ Description: Italian (it) localization files for the KDevelop platform
  .
  This package is part of the KDevelop platform.
 
+Package: kdevplatform-l10n-nb
+Section: localization
+Architecture: all
+Recommends: kde-l10n-nb
+Provides: kdevplatform-l10n
+Description: Norwegian Bookmal (nb) localization files for the KDevelop platform
+ This package contains the Norwegian Bookmal translations for applications using
+ the KDevelop platform.
+ .
+ This package is part of the KDevelop platform.
+
 Package: kdevplatform-l10n-nds
 Section: localization
 Architecture: all
@@ -239,6 +250,17 @@ Recommends: kde-l10n-ptbr
 Provides: kdevplatform-l10n
 Description: Brazilian Portugese (pt_BR) localization files for the KDevelop platform
  This package contains the Brazilian Portugese translations for applications
+ using the KDevelop platform.
+ .
+ This package is part of the KDevelop platform.
+
+Package: kdevplatform-l10n-ru
+Section: localization
+Architecture: all
+Recommends: kde-l10n-ru
+Provides: kdevplatform-l10n
+Description: Russian (ru) localization files for the KDevelop platform
+ This package contains the Russian translations for applications
  using the KDevelop platform.
  .
  This package is part of the KDevelop platform.
