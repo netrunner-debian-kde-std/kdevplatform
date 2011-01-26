@@ -1,10 +1,11 @@
 usr/include/kdevplatform/debugger
 usr/include/kdevplatform/documentation
 usr/include/kdevplatform/execute
-usr/include/kdevplatform/genericprojectmanager
+usr/include/kdevplatform/project
 usr/include/kdevplatform/interfaces
 usr/include/kdevplatform/kdevplatformversion.h
 usr/include/kdevplatform/language
+usr/include/kdevplatform/openwith
 usr/include/kdevplatform/outputview
 usr/include/kdevplatform/project
 usr/include/kdevplatform/shell

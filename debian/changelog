@@ -1,4 +1,14 @@
-kdevplatform (1.1.1-0r1) UNRELEASED; urgency=low
+kdevplatform (1.2.0-0r1) UNRELEASED; urgency=low
+
+  [ Andreas Cord-Landwehr ]
+  * New Upstream Release
+  * Rename packages due to soname bump:
+    - kdevplatform2-libs -> kdevplatform3-libs
+    - libsublime2 -> libsublime3
+  * Update install files
+  * Disable Galacian localization package; not shipped in this release
+  * Disable Finnish localization package; not shipped in this release
+  * Enable French localization package
 
   [ Nicolás Alvarez ]
   * Add libsublime1 debugging symbols. Closes: #593636
@@ -15,9 +25,6 @@ kdevplatform (1.1.1-0r1) UNRELEASED; urgency=low
     - kdevplatform1-libs -> kdevplatform2-libs
     - libsublime1 -> libsublime2
   * Bump Standards-Version to 3.9.1 (no changes needed).
-
-  [ Andreas Cord-Landwehr ]
-  * Comment French localization packages, not shipped in this release.
 
  -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Sat, 13 Nov 2010 13:46:24 +0200
 
