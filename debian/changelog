@@ -1,14 +1,23 @@
 kdevplatform (1.2.0-0r1) UNRELEASED; urgency=low
 
-  [ Andreas Cord-Landwehr ]
   * New Upstream Release
+
+  [ Andreas Cord-Landwehr ]
+  * Merge all localization packages into one
+    - includes: Catalan (ca), Southern Catalan (cavalencia), Danish (da),
+      German (de), British English (engb), Spanish (es), Estonian (et),
+      French (fr), Italian (it), Norwegian Bookmal (nb),
+      Low Saxon (nds), Dutch (nl), Brazilian Portuguese (ptbr), 
+      Portuguese (pt), Russian (ru), Slovenian (sl), Swedish (sv),
+      Thai (th), Ukrainian (uk), Chinese Simplified (zh_CN)
+      Chinese Traditional (zh_TW)
+    - add Breaks for all kdevplatform-l10n-* packages 
+    - add Replaces for all kdevplatform-l10n-* packages
+    - add kdevplatform-l10n package
   * Rename packages due to soname bump:
     - kdevplatform2-libs -> kdevplatform3-libs
     - libsublime2 -> libsublime3
   * Update install files
-  * Disable Galacian localization package; not shipped in this release
-  * Disable Finnish localization package; not shipped in this release
-  * Enable French localization package
 
   [ Nicolás Alvarez ]
   * Add libsublime1 debugging symbols. Closes: #593636

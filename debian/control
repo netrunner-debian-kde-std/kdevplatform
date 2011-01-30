@@ -67,277 +67,29 @@ Description: development files for the sublime user interface library
  .
  This package is part of the KDevelop platform.
 
-Package: kdevplatform-l10n-ca
+Package: kdevplatform-l10n
 Section: localization
 Architecture: all
-Recommends: kde-l10n-ca
-Provides: kdevplatform-l10n
-Description: Catalan (ca) localization files for the KDevelop platform
- This package contains the Catalan translations for applications using
+Replaces: kdevplatform-l10n-ca, kdevplatform-l10n-cavalencia, kdevplatform-l10n-da,
+ kdevplatform-l10n-de, kdevplatform-l10n-engb, kdevplatform-l10n-es,
+ kdevplatform-l10n-et, kdevplatform-l10n-fi, kdevplatform-l10n-fr,
+ kdevplatform-l10n-gl, kdevplatform-l10n-hu, kdevplatform-l10n-it,
+ kdevplatform-l10n-nds, kdevplatform-l10n-nl, kdevplatform-l10n-pt,
+ kdevplatform-l10n-ptbr, kdevplatform-l10n-ru, kdevplatform-l10n-sl,
+ kdevplatform-l10n-sv, kdevplatform-l10n-th, kdevplatform-l10n-tr,
+ kdevplatform-l10n-uk, kdevplatform-l10n-zhcn, kdevplatform-l10n-zhtw
+Breaks: kdevplatform-l10n-ca, kdevplatform-l10n-cavalencia, kdevplatform-l10n-da,
+ kdevplatform-l10n-de, kdevplatform-l10n-engb, kdevplatform-l10n-es,
+ kdevplatform-l10n-et, kdevplatform-l10n-fi, kdevplatform-l10n-fr,
+ kdevplatform-l10n-gl, kdevplatform-l10n-hu, kdevplatform-l10n-it,
+ kdevplatform-l10n-nds, kdevplatform-l10n-nl, kdevplatform-l10n-pt,
+ kdevplatform-l10n-ptbr, kdevplatform-l10n-ru, kdevplatform-l10n-sl,
+ kdevplatform-l10n-sv, kdevplatform-l10n-th, kdevplatform-l10n-tr,
+ kdevplatform-l10n-uk, kdevplatform-l10n-zhcn, kdevplatform-l10n-zhtw
+Suggests: kde-l10n
+Description: language package for the KDevelop platform 
+ This package contains the localization files for applications using
  the KDevelop platform.
  .
  This package is part of the KDevelop platform.
 
-Package: kdevplatform-l10n-cavalencia
-Section: localization
-Architecture: all
-Recommends: kde-l10n-cavalencia
-Provides: kdevplatform-l10n
-Description: Southern Catalan (Valencian) (ca@valencia) files for the KDevelop platform
- This package contains the Southern Catalan (Valencian) translations for
- applications using the KDevelop platform.
- .
- This package is part of the KDevelop platform.
-
-Package: kdevplatform-l10n-da
-Section: localization
-Architecture: all
-Recommends: kde-l10n-da
-Provides: kdevplatform-l10n
-Description: Danish (da) localization files for the KDevelop platform
- This package contains the Danish translations for applications using
- the KDevelop platform.
- .
- This package is part of the KDevelop platform.
-
-Package: kdevplatform-l10n-de
-Section: localization
-Architecture: all
-Recommends: kde-l10n-de
-Provides: kdevplatform-l10n
-Description: German (de) localization files for the KDevelop platform
- This package contains the German translations for applications using
- the KDevelop platform.
- .
- This package is part of the KDevelop platform.
-
-Package: kdevplatform-l10n-engb
-Section: localization
-Architecture: all
-Recommends: kde-l10n-engb
-Provides: kdevplatform-l10n
-Description: British English (en_GB) localization files for the KDevelop platform
- This package contains the British English translations for applications using
- the KDevelop platform.
- .
- This package is part of the KDevelop platform.
-
-Package: kdevplatform-l10n-es
-Section: localization
-Architecture: all
-Recommends: kde-l10n-es
-Provides: kdevplatform-l10n
-Description: Spanish (es) localization files for the KDevelop platform
- This package contains the Spanish translations for applications using
- the KDevelop platform.
- .
- This package is part of the KDevelop platform.
-
-Package: kdevplatform-l10n-et
-Section: localization
-Architecture: all
-Recommends: kde-l10n-et
-Provides: kdevplatform-l10n
-Description: Estonian (et) localization files for the KDevelop platform
- This package contains the Estonian translations for applications using
- the KDevelop platform.
- .
- This package is part of the KDevelop platform.
-
-#Package: kdevplatform-l10n-fi
-#Section: localization
-#Architecture: all
-#Recommends: kde-l10n-fi
-#Provides: kdevplatform-l10n
-#Description: Finnish (fi) localization files for the KDevelop platform
-# This package contains the Finnish translations for applications using
-# the KDevelop platform.
-# .
-# This package is part of the KDevelop platform.
-
-Package: kdevplatform-l10n-fr
-Section: localization
-Architecture: all
-Recommends: kde-l10n-fr
-Provides: kdevplatform-l10n
-Description: French (fr) localization files for the KDevelop platform
- This package contains the French translations for applications using
- the KDevelop platform.
- .
- This package is part of the KDevelop platform.
-
-#Package: kdevplatform-l10n-gl
-#Section: localization
-#Architecture: all
-#Recommends: kde-l10n-gl
-#Provides: kdevplatform-l10n
-#Description: Galician (gl) localization files for the KDevelop platform
-# This package contains the Galician translations for applications using
-# the KDevelop platform.
-# .
-# This package is part of the KDevelop platform.
-
-#Package: kdevplatform-l10n-hu
-#Section: localization
-#Architecture: all
-#Recommends: kde-l10n-hu
-#Provides: kdevplatform-l10n
-#Description: Hungarian (hu) localization files for the KDevelop platform
-# This package contains the Hungarian translations for applications using
-# the KDevelop platform.
-# .
-# This package is part of the KDevelop platform.
-
-Package: kdevplatform-l10n-it
-Section: localization
-Architecture: all
-Recommends: kde-l10n-it
-Provides: kdevplatform-l10n
-Description: Italian (it) localization files for the KDevelop platform
- This package contains the Italian translations for applications using
- the KDevelop platform.
- .
- This package is part of the KDevelop platform.
-
-Package: kdevplatform-l10n-nb
-Section: localization
-Architecture: all
-Recommends: kde-l10n-nb
-Provides: kdevplatform-l10n
-Description: Norwegian Bookmal (nb) localization files for the KDevelop platform
- This package contains the Norwegian Bookmal translations for applications using
- the KDevelop platform.
- .
- This package is part of the KDevelop platform.
-
-Package: kdevplatform-l10n-nds
-Section: localization
-Architecture: all
-Recommends: kde-l10n-nds
-Provides: kdevplatform-l10n
-Description: Low Saxon (nds) localization files for the KDevelop platform
- This package contains the Low Saxon translations for applications using
- the KDevelop platform.
- .
- This package is part of the KDevelop platform.
-
-Package: kdevplatform-l10n-nl
-Section: localization
-Architecture: all
-Recommends: kde-l10n-nl
-Provides: kdevplatform-l10n
-Description: Dutch (nl) localization files for the KDevelop platform
- This package contains the Dutch translations for applications using
- the KDevelop platform.
- .
- This package is part of the KDevelop platform.
-
-Package: kdevplatform-l10n-pt
-Section: localization
-Architecture: all
-Recommends: kde-l10n-pt
-Provides: kdevplatform-l10n
-Description: Portugese (pt) localization files for the KDevelop platform
- This package contains the Portugese translations for applications using
- the KDevelop platform.
- .
- This package is part of the KDevelop platform.
-
-Package: kdevplatform-l10n-ptbr
-Section: localization
-Architecture: all
-Recommends: kde-l10n-ptbr
-Provides: kdevplatform-l10n
-Description: Brazilian Portugese (pt_BR) localization files for the KDevelop platform
- This package contains the Brazilian Portugese translations for applications
- using the KDevelop platform.
- .
- This package is part of the KDevelop platform.
-
-Package: kdevplatform-l10n-ru
-Section: localization
-Architecture: all
-Recommends: kde-l10n-ru
-Provides: kdevplatform-l10n
-Description: Russian (ru) localization files for the KDevelop platform
- This package contains the Russian translations for applications
- using the KDevelop platform.
- .
- This package is part of the KDevelop platform.
-
-Package: kdevplatform-l10n-sl
-Section: localization
-Architecture: all
-Recommends: kde-l10n-sl
-Provides: kdevplatform-l10n
-Description: Slovenian (sl) localization files for the KDevelop platform
- This package contains the Slovenian translations for applications using
- the KDevelop platform.
- .
- This package is part of the KDevelop platform.
-
-Package: kdevplatform-l10n-sv
-Section: localization
-Architecture: all
-Recommends: kde-l10n-sv
-Provides: kdevplatform-l10n
-Description: Swedish (sv) localization files for the KDevelop platform
- This package contains the Swedish translations for applications using
- the KDevelop platform.
- .
- This package is part of the KDevelop platform.
-
-Package: kdevplatform-l10n-th
-Section: localization
-Architecture: all
-Recommends: kde-l10n-th
-Provides: kdevplatform-l10n
-Description: Thai (th) localization files for the KDevelop platform
- This package contains the Thai translations for applications using
- the KDevelop platform.
- .
- This package is part of the KDevelop platform.
-
-# Package: kdevplatform-l10n-tr
-# Section: localization
-# Architecture: all
-# Recommends: kde-l10n-tr
-# Provides: kdevplatform-l10n
-# Description: Turkish (tr) localization files for the KDevelop platform
-#  This package contains the Turkish translations for applications using
-#  the KDevelop platform.
-#  .
-#  This package is part of the KDevelop platform.
-
-Package: kdevplatform-l10n-uk
-Section: localization
-Architecture: all
-Recommends: kde-l10n-uk
-Provides: kdevplatform-l10n
-Description: Ukrainian (uk) localization files for the KDevelop platform
- This package contains the Ukrainian translations for applications using
- the KDevelop platform.
- .
- This package is part of the KDevelop platform.
-
-Package: kdevplatform-l10n-zhcn
-Section: localization
-Architecture: all
-Recommends: kde-l10n-zhcn
-Provides: kdevplatform-l10n
-Description: Chinese Simplified (zh_CN) localization files for the KDevelop platform
- This package contains the Chinese simplified translations for applications
- using the KDevelop platform.
- .
- This package is part of the KDevelop platform.
-
-Package: kdevplatform-l10n-zhtw
-Section: localization
-Architecture: all
-Recommends: kde-l10n-zhtw
-Provides: kdevplatform-l10n
-Description: Chinese Traditional (zh_TW) localization files for the KDevelop platform
- This package contains the Chinese Traditional translations for applications
- using the KDevelop platform.
- .
- This package is part of the KDevelop platform.
