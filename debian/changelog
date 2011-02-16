@@ -36,6 +36,9 @@ kdevplatform (1.2.0-0r1) UNRELEASED; urgency=low
     - libsublime1 -> libsublime2
   * Bump Standards-Version to 3.9.1 (no changes needed).
 
+  [ Pino Toscano ]
+  * kdevplatform3-libs: suggest git, cvs, konsole.
+
  -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Sat, 13 Nov 2010 13:46:24 +0200
 
 kdevplatform (1.0.1-1) unstable; urgency=low
