@@ -1,4 +1,4 @@
-kdevplatform (1.2.0-0r1) UNRELEASED; urgency=low
+kdevplatform (1.2.1-0r1) UNRELEASED; urgency=low
 
   * New upstream release:
     - provides Git support. (Closes: #597281)
