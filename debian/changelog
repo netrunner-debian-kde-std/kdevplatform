@@ -19,6 +19,7 @@ kdevplatform (1.2.1-0r1) UNRELEASED; urgency=low
     - kdevplatform2-libs -> kdevplatform3-libs
     - libsublime2 -> libsublime3
   * Update install files
+  * Add myself to Uploaders.
 
   [ Nicolás Alvarez ]
   * Add libsublime1 debugging symbols. Closes: #593636
