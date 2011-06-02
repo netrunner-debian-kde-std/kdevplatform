@@ -1,4 +1,4 @@
-kdevplatform (1.2.2-0r1) UNRELEASED; urgency=low
+kdevplatform (1.2.2-1) UNRELEASED; urgency=low
 
   * New upstream release:
     - provides Git support. (Closes: #597281)
@@ -35,12 +35,15 @@ kdevplatform (1.2.2-0r1) UNRELEASED; urgency=low
   * Rename packages due to soname bump:
     - kdevplatform1-libs -> kdevplatform2-libs
     - libsublime1 -> libsublime2
-  * Bump Standards-Version to 3.9.1 (no changes needed).
+  * Bump Standards-Version to 3.9.2 (no changes needed).
 
   [ Pino Toscano ]
   * kdevplatform3-libs: suggest git, cvs, konsole.
 
- -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Sat, 13 Nov 2010 13:46:24 +0200
+  [ Fathi Boudra ]
+  * Add libqtwebkit-dev build dependency to fix ftbfs.
+
+ -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Thu, 02 Jun 2011 11:39:31 +0300
 
 kdevplatform (1.0.1-1) unstable; urgency=low
 
