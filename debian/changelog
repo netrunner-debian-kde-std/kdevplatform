@@ -1,7 +1,9 @@
-kdevplatform (1.2.2-1) UNRELEASED; urgency=low
+kdevplatform (1.2.2-1) unstable; urgency=low
 
   * New upstream release:
     - provides Git support. (Closes: #597281)
+    - fix ftbfs error: reference 'm_registry' cannot be declared 'mutable'
+      (Closes: #624885)
 
   [ Andreas Cord-Landwehr ]
   * Merge all localization packages into one
@@ -12,17 +14,17 @@ kdevplatform (1.2.2-1) UNRELEASED; urgency=low
       Portuguese (pt), Russian (ru), Slovenian (sl), Swedish (sv),
       Thai (th), Ukrainian (uk), Chinese Simplified (zh_CN)
       Chinese Traditional (zh_TW)
-    - add Breaks for all kdevplatform-l10n-* packages 
-    - add Replaces for all kdevplatform-l10n-* packages
-    - add kdevplatform-l10n package
+    - add Breaks for all kdevplatform-l10n-* packages .
+    - add Replaces for all kdevplatform-l10n-* packages.
+    - add kdevplatform-l10n package.
   * Rename packages due to soname bump:
     - kdevplatform2-libs -> kdevplatform3-libs
     - libsublime2 -> libsublime3
-  * Update install files
+  * Update install files.
   * Add myself to Uploaders.
 
   [ Nicolás Alvarez ]
-  * Add libsublime1 debugging symbols. Closes: #593636
+  * Add libsublime1 debugging symbols. (Closes: #593636)
   * Add debian/watch file to track upstream versions.
   * Update Vcs-* fields to point to Git instead of SVN.
 
@@ -35,7 +37,7 @@ kdevplatform (1.2.2-1) UNRELEASED; urgency=low
   * Rename packages due to soname bump:
     - kdevplatform1-libs -> kdevplatform2-libs
     - libsublime1 -> libsublime2
-  * Bump Standards-Version to 3.9.2 (no changes needed).
+  * Bump Standards-Version to 3.9.1 (no changes needed).
 
   [ Pino Toscano ]
   * kdevplatform3-libs: suggest git, cvs, konsole.
