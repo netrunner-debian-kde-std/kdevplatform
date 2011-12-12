@@ -1,10 +1,10 @@
-kdevplatform (1.2.3-0) UNRELEASED; urgency=low
+kdevplatform (1.2.3-1) unstable; urgency=low
 
   [ Andreas Cord-Landwehr ]
   * New upstream release.
   * Update copyright.
 
- -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Sat, 02 Jul 2011 21:30:05 +0200
+ -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Mon, 12 Dec 2011 18:48:50 +0100
 
 kdevplatform (1.2.2-1) unstable; urgency=low
 
