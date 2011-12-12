@@ -1,6 +1,8 @@
 kdevplatform (1.2.3-0) UNRELEASED; urgency=low
 
-  * New Upstream Release. 
+  [ Andreas Cord-Landwehr ]
+  * New upstream release.
+  * Update copyright.
 
  -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Sat, 02 Jul 2011 21:30:05 +0200
 
