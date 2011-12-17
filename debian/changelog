@@ -3,6 +3,7 @@ kdevplatform (1.2.3-2) UNRELEASED; urgency=low
   [ Felix Geyer ]
   * Hardcode the SONAME in libsublime3.install and kdevplatform3-libs.install
     so SONAME bumps can't go unnoticed.
+  * Remove duplicate line in kdevplatform-dev.install.
 
  -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Sat, 17 Dec 2011 10:27:17 +0100
 

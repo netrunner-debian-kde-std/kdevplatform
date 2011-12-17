@@ -1,7 +1,6 @@
 usr/include/kdevplatform/debugger
 usr/include/kdevplatform/documentation
 usr/include/kdevplatform/execute
-usr/include/kdevplatform/project
 usr/include/kdevplatform/interfaces
 usr/include/kdevplatform/kdevplatformversion.h
 usr/include/kdevplatform/language
