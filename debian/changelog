@@ -1,3 +1,8 @@
+kdevplatform (1.2.3-2) UNRELEASED; urgency=low
+
+
+ -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Sat, 17 Dec 2011 10:27:17 +0100
+
 kdevplatform (1.2.3-1) unstable; urgency=low
 
   [ Andreas Cord-Landwehr ]
