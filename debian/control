@@ -13,11 +13,12 @@ Homepage: http://www.kdevelop.org/
 Vcs-Browser: http://git.debian.org/?p=pkg-kde/kde-std/kdevplatform.git
 Vcs-Git: git://git.debian.org/pkg-kde/kde-std/kdevplatform.git
 
-Package: kdevplatform3-libs
+Package: kdevplatform5-libs
 Architecture: any
 Depends: ${shlibs:Depends}, libsublime3 (>= ${source:Version})
-Replaces: kdevelop (<< 4:3.9.96-1), kdevelop-data (<< 4:3.9.96-1), kdevplatform1-libs, kdevplatform2-libs
-Breaks: kdevplatform1-libs, kdevplatform2-libs
+Replaces: kdevelop (<< 4:3.9.96-1), kdevelop-data (<< 4:3.9.96-1),
+ kdevplatform1-libs, kdevplatform2-libs, kdevplatform3-libs
+Breaks: kdevplatform1-libs, kdevplatform2-libs, kdevplatform3-libs
 Suggests: kdevplatform-l10n, git, cvs, konsole
 Description: shared libraries for the KDevelop platform
  This package contains shared libraries needed to run integrated development
@@ -28,7 +29,7 @@ Description: shared libraries for the KDevelop platform
 Package: kdevplatform-dev
 Section: libdevel
 Architecture: any
-Depends: kdevplatform3-libs (= ${binary:Version}), ${sameVersionDep:kdelibs5-dev:kdevplatform3-libs},
+Depends: kdevplatform5-libs (= ${binary:Version}), ${sameVersionDep:kdelibs5-dev:kdevplatform5-libs},
  libsublime-dev (>= ${source:Version})
 Description: development files for the KDevelop platform
  This package contains development files for building integrated development
@@ -40,7 +41,7 @@ Package: kdevplatform-dbg
 Section: debug
 Architecture: any
 Priority: extra
-Depends: kdevplatform3-libs (= ${binary:Version}), libsublime3 (= ${binary:Version}), kdelibs5-dbg, libc6-dbg [amd64]
+Depends: kdevplatform5-libs (= ${binary:Version}), libsublime3 (= ${binary:Version}), kdelibs5-dbg, libc6-dbg [amd64]
 Description: debugging symbols for the KDevelop platform
  This package contains the debugging symbols associated with kdevplatform.
  They will automatically be used by gdb for debugging kdevplatform-related
