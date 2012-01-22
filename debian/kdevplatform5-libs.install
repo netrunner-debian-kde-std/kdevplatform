@@ -1,3 +1,5 @@
+usr/bin/kdev_dbus_socket_transformer
+usr/bin/kdev_format_source.sh
 usr/lib/kde4/kcm_kdev_bgsettings.so
 usr/lib/kde4/kcm_kdev_ccsettings.so
 usr/lib/kde4/kcm_kdev_envsettings.so
@@ -14,6 +16,7 @@ usr/lib/kde4/kdevcvs.so
 usr/lib/kde4/kdevdocumentswitcher.so
 usr/lib/kde4/kdevdocumentview.so
 usr/lib/kde4/kdevexecute.so
+usr/lib/kde4/kdevexecutescript.so
 usr/lib/kde4/kdevexternalscript.so
 usr/lib/kde4/kdevfilemanager.so
 usr/lib/kde4/kdevgenericmanager.so
@@ -24,12 +27,15 @@ usr/lib/kde4/kdevopenwith.so
 usr/lib/kde4/kdevpastebin.so
 usr/lib/kde4/kdevpatchreview.so
 usr/lib/kde4/kdevproblemreporter.so
+usr/lib/kde4/kdevprojectdashboard.so
 usr/lib/kde4/kdevprojectmanagerview.so
 usr/lib/kde4/kdevquickopen.so
 usr/lib/kde4/kdevreviewboard.so
 usr/lib/kde4/kdevsnippet.so
 usr/lib/kde4/kdevstandardoutputview.so
 usr/lib/kde4/kdevsubversion.so
+usr/lib/kde4/kdevvcschangesviewplugin.so
+usr/lib/kde4/plasma_kdev_projectfileelement.so
 usr/lib/libkdevplatformdebugger.so.5*
 usr/lib/libkdevplatformdocumentation.so.5*
 usr/lib/libkdevplatforminterfaces.so.5*
@@ -43,10 +49,13 @@ usr/lib/libkdevplatformvcs.so.5*
 usr/share/icons/hicolor/128x128/apps/reviewboard.png
 usr/share/icons/hicolor/16x16/apps/git.png
 usr/share/icons/hicolor/16x16/apps/reviewboard.png
+usr/share/icons/hicolor/16x16/apps/subversion.png
 usr/share/icons/hicolor/22x22/actions/run-clean.png
 usr/share/icons/hicolor/22x22/actions/run-install.png
 usr/share/icons/hicolor/32x32/apps/git.png
+usr/share/icons/hicolor/32x32/apps/subversion.png
 usr/share/icons/hicolor/64x64/apps/git.png
+usr/share/icons/hicolor/64x64/apps/subversion.png
 usr/share/kde4/apps/kdevappwizard/kdevappwizard.rc
 usr/share/kde4/apps/kdevappwizard/template_previews/default-kdevelop.png
 usr/share/kde4/apps/kdevclassbrowser/kdevclassbrowser.rc
@@ -76,6 +85,7 @@ usr/share/kde4/services/kcm_kdev_pluginsettings.desktop
 usr/share/kde4/services/kcm_kdev_projectsettings.desktop
 usr/share/kde4/services/kcm_kdev_uisettings.desktop
 usr/share/kde4/services/kcm_kdevsourceformattersettings.desktop
+usr/share/kde4/services/kdev-dash-projectfileelement.desktop
 usr/share/kde4/services/kdevappwizard.desktop
 usr/share/kde4/services/kdevclassbrowser.desktop
 usr/share/kde4/services/kdevcodeutils.desktop
@@ -84,6 +94,7 @@ usr/share/kde4/services/kdevcvs.desktop
 usr/share/kde4/services/kdevdocumentswitcher.desktop
 usr/share/kde4/services/kdevdocumentview.desktop
 usr/share/kde4/services/kdevexecute.desktop
+usr/share/kde4/services/kdevexecutescript.desktop
 usr/share/kde4/services/kdevexternalscript.desktop
 usr/share/kde4/services/kdevfilemanager.desktop
 usr/share/kde4/services/kdevgenericmanager.desktop
@@ -94,10 +105,12 @@ usr/share/kde4/services/kdevopenwith.desktop
 usr/share/kde4/services/kdevpastebin.desktop
 usr/share/kde4/services/kdevpatchreview.desktop
 usr/share/kde4/services/kdevproblemreporter.desktop
+usr/share/kde4/services/kdevprojectdashboard.desktop
 usr/share/kde4/services/kdevprojectmanagerview.desktop
 usr/share/kde4/services/kdevquickopen.desktop
 usr/share/kde4/services/kdevreviewboard.desktop
 usr/share/kde4/services/kdevsnippet.desktop
 usr/share/kde4/services/kdevstandardoutputview.desktop
 usr/share/kde4/services/kdevsubversion.desktop
+usr/share/kde4/services/kdevvcschangesview.desktop
 usr/share/kde4/servicetypes/kdevelopplugin.desktop

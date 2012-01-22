@@ -1,6 +1,8 @@
+usr/bin/kdev_dbus_socket_transformer
 usr/include/kdevplatform/debugger
 usr/include/kdevplatform/documentation
 usr/include/kdevplatform/execute
+usr/include/kdevplatform/executescript/iexecutescriptplugin.h
 usr/include/kdevplatform/interfaces
 usr/include/kdevplatform/kdevplatformversion.h
 usr/include/kdevplatform/language
