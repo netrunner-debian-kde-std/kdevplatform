@@ -15,7 +15,7 @@ Vcs-Git: git://git.debian.org/pkg-kde/kde-std/kdevplatform.git
 
 Package: kdevplatform5-libs
 Architecture: any
-Depends: ${shlibs:Depends}, libsublime3 (>= ${source:Version})
+Depends: ${shlibs:Depends}, libsublime5 (>= ${source:Version})
 Replaces: kdevelop (<< 4:3.9.96-1), kdevelop-data (<< 4:3.9.96-1),
  kdevplatform1-libs, kdevplatform2-libs, kdevplatform3-libs
 Breaks: kdevplatform1-libs, kdevplatform2-libs, kdevplatform3-libs
@@ -41,7 +41,7 @@ Package: kdevplatform-dbg
 Section: debug
 Architecture: any
 Priority: extra
-Depends: kdevplatform5-libs (= ${binary:Version}), libsublime3 (= ${binary:Version}), kdelibs5-dbg, libc6-dbg [amd64]
+Depends: kdevplatform5-libs (= ${binary:Version}), libsublime5 (= ${binary:Version}), kdelibs5-dbg, libc6-dbg [amd64]
 Description: debugging symbols for the KDevelop platform
  This package contains the debugging symbols associated with kdevplatform.
  They will automatically be used by gdb for debugging kdevplatform-related
@@ -49,7 +49,7 @@ Description: debugging symbols for the KDevelop platform
  .
  This package is part of the KDevelop platform.
 
-Package: libsublime3
+Package: libsublime5
 Architecture: any
 Depends: ${shlibs:Depends}
 Description: User interface library
@@ -61,7 +61,7 @@ Description: User interface library
 Package: libsublime-dev
 Section: libdevel
 Architecture: any
-Depends: libsublime3 (= ${binary:Version}), ${sameVersionDep:kdelibs5-dev:libsublime3}
+Depends: libsublime5 (= ${binary:Version}), ${sameVersionDep:kdelibs5-dev:libsublime5}
 Description: development files for the sublime user interface library
  This package contains development files for building applications using
  libsublime.
