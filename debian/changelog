@@ -8,6 +8,7 @@ kdevplatform (1.3.0-0r0) UNRELEASED; urgency=low
     - kdevplatform3-libs -> kdevplatform5-libs
     - libsublime3 -> libsublime5
   * Add shlibs:Depends for kdevplatform-dev.
+  * Update debian/copyright file.
 
   [ Felix Geyer ]
   * Hardcode the SONAME in libsublime3.install and kdevplatform3-libs.install
