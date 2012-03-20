@@ -1,0 +1,10 @@
+Description: use bash shell for kdevplatform formatter script.
+
+--- a/util/kdev_format_source.sh
++++ b/util/kdev_format_source.sh
+@@ -1,4 +1,4 @@
+-#!/bin/sh
++#!/bin/bash
+ 
+ # Author: David Nolden <david.nolden.kdevelop@art-master.de>
+ # This script is made available under the GPLv2 licence.
