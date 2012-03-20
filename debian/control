@@ -29,7 +29,8 @@ Description: shared libraries for the KDevelop platform
 Package: kdevplatform-dev
 Section: libdevel
 Architecture: any
-Depends: kdevplatform5-libs (= ${binary:Version}), ${sameVersionDep:kdelibs5-dev:kdevplatform5-libs},
+Depends: ${shlibs:Depends}, kdevplatform5-libs (= ${binary:Version}),
+ ${sameVersionDep:kdelibs5-dev:kdevplatform5-libs},
  libsublime-dev (>= ${source:Version})
 Description: development files for the KDevelop platform
  This package contains development files for building integrated development
