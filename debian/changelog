@@ -15,6 +15,9 @@ kdevplatform (1.3.0-0r0) UNRELEASED; urgency=low
     so SONAME bumps can't go unnoticed.
   * Remove duplicate line in kdevplatform-dev.install.
 
+  [ Pino Toscano ]
+  * Depend on ${misc:Depends} everywhere.
+
  -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Sat, 17 Dec 2011 10:27:17 +0100
 
 kdevplatform (1.2.3-1) unstable; urgency=low
