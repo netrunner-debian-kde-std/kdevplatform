@@ -1,9 +1,7 @@
-From: Andreas Cord-Landwehr <cola@uni-paderborn.de>
-Subject: Fix usage of shell for script. 
+Subject: Fix usage of shell for script.
 Forwarded: no
 Author: Andreas Cord-Landwehr <cola@uni-paderborn.de>
 Last-Update: 2012-03-21
-
 Description: use bash shell for kdevplatform formatter script.
 
 --- a/util/kdev_format_source.sh
