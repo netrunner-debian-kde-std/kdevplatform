@@ -29,7 +29,7 @@ Description: shared libraries for the KDevelop platform
 Package: kdevplatform-dev
 Section: libdevel
 Architecture: any
-Depends: ${misc:Depends}, ${shlibs:Depends},
+Depends: ${misc:Depends},
  kdevplatform5-libs (= ${binary:Version}),
  ${sameVersionDep:kdelibs5-dev:kdevplatform5-libs},
  libsublime-dev (>= ${source:Version})
