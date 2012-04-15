@@ -1,5 +1,6 @@
 usr/bin/kdev_dbus_socket_transformer
 usr/bin/kdev_format_source.sh
+usr/bin/kdevplatform_shell_environment.sh
 usr/lib/kde4/kcm_kdev_bgsettings.so
 usr/lib/kde4/kcm_kdev_ccsettings.so
 usr/lib/kde4/kcm_kdev_envsettings.so
