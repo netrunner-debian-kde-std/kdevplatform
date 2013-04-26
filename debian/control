@@ -13,12 +13,13 @@ Homepage: http://www.kdevelop.org/
 Vcs-Browser: http://git.debian.org/?p=pkg-kde/kde-std/kdevplatform.git
 Vcs-Git: git://git.debian.org/pkg-kde/kde-std/kdevplatform.git
 
-Package: kdevplatform5-libs
+Package: kdevplatform7-libs
 Architecture: any
 Depends: ${misc:Depends}, ${shlibs:Depends}, libsublime5 (>= ${source:Version})
 Replaces: kdevelop (<< 4:3.9.96-1), kdevelop-data (<< 4:3.9.96-1),
- kdevplatform1-libs, kdevplatform2-libs, kdevplatform3-libs
-Breaks: kdevplatform1-libs, kdevplatform2-libs, kdevplatform3-libs
+ kdevplatform1-libs, kdevplatform2-libs, kdevplatform3-libs, kdevplatform5-libs
+Breaks: kdevplatform1-libs, kdevplatform2-libs, kdevplatform3-libs,
+ kdevplatform5-libs
 Suggests: kdevplatform-l10n, git, cvs, konsole
 Description: shared libraries for the KDevelop platform
  This package contains shared libraries needed to run integrated development
@@ -30,8 +31,8 @@ Package: kdevplatform-dev
 Section: libdevel
 Architecture: any
 Depends: ${misc:Depends},
- kdevplatform5-libs (= ${binary:Version}),
- ${sameVersionDep:kdelibs5-dev:kdevplatform5-libs},
+ kdevplatform7-libs (= ${binary:Version}),
+ ${sameVersionDep:kdelibs5-dev:kdevplatform7-libs},
  libsublime-dev (>= ${source:Version})
 Description: development files for the KDevelop platform
  This package contains development files for building integrated development
@@ -43,7 +44,7 @@ Package: kdevplatform-dbg
 Section: debug
 Architecture: any
 Priority: extra
-Depends: ${misc:Depends}, kdevplatform5-libs (= ${binary:Version}),
+Depends: ${misc:Depends}, kdevplatform7-libs (= ${binary:Version}),
  libsublime5 (= ${binary:Version}), kdelibs5-dbg
 Description: debugging symbols for the KDevelop platform
  This package contains the debugging symbols associated with kdevplatform.
