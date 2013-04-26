@@ -4,6 +4,7 @@ kdevplatform (1.5.0-0r0) UNRELEASED; urgency=low
   * New upstream release
   * Rename packages due to soname bump:
     - kdevplatform5-libs -> kdevplatform7-libs
+    - libsublime5 -> libsublime7
 
  -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Fri, 26 Apr 2013 21:41:47 +0200
 
