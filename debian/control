@@ -11,7 +11,7 @@ Build-Depends: cdbs (>= 0.4.51),
                debhelper (>= 7.4.15),
                kdelibs5-dev (>= 4:4.7.0),
                libboost-serialization-dev,
-               libgrantlee-dev (>= 0.1.7)
+               libgrantlee-dev (>= 0.1.7),
                libqjson-dev,
                libqtwebkit-dev,
                libsvn-dev,
