@@ -20,6 +20,7 @@ usr/lib/cmake/kdevplatform/KDevPlatformTargets.cmake
 usr/lib/libkdevplatformdebugger.so
 usr/lib/libkdevplatformdocumentation.so
 usr/lib/libkdevplatforminterfaces.so
+usr/lib/libkdevplatformjsontests.so
 usr/lib/libkdevplatformlanguage.so
 usr/lib/libkdevplatformoutputview.so
 usr/lib/libkdevplatformproject.so
