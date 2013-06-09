@@ -11,6 +11,7 @@ kdevplatform (1.5.1-0r0) UNRELEASED; urgency=low
   * Update copyright.
   * Disable compilation of SVN plugin due to license
     incompatability: patches/excludeSvnPluginFromCompilation.diff
+  * Remove libsvn-dev build dependency: only needed for SVN plugin.
 
  -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Fri, 26 Apr 2013 21:41:47 +0200
 
