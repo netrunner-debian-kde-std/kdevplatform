@@ -2480,7 +2480,154 @@ Files: outputview/ifilterstrategy.cpp
        outputview/tests/outputmodeltest.cpp
        outputview/tests/outputmodeltest.h
        outputview/tests/testlinebuilderfunctions.h
-       plugins/subversion/kdevsvncpp/annotate_line.hpp
+Copyright: 2012 Milian Wolff <mail@milianw.de>
+           2012 Morten Danielsen Volden <mvolden2@gmail.com>
+Comment: Files relicensed upstream, see http://commits.kde.org/kdevplatform/fbed9bc2665de2ca23d51df51e065abb0838fa8b
+    From fbed9bc2665de2ca23d51df51e065abb0838fa8b Mon Sep 17 00:00:00 2001
+    From: Aleix Pol <aleixpol@kde.org>
+    Date: Fri, 7 Jun 2013 02:18:23 +0200
+    Subject: [PATCH 2/2] Fix licensing mistake in output view
+
+    Milian and Morten where the only two who contributed to it.
+
+    CCMAIL: mvolden2@gmail.com
+    CCMAIL: mail@milianw.de
+    ---
+    outputview/ifilterstrategy.cpp              |    2 +-
+    outputview/ifilterstrategy.h                |    2 +-
+    outputview/outputfilteringstrategies.cpp    |    2 +-
+    outputview/outputfilteringstrategies.h      |    2 +-
+    outputview/tests/filteringstrategytest.cpp  |    2 +-
+    outputview/tests/filteringstrategytest.h    |    2 +-
+    outputview/tests/outputmodeltest.cpp        |    2 +-
+    outputview/tests/outputmodeltest.h          |    2 +-
+    outputview/tests/testlinebuilderfunctions.h |    2 +-
+    9 files changed, 9 insertions(+), 9 deletions(-)
+
+    diff --git a/outputview/ifilterstrategy.cpp b/outputview/ifilterstrategy.cpp
+    index d740e7e..0ad2d06 100644
+    --- a/outputview/ifilterstrategy.cpp
+    +++ b/outputview/ifilterstrategy.cpp
+    @@ -4,7 +4,7 @@
+    
+        This program is free software: you can redistribute it and/or modify
+        it under the terms of the GNU General Public License as published by
+    -    the Free Software Foundation, either version 3 of the License, or
+    +    the Free Software Foundation, either version 2 of the License, or
+        (at your option) any later version.
+    
+        This program is distributed in the hope that it will be useful,
+    diff --git a/outputview/ifilterstrategy.h b/outputview/ifilterstrategy.h
+    index f98b531..5c05dcc 100644
+    --- a/outputview/ifilterstrategy.h
+    +++ b/outputview/ifilterstrategy.h
+    @@ -4,7 +4,7 @@
+    
+        This program is free software: you can redistribute it and/or modify
+        it under the terms of the GNU General Public License as published by
+    -    the Free Software Foundation, either version 3 of the License, or
+    +    the Free Software Foundation, either version 2 of the License, or
+        (at your option) any later version.
+    
+        This program is distributed in the hope that it will be useful,
+    diff --git a/outputview/outputfilteringstrategies.cpp b/outputview/outputfilteringstrategies.cpp
+    index 9e526bd..9e7f474 100644
+    --- a/outputview/outputfilteringstrategies.cpp
+    +++ b/outputview/outputfilteringstrategies.cpp
+    @@ -4,7 +4,7 @@
+    
+        This program is free software: you can redistribute it and/or modify
+        it under the terms of the GNU General Public License as published by
+    -    the Free Software Foundation, either version 3 of the License, or
+    +    the Free Software Foundation, either version 2 of the License, or
+        (at your option) any later version.
+    
+        This program is distributed in the hope that it will be useful,
+    diff --git a/outputview/outputfilteringstrategies.h b/outputview/outputfilteringstrategies.h
+    index f92c5a0..c5f271a 100644
+    --- a/outputview/outputfilteringstrategies.h
+    +++ b/outputview/outputfilteringstrategies.h
+    @@ -4,7 +4,7 @@
+    
+        This program is free software: you can redistribute it and/or modify
+        it under the terms of the GNU General Public License as published by
+    -    the Free Software Foundation, either version 3 of the License, or
+    +    the Free Software Foundation, either version 2 of the License, or
+        (at your option) any later version.
+    
+        This program is distributed in the hope that it will be useful,
+    diff --git a/outputview/tests/filteringstrategytest.cpp b/outputview/tests/filteringstrategytest.cpp
+    index a6e0bb4..dfc7c0e 100644
+    --- a/outputview/tests/filteringstrategytest.cpp
+    +++ b/outputview/tests/filteringstrategytest.cpp
+    @@ -5,7 +5,7 @@
+    
+        This program is free software: you can redistribute it and/or modify
+        it under the terms of the GNU General Public License as published by
+    -    the Free Software Foundation, either version 3 of the License, or
+    +    the Free Software Foundation, either version 2 of the License, or
+        (at your option) any later version.
+    
+        This program is distributed in the hope that it will be useful,
+    diff --git a/outputview/tests/filteringstrategytest.h b/outputview/tests/filteringstrategytest.h
+    index 9f04503..a63bf31 100644
+    --- a/outputview/tests/filteringstrategytest.h
+    +++ b/outputview/tests/filteringstrategytest.h
+    @@ -4,7 +4,7 @@
+    
+        This program is free software: you can redistribute it and/or modify
+        it under the terms of the GNU General Public License as published by
+    -    the Free Software Foundation, either version 3 of the License, or
+    +    the Free Software Foundation, either version 2 of the License, or
+        (at your option) any later version.
+    
+        This program is distributed in the hope that it will be useful,
+    diff --git a/outputview/tests/outputmodeltest.cpp b/outputview/tests/outputmodeltest.cpp
+    index ddbe04c..6f8e9fa 100644
+    --- a/outputview/tests/outputmodeltest.cpp
+    +++ b/outputview/tests/outputmodeltest.cpp
+    @@ -5,7 +5,7 @@
+    
+        This program is free software: you can redistribute it and/or modify
+        it under the terms of the GNU General Public License as published by
+    -    the Free Software Foundation, either version 3 of the License, or
+    +    the Free Software Foundation, either version 2 of the License, or
+        (at your option) any later version.
+    
+        This program is distributed in the hope that it will be useful,
+    diff --git a/outputview/tests/outputmodeltest.h b/outputview/tests/outputmodeltest.h
+    index a8de3d0..b733404 100644
+    --- a/outputview/tests/outputmodeltest.h
+    +++ b/outputview/tests/outputmodeltest.h
+    @@ -5,7 +5,7 @@
+    
+        This program is free software: you can redistribute it and/or modify
+        it under the terms of the GNU General Public License as published by
+    -    the Free Software Foundation, either version 3 of the License, or
+    +    the Free Software Foundation, either version 2 of the License, or
+        (at your option) any later version.
+    
+        This program is distributed in the hope that it will be useful,
+    diff --git a/outputview/tests/testlinebuilderfunctions.h b/outputview/tests/testlinebuilderfunctions.h
+    index 72334ec..2ab9e60 100644
+    --- a/outputview/tests/testlinebuilderfunctions.h
+    +++ b/outputview/tests/testlinebuilderfunctions.h
+    @@ -4,7 +4,7 @@
+    
+        This program is free software: you can redistribute it and/or modify
+        it under the terms of the GNU General Public License as published by
+    -    the Free Software Foundation, either version 3 of the License, or
+    +    the Free Software Foundation, either version 2 of the License, or
+        (at your option) any later version.
+    
+        This program is distributed in the hope that it will be useful,
+    -- 
+    1.7.10.4
+License: GPL-2+
+
+
+
+Files: plugins/subversion/kdevsvncpp/annotate_line.hpp
        plugins/subversion/kdevsvncpp/apr.cpp
        plugins/subversion/kdevsvncpp/apr.hpp
        plugins/subversion/kdevsvncpp/client.cpp
@@ -2532,8 +2679,6 @@ Files: outputview/ifilterstrategy.cpp
        plugins/subversion/kdevsvncpp/wc.cpp
 Copyright: 2002-2009 The RapidSvn Group
            2008 Andreas Pakulat <apaku@gmx.de>
-           2012 Milian Wolff <mail@milianw.de>
-           2012 Morten Danielsen Volden <mvolden2@gmail.com>
 License: GPL-3+
 
 
