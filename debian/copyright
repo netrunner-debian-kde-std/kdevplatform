@@ -1019,7 +1019,7 @@ Copyright: 2002-2008 The RapidSvn Group
            2009 Nokia Corporation and/or its subsidiary(-ies)
            2009 Andreas Pakulat <apaku@gmx.de>
            2010-2011 Milian Wolff <mail@milianw.de>
-License: LGPL 2.1+
+License: LGPL-2.1+
 
 
 Files: documentation/documentationview.cpp
@@ -2338,7 +2338,7 @@ Copyright: 1994, 1996-1998, 2001, 2002, 2003, 2004, 2005 Free Software Foundatio
            2012 Miha Čančula <miha@noughmad.eu>
            2012 Morten Danielsen Volden <mvolden2@gmail.com>
            2012 Sven Brauch <svenbrauch@googlemail.com>
-License: GPL2+
+License: GPL-2+
 
 
 
@@ -2404,7 +2404,8 @@ Files: debugger/interfaces/iframestackmodel.cpp
        util/google/sparsehash/sparseconfig_windows.h
        util/kdev_format_source.sh
 Copyright: no copyright holders stated
-License: given by default copyright file COPYING.SRC: LGPL2
+Comment: given by default copyright file COPYING.SRC
+License: LGPL-2
 
 
 
@@ -2464,7 +2465,7 @@ Copyright: 2002-2003 Christian Loose <christian.loose@hamburg.de>
            2011 Andrey Batyiev <batyiev@gmail.com>
            2011 Sergey Vidyuk <sir.vestnik@gmail.com>
            2012 Milian Wolff <mail@milianw.de>
-License: GPL 2+ or any later version accepted by the membership of KDE e.V.
+License: GPL-2+ or any later version accepted by the membership of KDE e.V.
          (or its successor approved by the membership of KDE e.V.), which shall
          act as a proxy as defined in Section 14 of version 3 of the license.
 
@@ -2533,7 +2534,7 @@ Copyright: 2002-2009 The RapidSvn Group
            2008 Andreas Pakulat <apaku@gmx.de>
            2012 Milian Wolff <mail@milianw.de>
            2012 Morten Danielsen Volden <mvolden2@gmail.com>
-License: GPL3+
+License: GPL-3+
 
 
 
@@ -2541,14 +2542,14 @@ Files: util/google/type_traits.h
        util/google/sparsehash/sparsehashtable.h
        util/google/sparsehash/densehashtable.h
 Copyright: 2005-2006 Google Inc.
-License: BSD (3 clause)
+License: BSD-3-clause
 
 
 
 Files: language/duchain/types/typepointer.h
 Copyright: 2007-2008 David Nolden <david.nolden.kdevelop@art-master.de>
            2005 Frerich Raabe <raabe@kde.org>
-License: BSD (2 clause)
+License: BSD-2-clause
 
 
 
@@ -2597,3 +2598,4 @@ The Debian packaging is:
     Copyright (C) 2012-2013, Andreas Cord-Landwehr <cola@uni-paderborn.de>
 
 and is licensed under the GPL, see above.
+
