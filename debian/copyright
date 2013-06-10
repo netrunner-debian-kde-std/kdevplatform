@@ -28,14 +28,7 @@ Files: documentation/documentationview.cpp
        interfaces/ipatchsource.h
        language/backgroundparser/parseprojectjob.cpp
        language/backgroundparser/parseprojectjob.h
-       language/checks/controlflowgraph.cpp
-       language/checks/controlflowgraph.h
-       language/checks/controlflownode.cpp
-       language/checks/controlflownode.h
-       language/checks/dataaccess.cpp
-       language/checks/dataaccess.h
-       language/checks/dataaccessrepository.cpp
-       language/checks/dataaccessrepository.h
+       language/checks/*
        language/codecompletion/codecompletioncontext.cpp
        language/codecompletion/codecompletioncontext.h
        language/codecompletion/codecompletionhelper.cpp
@@ -66,21 +59,21 @@ Files: documentation/documentationview.cpp
        language/duchain/classfunctiondeclaration.cpp
        language/duchain/classfunctiondeclaration.h
        language/duchain/classmemberdeclaration.cpp
-       language/duchain/classmemberdeclarationdata.h
        language/duchain/classmemberdeclaration.h
+       language/duchain/classmemberdeclarationdata.h
        language/duchain/codemodel.cpp
        language/duchain/codemodel.h
        language/duchain/declaration.cpp
-       language/duchain/declarationdata.h
        language/duchain/declaration.h
+       language/duchain/declarationdata.h
        language/duchain/declarationid.cpp
        language/duchain/declarationid.h
        language/duchain/definitions.cpp
        language/duchain/definitions.h
-       language/duchain/duchainbase.cpp
-       language/duchain/duchainbase.h
        language/duchain/duchain.cpp
        language/duchain/duchain.h
+       language/duchain/duchainbase.cpp
+       language/duchain/duchainbase.h
        language/duchain/duchainlock.cpp
        language/duchain/duchainlock.h
        language/duchain/duchainobserver.cpp
@@ -117,41 +110,21 @@ Files: documentation/documentationview.cpp
        language/duchain/localindexedducontext.h
        language/duchain/namespacealiasdeclaration.cpp
        language/duchain/namespacealiasdeclaration.h
-       language/duchain/navigation/abstractdeclarationnavigationcontext.cpp
-       language/duchain/navigation/abstractdeclarationnavigationcontext.h
-       language/duchain/navigation/abstractincludenavigationcontext.cpp
-       language/duchain/navigation/abstractincludenavigationcontext.h
-       language/duchain/navigation/abstractnavigationcontext.cpp
-       language/duchain/navigation/abstractnavigationcontext.h
-       language/duchain/navigation/abstractnavigationwidget.cpp
-       language/duchain/navigation/abstractnavigationwidget.h
-       language/duchain/navigation/navigationaction.h
-       language/duchain/navigation/problemnavigationcontext.cpp
-       language/duchain/navigation/problemnavigationcontext.h
-       language/duchain/navigation/usescollector.cpp
-       language/duchain/navigation/usescollector.h
-       language/duchain/navigation/usesnavigationcontext.cpp
-       language/duchain/navigation/usesnavigationcontext.h
-       language/duchain/navigation/useswidget.cpp
-       language/duchain/navigation/useswidget.h
+       language/duchain/navigation/*
        language/duchain/parsingenvironment.cpp
        language/duchain/parsingenvironment.h
        language/duchain/persistentsetmap.h
        language/duchain/persistentsymboltable.cpp
        language/duchain/persistentsymboltable.h
-       language/duchain/repositories/itemrepository.cpp
-       language/duchain/repositories/itemrepository.h
-       language/duchain/repositories/stringrepository.h
-       language/duchain/repositories/typerepository.cpp
-       language/duchain/repositories/typerepository.h
+       language/duchain/repositories/*
        language/duchain/specializationstore.cpp
        language/duchain/specializationstore.h
        language/duchain/stringhelpers.cpp
        language/duchain/stringhelpers.h
        language/duchain/topducontext.cpp
+       language/duchain/topducontext.h
        language/duchain/topducontextdynamicdata.cpp
        language/duchain/topducontextdynamicdata.h
-       language/duchain/topducontext.h
        language/duchain/topducontextutils.h
        language/duchain/types/abstracttype.cpp
        language/duchain/types/abstracttype.h
@@ -185,8 +158,8 @@ Files: documentation/documentationview.cpp
        language/duchain/types/typeregister.cpp
        language/duchain/types/typeregister.h
        language/duchain/types/typesystem.cpp
-       language/duchain/types/typesystemdata.h
        language/duchain/types/typesystem.h
+       language/duchain/types/typesystemdata.h
        language/duchain/types/typeutils.cpp
        language/duchain/types/typeutils.h
        language/duchain/types/unsuretype.cpp
@@ -255,17 +228,16 @@ Files: documentation/documentationview.cpp
        tests/json/jsontesthelpers.h
        tests/json/jsontypetests.h
        tests/json/testsuite.h
-       tests/testfile.cpp
-       tests/testfile.h
        tests/modeltest.cpp
        tests/modeltest.h
+       tests/testfile.cpp
+       tests/testfile.h
        util/convenientfreelist.h
        util/embeddedfreetree.h
        util/focusedtreeview.cpp
        util/ksharedobject.h
        util/pushvalue.h
-       util/tests/test_embeddedfreetree.cpp
-       util/tests/test_kdevvarlengtharray.cpp
+       util/tests/*
        vcs/models/projectchangesmodel.cpp
        vcs/models/projectchangesmodel.h
        vcs/widgets/vcsdiffpatchsources.cpp
@@ -274,18 +246,21 @@ Copyright: 2002 Anders Lund <anders.lund@lund.tdcadsl.dk>
            2002-2006 Roberto Raggi <roberto@kdevelop.org>
            2006 Adam Treat <treat@kde.org>
            2006-2008 Hamish Rodda <rodda@kde.org>
-           2006-2010 David Nolden <david.nolden.kdevelop@art-master.de>
+           2006-2010 David Nolden <david.nolden.kdevelop@art-master.de>, david.nolden@kdevelop.org>
            2007 Bernd Buschinski <b.buschinski@web.de>
            2007 Jani Huhtanen <jani.huhtanen@tut.fi>
            2007 Kris Wong <kris.p.wong@gmail.com>
            2007 Mirko Stocker <me@misto.ch>
            2007 Trolltech ASA
+           2008-2009 Ramón Zarazúa <killerfox512@gmail.com>, <killerfox512+kde@gmail.com>
            2009 Dominik Haumann <dhaumann kde org>
            2009 Lior Mualem <lior.m.kde@gmail.com>
+           2009 Manuel Breugelmans <mbr.nxi@gmail.com>
            2009-2010 Aleix Pol Gonzalez <aleixpol@kde.org>
            2010 Benjamin Port <port.benjamin@gmail.com> 
            2010 Milian Wolff <mail@milianw.de>
-           2012 Niko Sams <niko.sams@gmai.com>
+           2010, 2012 Niko Sams <niko.sams@gmai.com>
+           2012 Olivier de Gaalon <olivier.jg@gmail.com>
 License: LGPL-2
 
 
@@ -998,7 +973,6 @@ Copyright: 1999-2002 Bernd Gehrmann <bernd@kdevelop.org>
 License: LGPL-2+
 
 
-
 Files: plugins/externalscript/editexternalscript.cpp
        plugins/externalscript/editexternalscript.h
        plugins/externalscript/externalscriptdebug.cpp
@@ -1022,286 +996,15 @@ Copyright: 2002-2008 The RapidSvn Group
 License: LGPL-2.1+
 
 
-Files: documentation/documentationview.cpp
-       documentation/documentationview.h
-       interfaces/iassistant.cpp
-       interfaces/iassistant.h
-       interfaces/idocumentationcontroller.h
-       interfaces/ipatchsource.cpp
-       interfaces/ipatchsource.h
-       language/backgroundparser/parseprojectjob.cpp
-       language/backgroundparser/parseprojectjob.h
-       language/checks/controlflowgraph.cpp
-       language/checks/controlflowgraph.h
-       language/checks/controlflownode.cpp
-       language/checks/controlflownode.h
-       language/checks/dataaccess.cpp
-       language/checks/dataaccess.h
-       language/checks/dataaccessrepository.cpp
-       language/checks/dataaccessrepository.h
-       language/codecompletion/codecompletioncontext.cpp
-       language/codecompletion/codecompletioncontext.h
-       language/codecompletion/codecompletionhelper.cpp
-       language/codecompletion/codecompletionhelper.h
-       language/codecompletion/codecompletiontesthelper.h
-       language/codegen/astchangeset.h
-       language/codegen/codegenerator.cpp
-       language/codegen/codegenerator.h
-       language/codegen/coderepresentation.cpp
-       language/codegen/coderepresentation.h
-       language/codegen/documentchangeset.cpp
-       language/codegen/documentchangeset.h
-       language/codegen/duchainchangeset.cpp
-       language/codegen/duchainchangeset.h
-       language/codegen/utilities.cpp
-       language/codegen/utilities.h
-       language/duchain/abstractfunctiondeclaration.cpp
-       language/duchain/abstractfunctiondeclaration.h
-       language/duchain/aliasdeclaration.cpp
-       language/duchain/aliasdeclaration.h
-       language/duchain/appendedlist.h
-       language/duchain/appendedlist_static.h
-       language/duchain/builders/abstractdeclarationbuilder.h
-       language/duchain/builders/abstracttypebuilder.h
-       language/duchain/builders/abstractusebuilder.h
-       language/duchain/classdeclaration.cpp
-       language/duchain/classdeclaration.h
-       language/duchain/classfunctiondeclaration.cpp
-       language/duchain/classfunctiondeclaration.h
-       language/duchain/classmemberdeclaration.cpp
-       language/duchain/classmemberdeclarationdata.h
-       language/duchain/classmemberdeclaration.h
-       language/duchain/codemodel.cpp
-       language/duchain/codemodel.h
-       language/duchain/declaration.cpp
-       language/duchain/declarationdata.h
-       language/duchain/declaration.h
-       language/duchain/declarationid.cpp
-       language/duchain/declarationid.h
-       language/duchain/definitions.cpp
-       language/duchain/definitions.h
-       language/duchain/duchainbase.cpp
-       language/duchain/duchainbase.h
-       language/duchain/duchain.cpp
-       language/duchain/duchain.h
-       language/duchain/duchainlock.cpp
-       language/duchain/duchainlock.h
-       language/duchain/duchainobserver.cpp
-       language/duchain/duchainobserver.h
-       language/duchain/duchainpointer.cpp
-       language/duchain/duchainpointer.h
-       language/duchain/duchainregister.cpp
-       language/duchain/duchainregister.h
-       language/duchain/ducontext.cpp
-       language/duchain/ducontext.h
-       language/duchain/dumpchain.cpp
-       language/duchain/dumpchain.h
-       language/duchain/forwarddeclaration.cpp
-       language/duchain/forwarddeclaration.h
-       language/duchain/functiondeclaration.cpp
-       language/duchain/functiondeclaration.h
-       language/duchain/functiondefinition.cpp
-       language/duchain/functiondefinition.h
-       language/duchain/identifier.cpp
-       language/duchain/identifier.h
-       language/duchain/importers.cpp
-       language/duchain/importers.h
-       language/duchain/indexeddeclaration.cpp
-       language/duchain/indexeddeclaration.h
-       language/duchain/indexedducontext.cpp
-       language/duchain/indexedducontext.h
-       language/duchain/indexedtopducontext.cpp
-       language/duchain/indexedtopducontext.h
-       language/duchain/instantiationinformation.cpp
-       language/duchain/instantiationinformation.h
-       language/duchain/localindexeddeclaration.cpp
-       language/duchain/localindexeddeclaration.h
-       language/duchain/localindexedducontext.cpp
-       language/duchain/localindexedducontext.h
-       language/duchain/namespacealiasdeclaration.cpp
-       language/duchain/namespacealiasdeclaration.h
-       language/duchain/navigation/abstractdeclarationnavigationcontext.cpp
-       language/duchain/navigation/abstractdeclarationnavigationcontext.h
-       language/duchain/navigation/abstractincludenavigationcontext.cpp
-       language/duchain/navigation/abstractincludenavigationcontext.h
-       language/duchain/navigation/abstractnavigationcontext.cpp
-       language/duchain/navigation/abstractnavigationcontext.h
-       language/duchain/navigation/abstractnavigationwidget.cpp
-       language/duchain/navigation/abstractnavigationwidget.h
-       language/duchain/navigation/navigationaction.h
-       language/duchain/navigation/problemnavigationcontext.cpp
-       language/duchain/navigation/problemnavigationcontext.h
-       language/duchain/navigation/usescollector.cpp
-       language/duchain/navigation/usescollector.h
-       language/duchain/navigation/usesnavigationcontext.cpp
-       language/duchain/navigation/usesnavigationcontext.h
-       language/duchain/navigation/useswidget.cpp
-       language/duchain/navigation/useswidget.h
-       language/duchain/parsingenvironment.cpp
-       language/duchain/parsingenvironment.h
-       language/duchain/persistentsetmap.h
-       language/duchain/persistentsymboltable.cpp
-       language/duchain/persistentsymboltable.h
-       language/duchain/repositories/itemrepository.cpp
-       language/duchain/repositories/itemrepository.h
-       language/duchain/repositories/stringrepository.h
-       language/duchain/repositories/typerepository.cpp
-       language/duchain/repositories/typerepository.h
-       language/duchain/specializationstore.cpp
-       language/duchain/specializationstore.h
-       language/duchain/stringhelpers.cpp
-       language/duchain/stringhelpers.h
-       language/duchain/topducontext.cpp
-       language/duchain/topducontextdynamicdata.cpp
-       language/duchain/topducontextdynamicdata.h
-       language/duchain/topducontext.h
-       language/duchain/topducontextutils.h
-       language/duchain/types/abstracttype.cpp
-       language/duchain/types/abstracttype.h
-       language/duchain/types/alltypes.h
-       language/duchain/types/arraytype.cpp
-       language/duchain/types/arraytype.h
-       language/duchain/types/constantintegraltype.cpp
-       language/duchain/types/constantintegraltype.h
-       language/duchain/types/delayedtype.cpp
-       language/duchain/types/delayedtype.h
-       language/duchain/types/enumerationtype.cpp
-       language/duchain/types/enumerationtype.h
-       language/duchain/types/enumeratortype.cpp
-       language/duchain/types/enumeratortype.h
-       language/duchain/types/functiontype.cpp
-       language/duchain/types/functiontype.h
-       language/duchain/types/identifiedtype.cpp
-       language/duchain/types/identifiedtype.h
-       language/duchain/types/indexedtype.cpp
-       language/duchain/types/indexedtype.h
-       language/duchain/types/integraltype.cpp
-       language/duchain/types/integraltype.h
-       language/duchain/types/pointertype.cpp
-       language/duchain/types/pointertype.h
-       language/duchain/types/referencetype.cpp
-       language/duchain/types/referencetype.h
-       language/duchain/types/structuretype.cpp
-       language/duchain/types/structuretype.h
-       language/duchain/types/typealiastype.cpp
-       language/duchain/types/typealiastype.h
-       language/duchain/types/typeregister.cpp
-       language/duchain/types/typeregister.h
-       language/duchain/types/typesystem.cpp
-       language/duchain/types/typesystemdata.h
-       language/duchain/types/typesystem.h
-       language/duchain/types/typeutils.cpp
-       language/duchain/types/typeutils.h
-       language/duchain/types/unsuretype.cpp
-       language/duchain/types/unsuretype.h
-       language/duchain/use.cpp
-       language/duchain/use.h
-       language/duchain/uses.cpp
-       language/duchain/uses.h
-       language/duchain/waitforupdate.cpp
-       language/duchain/waitforupdate.h
-       language/editor/cursorinrevision.h
-       language/editor/documentcursor.h
-       language/editor/documentrange.h
-       language/editor/editorintegratorstatic.h
-       language/editor/modificationrevision.cpp
-       language/editor/modificationrevision.h
-       language/editor/modificationrevisionset.cpp
-       language/editor/modificationrevisionset.h
-       language/editor/rangeinrevision.h
-       language/editor/simplecursor.h
-       language/editor/simplerange.h
-       language/interfaces/iastcontainer.cpp
-       language/interfaces/iastcontainer.h
-       language/util/debuglanguageparserhelper.h
-       language/util/includeitem.cpp
-       language/util/includeitem.h
-       language/util/navigationtooltip.cpp
-       language/util/navigationtooltip.h
-       plugins/classbrowser/projectfolder.cpp
-       plugins/filemanager/bookmarkhandler.cpp
-       plugins/filemanager/bookmarkhandler.h
-       plugins/filetemplates/classidentifierpage.cpp
-       plugins/filetemplates/classidentifierpage.h
-       plugins/filetemplates/licensepage.cpp
-       plugins/filetemplates/licensepage.h
-       plugins/filetemplates/outputpage.cpp
-       plugins/filetemplates/outputpage.h
-       plugins/filetemplates/overridespage.cpp
-       plugins/filetemplates/overridespage.h
-       plugins/quickopen/customlistquickopen.cpp
-       plugins/quickopen/customlistquickopen.h
-       plugins/quickopen/declarationlistquickopen.cpp
-       plugins/quickopen/declarationlistquickopen.h
-       plugins/quickopen/duchainitemquickopen.cpp
-       plugins/quickopen/duchainitemquickopen.h
-       plugins/quickopen/projectfilequickopen.cpp
-       plugins/quickopen/projectfilequickopen.h
-       plugins/quickopen/projectitemquickopen.cpp
-       plugins/quickopen/projectitemquickopen.h
-       plugins/quickopen/quickopenmodel.cpp
-       plugins/quickopen/quickopenmodel.h
-       shell/assistantpopup.cpp
-       shell/assistantpopup.h
-       shell/documentationcontroller.cpp
-       shell/documentationcontroller.h
-       shell/overlaywidget.cpp
+Files: shell/overlaywidget.cpp
        shell/overlaywidget.h
-       shell/patchdocument.cpp
        shell/progressdialog.cpp
        shell/progressdialog.h
-       shell/progresswidget.cpp
-       shell/progresswidget.h
-       sublime/blur.h
-       sublime/holdupdates.cpp
-       sublime/holdupdates.h
-       tests/json/declarationvalidator.cpp
-       tests/json/declarationvalidator.h
-       tests/json/delayedoutput.cpp
-       tests/json/delayedoutput.h
-       tests/json/jsondeclarationtests.h
-       tests/json/jsonducontexttests.h
-       tests/json/jsontesthelpers.h
-       tests/json/jsontypetests.h
-       tests/json/testsuite.h
-       tests/testfile.cpp
-       tests/testfile.h
-       util/convenientfreelist.h
-       util/embeddedfreetree.h
-       util/focusedtreeview.cpp
-       util/ksharedobject.h
-       util/pushvalue.h
-       util/tests/test_embeddedfreetree.cpp
-       util/tests/test_kdevvarlengtharray.cpp
-       vcs/models/projectchangesmodel.cpp
-       vcs/models/projectchangesmodel.h
-       vcs/widgets/vcsdiffpatchsources.cpp
-       vcs/widgets/vcsdiffpatchsources.
-Copyright: 2002 Anders Lund <anders.lund@lund.tdcadsl.dk>
-           2002-2003 Klarävdalens Datakonsult AB
-           2002-2005 Roberto Raggi <roberto@kdevelop.org>
+Copyright: 2002-2003 Klarävdalens Datakonsult AB
            2004 David Faure <faure@kde.org>
            2004 Till Adam <adam@kde.org>
-           2006 Adam Treat <treat@kde.org>
-           2006 David Nolden <david.nolden.kdevelop@art-master.de>
-           2006 Roberto Raggi <roberto@kdevelop.org>
-           2006-2008 Hamish Rodda <rodda@kde.org>
-           2007 Bernd Buschinski <b.buschinski@web.de>
-           2007 Jani Huhtanen <jani.huhtanen@tut.fi>
-           2007 Kris Wong <kris.p.wong@gmail.com>
-           2007 Mirko Stocker <me@misto.ch>
-           2007-2010 David Nolden <david.nolden.kdevelop@art-master.de>, david.nolden@kdevelop.org>
-           2008-2009 Ramón Zarazúa <killerfox512@gmail.com>, <killerfox512+kde@gmail.com>
-           2009 Dominik Haumann <dhaumann kde org>
-           2009 Lior Mualem <lior.m.kde@gmail.com>
            2009 Manuel Breugelmans <mbr.nxi@gmail.com>
-           2009-2011 Aleix Pol Gonzalez <aleixpol@kde.org>
-           2010 Benjamin Port <port.benjamin@gmail.com>
-           2010,2012 Niko Sams <niko.sams@gmail.com>
-           2010-2012 Milian Wolff <mail@milianw.de>
-           2012 Olivier de Gaalon <olivier.jg@gmail.com>
 License: GPL-2
-
 
 
 Files: debugger/breakpoint/breakpoint.cpp
@@ -2032,6 +1735,8 @@ Files: debugger/breakpoint/breakpoint.cpp
        shell/plugincontroller.h
        shell/progressmanager.cpp
        shell/progressmanager.h
+       shell/progresswidget.cpp
+       shell/progresswidget.h
        shell/projectcontroller.cpp
        shell/projectcontroller.h
        shell/project.cpp
