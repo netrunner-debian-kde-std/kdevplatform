@@ -1,4 +1,4 @@
-kdevplatform (1.5.1-0r0) UNRELEASED; urgency=low
+kdevplatform (1.5.1-1) experimental; urgency=low
 
   [ Andreas Cord-Landwehr ]
   * New upstream release
@@ -13,7 +13,7 @@ kdevplatform (1.5.1-0r0) UNRELEASED; urgency=low
     incompatability: patches/excludeSvnPluginFromCompilation.diff
   * Remove libsvn-dev build dependency: only needed for SVN plugin.
 
- -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Fri, 26 Apr 2013 21:41:47 +0200
+ -- Sune Vuorela <sune@debian.org>  Fri, 28 Jun 2013 09:22:12 +0200
 
 kdevplatform (1.3.1-2) unstable; urgency=low
 
