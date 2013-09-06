@@ -1,4 +1,3 @@
-
 usr/bin/kdev_dbus_socket_transformer
 usr/bin/kdev_format_source.sh
 usr/bin/kdevplatform_shell_environment.sh
