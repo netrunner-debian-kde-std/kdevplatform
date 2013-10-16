@@ -1,3 +1,8 @@
+kdevplatform (1.5.1-3) UNRELEASED; urgency=low
+
+
+ -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Wed, 16 Oct 2013 21:51:24 +0200
+
 kdevplatform (1.5.1-2) unstable; urgency=low
 
   * Team upload. Upload to unstable.
