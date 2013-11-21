@@ -7,6 +7,7 @@ kdevplatform (1.5.2-0) UNRELEASED; urgency=low
     GPL-2+ licensed shared library kdevplatformoutputview (was GPL-2)
     (Closes: #719202)
   * Add libsvn-dev build dependency: needed for SVN plugin.
+  * Update install files.
 
  -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Wed, 16 Oct 2013 21:51:24 +0200
 

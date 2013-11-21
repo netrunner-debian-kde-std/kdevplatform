@@ -1,7 +1,6 @@
 usr/bin/kdev_dbus_socket_transformer
 usr/bin/kdev_format_source.sh
 usr/bin/kdevplatform_shell_environment.sh
-usr/lib/grantlee/0.3/kdev_filters.so
 usr/lib/kde4/imports/org/kde/kdevplatform/libkdevelopdashboarddeclarativeplugin.so
 usr/lib/kde4/imports/org/kde/kdevplatform/qmldir
 usr/lib/kde4/kcm_kdev_bgsettings.so
@@ -44,6 +43,7 @@ usr/lib/kde4/kdevtemplatemanager_config.so
 usr/lib/kde4/kdevtestview.so
 usr/lib/kde4/kdevvcschangesviewplugin.so
 usr/lib/kde4/plasma_kdev_projectfileelement.so
+usr/lib/kde4/plugins/grantlee/0.3/kdev_filters.so
 usr/lib/libkdevplatformdebugger.so.7*
 usr/lib/libkdevplatformdocumentation.so.7*
 usr/lib/libkdevplatforminterfaces.so.7*
