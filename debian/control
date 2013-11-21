@@ -14,6 +14,7 @@ Build-Depends: cdbs (>= 0.4.51),
                libgrantlee-dev (>= 0.1.7),
                libqjson-dev,
                libqtwebkit-dev,
+               libsvn-dev,
                pkg-kde-tools (>= 0.9.0)
 Standards-Version: 3.9.4
 Homepage: http://www.kdevelop.org/
