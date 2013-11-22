@@ -1008,9 +1008,9 @@ License: GPL-2
 
 
 Files: debugger/breakpoint/breakpoint.cpp
+       debugger/breakpoint/breakpoint.h
        debugger/breakpoint/breakpointdetails.cpp
        debugger/breakpoint/breakpointdetails.h
-       debugger/breakpoint/breakpoint.h
        debugger/breakpoint/breakpointmodel.cpp
        debugger/breakpoint/breakpointmodel.h
        debugger/breakpoint/breakpointwidget.cpp
@@ -1060,25 +1060,25 @@ Files: debugger/breakpoint/breakpoint.cpp
        interfaces/icore.h
        interfaces/idebugcontroller.cpp
        interfaces/idebugcontroller.h
-       interfaces/idocumentationcontroller.cpp
+       interfaces/idocument.cpp
+       interfaces/idocument.h
        interfaces/idocumentation.cpp
        interfaces/idocumentation.h
+       interfaces/idocumentationcontroller.cpp
        interfaces/idocumentationprovider.cpp
        interfaces/idocumentationprovider.h
        interfaces/idocumentationproviderprovider.cpp
        interfaces/idocumentationproviderprovider.h
        interfaces/idocumentcontroller.cpp
        interfaces/idocumentcontroller.h
-       interfaces/idocument.cpp
-       interfaces/idocument.h
+       interfaces/ilanguage.cpp
+       interfaces/ilanguage.h
        interfaces/ilanguagecheck.cpp
        interfaces/ilanguagecheck.h
        interfaces/ilanguagecheckprovider.cpp
        interfaces/ilanguagecheckprovider.h
        interfaces/ilanguagecontroller.cpp
        interfaces/ilanguagecontroller.h
-       interfaces/ilanguage.cpp
-       interfaces/ilanguage.h
        interfaces/ilaunchconfiguration.cpp
        interfaces/ilaunchconfiguration.h
        interfaces/ilauncher.cpp
@@ -1092,14 +1092,14 @@ Files: debugger/breakpoint/breakpoint.cpp
        interfaces/ipatchdocument.h
        interfaces/ipatchexporter.cpp
        interfaces/ipatchexporter.h
-       interfaces/iplugincontroller.cpp
-       interfaces/iplugincontroller.h
        interfaces/iplugin.cpp
        interfaces/iplugin.h
-       interfaces/iprojectcontroller.cpp
-       interfaces/iprojectcontroller.h
+       interfaces/iplugincontroller.cpp
+       interfaces/iplugincontroller.h
        interfaces/iproject.cpp
        interfaces/iproject.h
+       interfaces/iprojectcontroller.cpp
+       interfaces/iprojectcontroller.h
        interfaces/iprojectprovider.cpp
        interfaces/iprojectprovider.h
        interfaces/iruncontroller.cpp
@@ -1108,10 +1108,10 @@ Files: debugger/breakpoint/breakpoint.cpp
        interfaces/iselectioncontroller.h
        interfaces/isession.cpp
        interfaces/isession.h
-       interfaces/isourceformattercontroller.cpp
-       interfaces/isourceformattercontroller.h
        interfaces/isourceformatter.cpp
        interfaces/isourceformatter.h
+       interfaces/isourceformattercontroller.cpp
+       interfaces/isourceformattercontroller.h
        interfaces/istatus.cpp
        interfaces/istatus.h
        interfaces/itemplateprovider.cpp
@@ -1148,9 +1148,9 @@ Files: debugger/breakpoint/breakpoint.cpp
        language/codecompletion/codecompletion.cpp
        language/codecompletion/codecompletion.h
        language/codecompletion/codecompletionitem.cpp
+       language/codecompletion/codecompletionitem.h
        language/codecompletion/codecompletionitemgrouper.cpp
        language/codecompletion/codecompletionitemgrouper.h
-       language/codecompletion/codecompletionitem.h
        language/codecompletion/codecompletionmodel.cpp
        language/codecompletion/codecompletionmodel.h
        language/codecompletion/codecompletionworker.cpp
@@ -1238,6 +1238,8 @@ Files: debugger/breakpoint/breakpoint.cpp
        language/util/setrepository.h
        outputview/filtereditem.cpp
        outputview/filtereditem.h
+       outputview/ifilterstrategy.cpp
+       outputview/ifilterstrategy.h
        outputview/ioutputview.cpp
        outputview/ioutputview.h
        outputview/ioutputviewmodel.cpp
@@ -1246,6 +1248,8 @@ Files: debugger/breakpoint/breakpoint.cpp
        outputview/outputdelegate.h
        outputview/outputexecutejob.cpp
        outputview/outputexecutejob.h
+       outputview/outputfilteringstrategies.cpp
+       outputview/outputfilteringstrategies.h
        outputview/outputformats.cpp
        outputview/outputformats.h
        outputview/outputjob.cpp
@@ -1253,6 +1257,11 @@ Files: debugger/breakpoint/breakpoint.cpp
        outputview/outputmodel.cpp
        outputview/outputmodel.h
        outputview/outputviewexport.h
+       outputview/tests/filteringstrategytest.cpp
+       outputview/tests/filteringstrategytest.h
+       outputview/tests/outputmodeltest.cpp
+       outputview/tests/outputmodeltest.h
+       outputview/tests/testlinebuilderfunctions.h
        plugins/appwizard/appwizarddialog.cpp
        plugins/appwizard/appwizarddialog.h
        plugins/appwizard/appwizardpagewidget.cpp
@@ -1322,14 +1331,14 @@ Files: debugger/breakpoint/breakpoint.cpp
        plugins/cvs/tests/cvstest.h
        plugins/dashboard/appletselector.cpp
        plugins/dashboard/appletselector.h
+       plugins/dashboard/dashboard.cpp
+       plugins/dashboard/dashboard.h
        plugins/dashboard/dashboardcorona.cpp
        plugins/dashboard/dashboardcorona.h
-       plugins/dashboard/dashboard.cpp
        plugins/dashboard/dashboarddataengine.cpp
        plugins/dashboard/dashboarddataengine.h
        plugins/dashboard/dashboarddocument.cpp
        plugins/dashboard/dashboarddocument.h
-       plugins/dashboard/dashboard.h
        plugins/dashboard/dashboardpluginloader.cpp
        plugins/dashboard/dashboardpluginloader.h
        plugins/dashboard/dashboardview.cpp
@@ -1351,9 +1360,9 @@ Files: debugger/breakpoint/breakpoint.cpp
        plugins/documentview/kdevdocumentselection.cpp
        plugins/documentview/kdevdocumentselection.h
        plugins/documentview/kdevdocumentview.cpp
+       plugins/documentview/kdevdocumentview.h
        plugins/documentview/kdevdocumentviewdelegate.cpp
        plugins/documentview/kdevdocumentviewdelegate.h
-       plugins/documentview/kdevdocumentview.h
        plugins/documentview/kdevdocumentviewplugin.cpp
        plugins/documentview/kdevdocumentviewplugin.h
        plugins/documentview/settings/preferences.cpp
@@ -1516,14 +1525,14 @@ Files: debugger/breakpoint/breakpoint.cpp
        plugins/snippet/legacy/editrepository.h
        plugins/snippet/legacy/editsnippet.cpp
        plugins/snippet/legacy/editsnippet.h
+       plugins/snippet/legacy/snippet.cpp
+       plugins/snippet/legacy/snippet.h
        plugins/snippet/legacy/snippetcompletionitem.cpp
        plugins/snippet/legacy/snippetcompletionitem.h
        plugins/snippet/legacy/snippetcompletionmodel.cpp
        plugins/snippet/legacy/snippetcompletionmodel.h
-       plugins/snippet/legacy/snippet.cpp
        plugins/snippet/legacy/snippetfilterproxymodel.cpp
        plugins/snippet/legacy/snippetfilterproxymodel.h
-       plugins/snippet/legacy/snippet.h
        plugins/snippet/legacy/snippetrepository.cpp
        plugins/snippet/legacy/snippetrepository.h
        plugins/snippet/legacy/snippetstore.cpp
@@ -1707,19 +1716,19 @@ Files: debugger/breakpoint/breakpoint.cpp
        shell/kross/xmltokross/project.cpp
        shell/kross/xmltokross/project.h
        shell/kross/xmltokross/rppconfig.h
-       shell/languagecontroller.cpp
-       shell/languagecontroller.h
        shell/language.cpp
        shell/language.h
+       shell/languagecontroller.cpp
+       shell/languagecontroller.h
        shell/launchconfiguration.cpp
+       shell/launchconfiguration.h
        shell/launchconfigurationdialog.cpp
        shell/launchconfigurationdialog.h
-       shell/launchconfiguration.h
        shell/loadedpluginsdialog.cpp
        shell/loadedpluginsdialog.h
-       shell/mainwindow_actions.cpp
        shell/mainwindow.cpp
        shell/mainwindow.h
+       shell/mainwindow_actions.cpp
        shell/mainwindow_p.cpp
        shell/mainwindow_p.h
        shell/openprojectdialog.cpp
@@ -1737,10 +1746,10 @@ Files: debugger/breakpoint/breakpoint.cpp
        shell/progressmanager.h
        shell/progresswidget.cpp
        shell/progresswidget.h
-       shell/projectcontroller.cpp
-       shell/projectcontroller.h
        shell/project.cpp
        shell/project.h
+       shell/projectcontroller.cpp
+       shell/projectcontroller.h
        shell/projectinfopage.cpp
        shell/projectinfopage.h
        shell/projectsourcepage.cpp
@@ -1751,12 +1760,12 @@ Files: debugger/breakpoint/breakpoint.cpp
        shell/savedialog.h
        shell/selectioncontroller.cpp
        shell/selectioncontroller.h
+       shell/session.cpp
+       shell/session.h
        shell/sessioncontroller.cpp
        shell/sessioncontroller.h
-       shell/session.cpp
        shell/sessiondialog.cpp
        shell/sessiondialog.h
-       shell/session.h
        shell/settings/bgpreferences.cpp
        shell/settings/bgpreferences.h
        shell/settings/ccpreferences.cpp
@@ -1814,9 +1823,9 @@ Files: debugger/breakpoint/breakpoint.cpp
        shell/workingsets/closedworkingsetswidget.cpp
        shell/workingsets/closedworkingsetswidget.h
        shell/workingsets/workingset.cpp
+       shell/workingsets/workingset.h
        shell/workingsets/workingsetfilelabel.cpp
        shell/workingsets/workingsetfilelabel.h
-       shell/workingsets/workingset.h
        shell/workingsets/workingsethelpers.cpp
        shell/workingsets/workingsethelpers.h
        shell/workingsets/workingsettoolbutton.cpp
@@ -1846,10 +1855,10 @@ Files: debugger/breakpoint/breakpoint.cpp
        sublime/examples/example2main.h
        sublime/mainwindow.cpp
        sublime/mainwindow.h
-       sublime/mainwindowoperator.cpp
-       sublime/mainwindowoperator.h
        sublime/mainwindow_p.cpp
        sublime/mainwindow_p.h
+       sublime/mainwindowoperator.cpp
+       sublime/mainwindowoperator.h
        sublime/sublimedefs.cpp
        sublime/sublimedefs.h
        sublime/sublimeexport.h
@@ -2173,162 +2182,6 @@ Copyright: 2002-2003 Christian Loose <christian.loose@hamburg.de>
 License: GPL-2+ or any later version accepted by the membership of KDE e.V.
          (or its successor approved by the membership of KDE e.V.), which shall
          act as a proxy as defined in Section 14 of version 3 of the license.
-
-
-
-Files: outputview/ifilterstrategy.cpp
-       outputview/ifilterstrategy.h
-       outputview/outputfilteringstrategies.cpp
-       outputview/outputfilteringstrategies.h
-       outputview/tests/filteringstrategytest.cpp
-       outputview/tests/filteringstrategytest.h
-       outputview/tests/outputmodeltest.cpp
-       outputview/tests/outputmodeltest.h
-       outputview/tests/testlinebuilderfunctions.h
-Copyright: 2012 Milian Wolff <mail@milianw.de>
-           2012 Morten Danielsen Volden <mvolden2@gmail.com>
-Comment: Files relicensed upstream, see http://commits.kde.org/kdevplatform/fbed9bc2665de2ca23d51df51e065abb0838fa8b
-    From fbed9bc2665de2ca23d51df51e065abb0838fa8b Mon Sep 17 00:00:00 2001
-    From: Aleix Pol <aleixpol@kde.org>
-    Date: Fri, 7 Jun 2013 02:18:23 +0200
-    Subject: [PATCH 2/2] Fix licensing mistake in output view
-
-    Milian and Morten where the only two who contributed to it.
-
-    CCMAIL: mvolden2@gmail.com
-    CCMAIL: mail@milianw.de
-    ---
-    outputview/ifilterstrategy.cpp              |    2 +-
-    outputview/ifilterstrategy.h                |    2 +-
-    outputview/outputfilteringstrategies.cpp    |    2 +-
-    outputview/outputfilteringstrategies.h      |    2 +-
-    outputview/tests/filteringstrategytest.cpp  |    2 +-
-    outputview/tests/filteringstrategytest.h    |    2 +-
-    outputview/tests/outputmodeltest.cpp        |    2 +-
-    outputview/tests/outputmodeltest.h          |    2 +-
-    outputview/tests/testlinebuilderfunctions.h |    2 +-
-    9 files changed, 9 insertions(+), 9 deletions(-)
-
-    diff --git a/outputview/ifilterstrategy.cpp b/outputview/ifilterstrategy.cpp
-    index d740e7e..0ad2d06 100644
-    --- a/outputview/ifilterstrategy.cpp
-    +++ b/outputview/ifilterstrategy.cpp
-    @@ -4,7 +4,7 @@
-    
-        This program is free software: you can redistribute it and/or modify
-        it under the terms of the GNU General Public License as published by
-    -    the Free Software Foundation, either version 3 of the License, or
-    +    the Free Software Foundation, either version 2 of the License, or
-        (at your option) any later version.
-    
-        This program is distributed in the hope that it will be useful,
-    diff --git a/outputview/ifilterstrategy.h b/outputview/ifilterstrategy.h
-    index f98b531..5c05dcc 100644
-    --- a/outputview/ifilterstrategy.h
-    +++ b/outputview/ifilterstrategy.h
-    @@ -4,7 +4,7 @@
-    
-        This program is free software: you can redistribute it and/or modify
-        it under the terms of the GNU General Public License as published by
-    -    the Free Software Foundation, either version 3 of the License, or
-    +    the Free Software Foundation, either version 2 of the License, or
-        (at your option) any later version.
-    
-        This program is distributed in the hope that it will be useful,
-    diff --git a/outputview/outputfilteringstrategies.cpp b/outputview/outputfilteringstrategies.cpp
-    index 9e526bd..9e7f474 100644
-    --- a/outputview/outputfilteringstrategies.cpp
-    +++ b/outputview/outputfilteringstrategies.cpp
-    @@ -4,7 +4,7 @@
-    
-        This program is free software: you can redistribute it and/or modify
-        it under the terms of the GNU General Public License as published by
-    -    the Free Software Foundation, either version 3 of the License, or
-    +    the Free Software Foundation, either version 2 of the License, or
-        (at your option) any later version.
-    
-        This program is distributed in the hope that it will be useful,
-    diff --git a/outputview/outputfilteringstrategies.h b/outputview/outputfilteringstrategies.h
-    index f92c5a0..c5f271a 100644
-    --- a/outputview/outputfilteringstrategies.h
-    +++ b/outputview/outputfilteringstrategies.h
-    @@ -4,7 +4,7 @@
-    
-        This program is free software: you can redistribute it and/or modify
-        it under the terms of the GNU General Public License as published by
-    -    the Free Software Foundation, either version 3 of the License, or
-    +    the Free Software Foundation, either version 2 of the License, or
-        (at your option) any later version.
-    
-        This program is distributed in the hope that it will be useful,
-    diff --git a/outputview/tests/filteringstrategytest.cpp b/outputview/tests/filteringstrategytest.cpp
-    index a6e0bb4..dfc7c0e 100644
-    --- a/outputview/tests/filteringstrategytest.cpp
-    +++ b/outputview/tests/filteringstrategytest.cpp
-    @@ -5,7 +5,7 @@
-    
-        This program is free software: you can redistribute it and/or modify
-        it under the terms of the GNU General Public License as published by
-    -    the Free Software Foundation, either version 3 of the License, or
-    +    the Free Software Foundation, either version 2 of the License, or
-        (at your option) any later version.
-    
-        This program is distributed in the hope that it will be useful,
-    diff --git a/outputview/tests/filteringstrategytest.h b/outputview/tests/filteringstrategytest.h
-    index 9f04503..a63bf31 100644
-    --- a/outputview/tests/filteringstrategytest.h
-    +++ b/outputview/tests/filteringstrategytest.h
-    @@ -4,7 +4,7 @@
-    
-        This program is free software: you can redistribute it and/or modify
-        it under the terms of the GNU General Public License as published by
-    -    the Free Software Foundation, either version 3 of the License, or
-    +    the Free Software Foundation, either version 2 of the License, or
-        (at your option) any later version.
-    
-        This program is distributed in the hope that it will be useful,
-    diff --git a/outputview/tests/outputmodeltest.cpp b/outputview/tests/outputmodeltest.cpp
-    index ddbe04c..6f8e9fa 100644
-    --- a/outputview/tests/outputmodeltest.cpp
-    +++ b/outputview/tests/outputmodeltest.cpp
-    @@ -5,7 +5,7 @@
-    
-        This program is free software: you can redistribute it and/or modify
-        it under the terms of the GNU General Public License as published by
-    -    the Free Software Foundation, either version 3 of the License, or
-    +    the Free Software Foundation, either version 2 of the License, or
-        (at your option) any later version.
-    
-        This program is distributed in the hope that it will be useful,
-    diff --git a/outputview/tests/outputmodeltest.h b/outputview/tests/outputmodeltest.h
-    index a8de3d0..b733404 100644
-    --- a/outputview/tests/outputmodeltest.h
-    +++ b/outputview/tests/outputmodeltest.h
-    @@ -5,7 +5,7 @@
-    
-        This program is free software: you can redistribute it and/or modify
-        it under the terms of the GNU General Public License as published by
-    -    the Free Software Foundation, either version 3 of the License, or
-    +    the Free Software Foundation, either version 2 of the License, or
-        (at your option) any later version.
-    
-        This program is distributed in the hope that it will be useful,
-    diff --git a/outputview/tests/testlinebuilderfunctions.h b/outputview/tests/testlinebuilderfunctions.h
-    index 72334ec..2ab9e60 100644
-    --- a/outputview/tests/testlinebuilderfunctions.h
-    +++ b/outputview/tests/testlinebuilderfunctions.h
-    @@ -4,7 +4,7 @@
-    
-        This program is free software: you can redistribute it and/or modify
-        it under the terms of the GNU General Public License as published by
-    -    the Free Software Foundation, either version 3 of the License, or
-    +    the Free Software Foundation, either version 2 of the License, or
-        (at your option) any later version.
-    
-        This program is distributed in the hope that it will be useful,
-    -- 
-    1.7.10.4
-License: GPL-2+
 
 
 
