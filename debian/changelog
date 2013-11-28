@@ -9,6 +9,7 @@ kdevplatform (1.5.2-0) UNRELEASED; urgency=low
   * Add libsvn-dev build dependency: needed for SVN plugin.
   * Update install files.
   * Update copyright.
+  * Bump Standards-Version to 3.9.5: no changes needed.
 
  -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Wed, 16 Oct 2013 21:51:24 +0200
 
