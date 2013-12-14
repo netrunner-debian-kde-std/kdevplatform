@@ -12,6 +12,9 @@ kdevplatform (1.5.2-0) UNRELEASED; urgency=low
   * Bump Standards-Version to 3.9.5: no changes needed.
   * Update debian/watch file to track xz compressed tarballs. 
 
+  [ Pino Toscano ]
+  * kdevplatform7-libs.install: do not hardcode the minor grantlee version.
+
  -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Wed, 16 Oct 2013 21:51:24 +0200
 
 kdevplatform (1.5.1-2) unstable; urgency=low
