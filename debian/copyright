@@ -184,6 +184,7 @@ Files: documentation/documentationview.cpp
        language/interfaces/iastcontainer.cpp
        language/interfaces/iastcontainer.h
        language/util/debuglanguageparserhelper.h
+       language/util/kdevhash.h
        language/util/includeitem.cpp
        language/util/includeitem.h
        language/util/navigationtooltip.cpp
@@ -216,7 +217,6 @@ Files: documentation/documentationview.cpp
        shell/documentationcontroller.cpp
        shell/documentationcontroller.h
        shell/patchdocument.cpp
-       sublime/blur.h
        sublime/holdupdates.cpp
        sublime/holdupdates.h
        tests/json/declarationvalidator.cpp
@@ -227,6 +227,7 @@ Files: documentation/documentationview.cpp
        tests/json/jsonducontexttests.h
        tests/json/jsontesthelpers.h
        tests/json/jsontypetests.h
+       tests/json/testsuite.cpp
        tests/json/testsuite.h
        tests/modeltest.cpp
        tests/modeltest.h
@@ -238,8 +239,6 @@ Files: documentation/documentationview.cpp
        util/ksharedobject.h
        util/pushvalue.h
        util/tests/*
-       vcs/models/projectchangesmodel.cpp
-       vcs/models/projectchangesmodel.h
        vcs/widgets/vcsdiffpatchsources.cpp
        vcs/widgets/vcsdiffpatchsources.h
 Copyright: 2002 Anders Lund <anders.lund@lund.tdcadsl.dk>
@@ -412,6 +411,7 @@ Files: debugger/breakpoint/breakpoint.cpp
        language/duchain/duchainutils.cpp
        language/duchain/duchainutils.h
        language/duchain/ducontextdata.h
+       language/duchain/ducontextdynamicdata.h
        language/duchain/referencecounting.cpp
        language/duchain/referencecounting.h
        language/duchain/tests/benchhashes.cpp
@@ -491,22 +491,6 @@ Files: debugger/breakpoint/breakpoint.cpp
        plugins/contextbrowser/contextbrowser.h
        plugins/contextbrowser/contextbrowserview.cpp
        plugins/contextbrowser/contextbrowserview.h
-       plugins/dashboard/appletselector.cpp
-       plugins/dashboard/appletselector.h
-       plugins/dashboard/dashboardcorona.cpp
-       plugins/dashboard/dashboardcorona.h
-       plugins/dashboard/dashboard.cpp
-       plugins/dashboard/dashboarddataengine.cpp
-       plugins/dashboard/dashboarddataengine.h
-       plugins/dashboard/dashboarddocument.cpp
-       plugins/dashboard/dashboarddocument.h
-       plugins/dashboard/dashboard.h
-       plugins/dashboard/dashboardpluginloader.cpp
-       plugins/dashboard/dashboardpluginloader.h
-       plugins/dashboard/dashboardview.cpp
-       plugins/dashboard/dashboardview.h
-       plugins/dashboard/kdevprojectdashboard.cpp
-       plugins/dashboard/kdevprojectdashboard.h
        plugins/documentview/kdevdocumentmodel.cpp
        plugins/documentview/kdevdocumentmodel.h
        plugins/documentview/kdevdocumentselection.cpp
@@ -592,10 +576,16 @@ Files: debugger/breakpoint/breakpoint.cpp
        plugins/projectmanagerview/projectmanagerview.h
        plugins/projectmanagerview/projectmanagerviewplugin.cpp
        plugins/projectmanagerview/projectmanagerviewplugin.h
+       plugins/projectmanagerview/projectmodelitemdelegate.cpp
+       plugins/projectmanagerview/projectmodelitemdelegate.h
        plugins/projectmanagerview/projectmodelsaver.cpp
        plugins/projectmanagerview/projectmodelsaver.h
        plugins/projectmanagerview/projecttreeview.cpp
        plugins/projectmanagerview/projecttreeview.h
+       plugins/projectmanagerview/vcsoverlayproxymodel.cpp
+       plugins/projectmanagerview/vcsoverlayproxymodel.h
+       plugins/quickopen/documentationquickopenprovider.cpp
+       plugins/quickopen/documentationquickopenprovider.h
        plugins/quickopen/expandingtree/expandingdelegate.cpp
        plugins/quickopen/expandingtree/expandingdelegate.h
        plugins/quickopen/expandingtree/expandingtree.cpp
@@ -691,11 +681,17 @@ Files: debugger/breakpoint/breakpoint.cpp
        project/interfaces/iprojectbuilder.h
        project/interfaces/iprojectfilemanager.cpp
        project/interfaces/iprojectfilemanager.h
+       project/interfaces/iprojectfilter.cpp
+       project/interfaces/iprojectfilter.h
+       project/interfaces/iprojectfilterprovider.cpp
+       project/interfaces/iprojectfilterprovider.h
        project/projectbuildsetmodel.cpp
        project/projectbuildsetmodel.h
        project/projectconfigskeleton.cpp
        project/projectconfigskeleton.h
        project/projectexport.h
+       project/projectfiltermanager.cpp
+       project/projectfiltermanager.h
        project/projectitemlineedit.cpp
        project/projectitemlineedit.h
        project/projectmodel.cpp
@@ -706,6 +702,8 @@ Files: debugger/breakpoint/breakpoint.cpp
        project/tests/projectmodelperformancetest.h
        project/tests/projectmodeltest.cpp
        project/tests/projectmodeltest.h
+       shell/areadisplay.cpp
+       shell/areadisplay.h
        shell/completionsettings.cpp
        shell/completionsettings.h
        shell/core.cpp
@@ -764,6 +762,8 @@ Files: debugger/breakpoint/breakpoint.cpp
        shell/savedialog.h
        shell/selectioncontroller.cpp
        shell/selectioncontroller.h
+       shell/sessionchooserdialog.cpp
+       shell/sessionchooserdialog.h
        shell/sessioncontroller.cpp
        shell/sessioncontroller.h
        shell/session.cpp
@@ -781,6 +781,8 @@ Files: debugger/breakpoint/breakpoint.cpp
        shell/sourceformattercontroller.h
        shell/statusbar.cpp
        shell/statusbar.h
+       shell/testeditvimode.cpp
+       shell/testeditvimode.h
        shell/tests/nonguiinterfaceplugin.cpp
        shell/tests/nonguiinterfaceplugin.h
        shell/tests/plugincontrollertest.cpp
@@ -856,6 +858,7 @@ Files: debugger/breakpoint/breakpoint.cpp
        template/filters/kdevfilters.cpp
        template/filters/kdevfilters.h
        tests/autotestshell.h
+       tests/json/kdevplatformjsontestsexport.h
        tests/kdevplatformtestsexport.h
        tests/testcore.cpp
        tests/testcore.h
@@ -898,7 +901,11 @@ Files: debugger/breakpoint/breakpoint.cpp
        util/richtexttoolbutton.h
        util/sequentiallyrunjobs.cpp
        util/sequentiallyrunjobs.h
+       util/shellutils.cpp
+       util/shellutils.h
        util/utilexport.h
+       vcs/models/projectchangesmodel.cpp
+       vcs/models/projectchangesmodel.h
        vcs/models/vcsannotationmodel.cpp
        vcs/models/vcsannotationmodel.h
        vcs/models/vcseventmodel.cpp
@@ -956,8 +963,8 @@ Copyright: 1999-2002 Bernd Gehrmann <bernd@kdevelop.org>
            2009 Lior Mualem <lior.m.kde@gmail.com>
            2009-2010 Niko Sams <niko.sams@gmail.com>
            2009 Radu Benea <radub82@gmail.com>
-           2007-2012 Aleix Pol Gonzalez <aleixpol@kde.org>, <aleixpol@gmail.com>
-           2009-2012 Milian Wolff <mail@milianw.de>
+           2007-2013 Aleix Pol Gonzalez <aleixpol@kde.org>, <aleixpol@gmail.com>
+           2009-2013 Milian Wolff <mail@milianw.de>
            2010 Benjamin Port <port.benjamin@gmail.com>
            2010 Julien Desgats <julien.desgats@gmail.com>
            2010-2011 Dmitry Risenberg <dmitry.risenberg@gmail.com>
@@ -970,6 +977,8 @@ Copyright: 1999-2002 Bernd Gehrmann <bernd@kdevelop.org>
            2012 Miha Čančula <miha@noughmad.eu>
            2012 Morten Danielsen Volden <mvolden2@gmail.com>
            2012 Sven Brauch <svenbrauch@googlemail.com>
+           2013 Sebastian Kügler <sebas@kde.org>
+           2013 Sven Brauch <svenbrauch@gmail.com>
 License: LGPL-2+
 
 
@@ -979,8 +988,6 @@ Files: plugins/externalscript/editexternalscript.cpp
        plugins/externalscript/externalscriptdebug.h
        plugins/externalscript/externalscriptitem.cpp
        plugins/externalscript/externalscriptitem.h
-       plugins/externalscript/externalscriptoutputmodel.cpp
-       plugins/externalscript/externalscriptoutputmodel.h
        plugins/externalscript/externalscriptplugin.cpp
        plugins/externalscript/externalscriptplugin.h
        plugins/externalscript/externalscriptview.cpp LGPL
@@ -996,14 +1003,16 @@ Copyright: 2002-2008 The RapidSvn Group
 License: LGPL-2.1+
 
 
-Files: shell/overlaywidget.cpp
-       shell/overlaywidget.h
-       shell/progressdialog.cpp
-       shell/progressdialog.h
+Files: shell/progresswidget/overlaywidget.cpp
+       shell/progresswidget/overlaywidget.h
+       shell/progresswidget/progressdialog.cpp
+       shell/progresswidget/progressdialog.h
+       util/kdev_format_source
 Copyright: 2002-2003 Klarävdalens Datakonsult AB
            2004 David Faure <faure@kde.org>
            2004 Till Adam <adam@kde.org>
            2009 Manuel Breugelmans <mbr.nxi@gmail.com>
+           David Nolden <david.nolden.kdevelop@art-master.de>
 License: GPL-2
 
 
@@ -1024,6 +1033,7 @@ Files: debugger/breakpoint/breakpoint.cpp
        debugger/interfaces/ibreakpointcontroller.h
        debugger/interfaces/idebugsession.cpp
        debugger/interfaces/idebugsession.h
+       debugger/interfaces/iframestackmodel.cpp
        debugger/interfaces/iframestackmodel.h
        debugger/interfaces/ivariablecontroller.cpp
        debugger/interfaces/ivariablecontroller.h
@@ -1329,28 +1339,6 @@ Files: debugger/breakpoint/breakpoint.cpp
        plugins/cvs/importmetadatawidget.h
        plugins/cvs/tests/cvstest.cpp
        plugins/cvs/tests/cvstest.h
-       plugins/dashboard/appletselector.cpp
-       plugins/dashboard/appletselector.h
-       plugins/dashboard/dashboard.cpp
-       plugins/dashboard/dashboard.h
-       plugins/dashboard/dashboardcorona.cpp
-       plugins/dashboard/dashboardcorona.h
-       plugins/dashboard/dashboarddataengine.cpp
-       plugins/dashboard/dashboarddataengine.h
-       plugins/dashboard/dashboarddocument.cpp
-       plugins/dashboard/dashboarddocument.h
-       plugins/dashboard/dashboardpluginloader.cpp
-       plugins/dashboard/dashboardpluginloader.h
-       plugins/dashboard/dashboardview.cpp
-       plugins/dashboard/dashboardview.h
-       plugins/dashboard/declarative/icoreobject.cpp
-       plugins/dashboard/declarative/icoreobject.h
-       plugins/dashboard/declarative/kdevelopdashboarddeclarativeplugin.cpp
-       plugins/dashboard/declarative/kdevelopdashboarddeclarativeplugin.h
-       plugins/dashboard/kdevprojectdashboard.cpp
-       plugins/dashboard/kdevprojectdashboard.h
-       plugins/dashboard/plasmoids/projectfileplasmoid/projectfileelement.cpp
-       plugins/dashboard/plasmoids/projectfileplasmoid/projectfileelement.h
        plugins/documentswitcher/documentswitcherplugin.cpp
        plugins/documentswitcher/documentswitcherplugin.h
        plugins/documentswitcher/documentswitchertreeview.cpp
@@ -1405,14 +1393,14 @@ Files: debugger/breakpoint/breakpoint.cpp
        plugins/filetemplates/testcasespage.h
        plugins/genericprojectmanager/genericmanager.cpp
        plugins/genericprojectmanager/genericmanager.h
-       plugins/genericprojectmanager/genericprojectmanagerpreferences.cpp
-       plugins/genericprojectmanager/genericprojectmanagerpreferences.h
        plugins/genericprojectmanager/test/reloadtest.cpp
        plugins/genericprojectmanager/test/reloadtest.h
        plugins/git/gitjob.cpp
        plugins/git/gitjob.h
        plugins/git/stashmanagerdialog.cpp
        plugins/git/stashmanagerdialog.h
+       plugins/git/stashpatchsource.cpp
+       plugins/git/stashpatchsource.h
        plugins/grepview/grepdialog.cpp
        plugins/grepview/grepdialog.h
        plugins/grepview/grepjob.cpp
@@ -1742,10 +1730,10 @@ Files: debugger/breakpoint/breakpoint.cpp
        shell/patchdocument.h
        shell/plugincontroller.cpp
        shell/plugincontroller.h
-       shell/progressmanager.cpp
-       shell/progressmanager.h
-       shell/progresswidget.cpp
-       shell/progresswidget.h
+       shell/progresswidget/progressmanager.cpp
+       shell/progresswidget/progressmanager.h
+       shell/progresswidget/statusbarprogresswidget.cpp
+       shell/progresswidget/statusbarprogresswidget.h
        shell/project.cpp
        shell/project.h
        shell/projectcontroller.cpp
@@ -1922,7 +1910,6 @@ Files: debugger/breakpoint/breakpoint.cpp
        util/focusedtreeview.h
        util/formattinghelpers.cpp
        util/formattinghelpers.h
-       util/google/hash_fun.h
        util/kdevplatform_shell_environment.sh
        util/kdevstringhandler.h
        util/kdevvarlengtharray.h
@@ -1942,8 +1929,6 @@ Files: debugger/breakpoint/breakpoint.cpp
        util/spinlock.h
        util/utilexport.h
        vcs/dvcs/dvcsevent.h
-       vcs/dvcs/ui/logview.cpp
-       vcs/dvcs/ui/logview.h
        vcs/interfaces/ibasicversioncontrol.cpp
        vcs/interfaces/ibasicversioncontrol.h
        vcs/interfaces/ibranchingversioncontrol.h
@@ -2018,7 +2003,7 @@ Copyright: 1994, 1996-1998, 2001, 2002, 2003, 2004, 2005 Free Software Foundatio
            2004-2005 Sascha Cunz <sascha@kdevelop.org>
            2005 Ian Reinhart Geiser <ian@geiseri.com>
            2006 Matt Rogers <mattr@kde.org
-           2006-2008 Vladimir Prus <ghost@cs.msu.su>
+           2006-2009 Vladimir Prus <ghost@cs.msu.su>
            2006-2010 Andreas Pakulat <apaku@gmx.de>
            2006-2011 David Nolden <david.nolden.kde@art-master.de>, <david.nolden.kdevelop@art-master.de>
            2007 Dukju Ahn <dukjuahn@gmail.com>
@@ -2052,14 +2037,23 @@ Copyright: 1994, 1996-1998, 2001, 2002, 2003, 2004, 2005 Free Software Foundatio
            2012 Miha Čančula <miha@noughmad.eu>
            2012 Morten Danielsen Volden <mvolden2@gmail.com>
            2012 Sven Brauch <svenbrauch@googlemail.com>
+           2013 Jarosław Sierant <jaroslaw.sierant@gmail.com>
+           2013 Vlas Puhov <vlas.puhov@mail.ru>
+           2013 David E. Narvaez <david@piensalibre.net>
 License: GPL-2+
 
 
 
-Files: sublime/ideal.h
+Files: sublime/idealbuttonbarwidget.cpp
+       sublime/idealbuttonbarwidget.h
+       sublime/idealcontroller.cpp
+       sublime/idealcontroller.h
+       sublime/idealdockwidget.cpp
+       sublime/idealdockwidget.h
        sublime/ideallayout.cpp
        sublime/ideallayout.h
-       sublime/ideal.cpp
+       sublime/idealtoolbutton.cpp
+       sublime/idealtoolbutton.h
 Copyright: 2007 Hamish Rodda <rodda@kde.org>
            2007 Roberto Raggi <roberto@kdevelop.org>
            2008 Vladimir Prus <ghost@cs.msu.su>
@@ -2116,7 +2110,6 @@ Files: debugger/interfaces/iframestackmodel.cpp
        shell/kross/examples/msvckdevelop/KDevMSVCManager/SolutionReader.py
        shell/kross/examples/msvckdevelop/KDevMSVCManager/VCProjManager.py
        util/google/sparsehash/sparseconfig_windows.h
-       util/kdev_format_source.sh
 Copyright: no copyright holders stated
 Comment: given by default copyright file COPYING.SRC
 License: LGPL-2
@@ -2149,12 +2142,6 @@ Files: plugins/filetemplates/templatepreview.cpp
        vcs/dvcs/tests/dvcsjobTest.h
        vcs/dvcs/ui/branchmanager.cpp
        vcs/dvcs/ui/branchmanager.h
-       vcs/dvcs/ui/dvcsgenericoutputview.cpp
-       vcs/dvcs/ui/dvcsgenericoutputview.h
-       vcs/dvcs/ui/dvcsmainview.cpp
-       vcs/dvcs/ui/dvcsmainview.h
-       vcs/dvcs/ui/importdialog.cpp
-       vcs/dvcs/ui/importdialog.h
        vcs/dvcs/ui/importmetadatawidget.cpp
        vcs/dvcs/ui/importmetadatawidget.h
        vcs/dvcs/ui/revhistory/commitView.cpp
@@ -2241,9 +2228,12 @@ License: GPL-3+
 
 
 
-Files: util/google/type_traits.h
+Files: util/google/sparsehash/densehashtable.h
+       util/google/sparsehash/hashtable-common.h
+       util/google/sparsehash/libc_allocator_with_realloc.h
        util/google/sparsehash/sparsehashtable.h
-       util/google/sparsehash/densehashtable.h
+       util/google/template_util.h
+       util/google/type_traits.h
 Copyright: 2005-2006 Google Inc.
 License: BSD-3-clause
 
@@ -2253,6 +2243,68 @@ Files: language/duchain/types/typepointer.h
 Copyright: 2007-2008 David Nolden <david.nolden.kdevelop@art-master.de>
            2005 Frerich Raabe <raabe@kde.org>
 License: BSD-2-clause
+
+
+
+Files: interfaces/isessionlock.cpp
+       interfaces/isessionlock.h
+       shell/sessionlock.cpp
+       shell/sessionlock.h
+Copyright: 2013 Milian Wolff <mail@milianw.de>
+License: LGPL-2.1 or LGPL-3 or eV exception
+ This library is free software; you can redistribute it and/or
+ modify it under the terms of the GNU Lesser General Public
+ License as published by the Free Software Foundation; either
+ version 2.1 of the License, or (at your option) version 3, or any
+ later version accepted by the membership of KDE e.V. (or its
+ successor approved by the membership of KDE e.V.), which shall
+ act as a proxy defined in Section 6 of version 3 of the license.
+ .
+ This library is distributed in the hope that it will be useful,
+ but WITHOUT ANY WARRANTY; without even the implied warranty of
+ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+ Lesser General Public License for more details.
+ .
+ You should have received a copy of the GNU Lesser General Public 
+ License along with this library.  If not, see <http://www.gnu.org/licenses/>.
+
+
+
+Files: language/codegen/tests/test_documentchangeset.cpp
+       language/codegen/tests/test_documentchangeset.h
+       plugins/projectfilter/comboboxdelegate.cpp
+       plugins/projectfilter/comboboxdelegate.h
+       plugins/projectfilter/filter.cpp
+       plugins/projectfilter/filter.h
+       plugins/projectfilter/filtermodel.cpp
+       plugins/projectfilter/filtermodel.h
+       plugins/projectfilter/projectfilter.cpp
+       plugins/projectfilter/projectfilter.h
+       plugins/projectfilter/projectfilterdebug.cpp
+       plugins/projectfilter/projectfilterdebug.h
+       plugins/projectfilter/projectfilterkcm.cpp
+       plugins/projectfilter/projectfilterkcm.h
+       plugins/projectfilter/projectfilterprovider.cpp
+       plugins/projectfilter/projectfilterprovider.h
+       plugins/projectfilter/tests/test_projectfilter.cpp
+       plugins/projectfilter/tests/test_projectfilter.h
+Copyright: 2013 Milian Wolff <mail@milianw.de>
+License: GPL-2 or GPL-3 or eV exception
+ This program is free software; you can redistribute it and/or
+ modify it under the terms of the GNU General Public License as
+ published by the Free Software Foundation; either version 2 of
+ the License or (at your option) version 3 or any later version
+ accepted by the membership of KDE e.V. (or its successor approved
+ by the membership of KDE e.V.), which shall act as a proxy
+ defined in Section 14 of version 3 of the license.
+ .
+ This program is distributed in the hope that it will be useful,
+ but WITHOUT ANY WARRANTY; without even the implied warranty of
+ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ GNU General Public License for more details.
+ .
+ You should have received a copy of the GNU General Public License
+ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 
 

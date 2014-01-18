@@ -2,6 +2,9 @@ kdevplatform (1.6.0-0r1) UNRELEASED; urgency=medium
 
   * New upstream release.
 
+  [ Pino Toscano ]
+  * Update copyright.
+
  -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Sat, 18 Jan 2014 13:56:19 +0100
 
 kdevplatform (1.5.2-1) unstable; urgency=low
