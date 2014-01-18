@@ -2,6 +2,8 @@ kdevplatform (1.6.0-0r1) UNRELEASED; urgency=medium
 
   * New upstream release.
 
+  * !! TODO !! figure out the ABI bump without SONAME bump
+
   [ Pino Toscano ]
   * Update copyright.
   * Update install files.
