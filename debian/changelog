@@ -1,5 +1,6 @@
-kdevplatform (1.5.2-0r1) UNRELEASED; urgency=low
+kdevplatform (1.5.2-1) unstable; urgency=low
 
+  * Team upload.
   * New upstream release.
 
   [ Andreas Cord-Landwehr ]
@@ -16,7 +17,7 @@ kdevplatform (1.5.2-0r1) UNRELEASED; urgency=low
   * kdevplatform7-libs.install: do not hardcode the minor grantlee version.
   * Update Vcs-* headers.
 
- -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Wed, 16 Oct 2013 21:51:24 +0200
+ -- Pino Toscano <pino@debian.org>  Sat, 18 Jan 2014 09:50:09 +0100
 
 kdevplatform (1.5.1-2) unstable; urgency=low
 
