@@ -7,6 +7,9 @@ kdevplatform (1.6.0-0r1) UNRELEASED; urgency=medium
   [ Pino Toscano ]
   * Update copyright.
   * Update install files.
+  * Bump the debhelper compatibility to 9:
+    - bump compact to 9
+    - bump the debhelper build dependency to 9
 
  -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Sat, 18 Jan 2014 13:56:19 +0100
 

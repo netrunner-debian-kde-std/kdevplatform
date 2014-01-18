@@ -8,7 +8,7 @@ Uploaders: Fathi Boudra <fabo@debian.org>,
            Andreas Cord-Landwehr <cola@uni-paderborn.de>
 Build-Depends: cdbs (>= 0.4.51),
                cmake (>= 2.8.0),
-               debhelper (>= 7.4.15),
+               debhelper (>= 9),
                kdelibs5-dev (>= 4:4.7.0),
                libboost-serialization-dev,
                libgrantlee-dev (>= 0.1.7),
