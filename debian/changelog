@@ -14,6 +14,7 @@ kdevplatform (1.5.2-0r1) UNRELEASED; urgency=low
 
   [ Pino Toscano ]
   * kdevplatform7-libs.install: do not hardcode the minor grantlee version.
+  * Update Vcs-* headers.
 
  -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Wed, 16 Oct 2013 21:51:24 +0200
 

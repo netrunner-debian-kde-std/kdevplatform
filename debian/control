@@ -18,8 +18,8 @@ Build-Depends: cdbs (>= 0.4.51),
                pkg-kde-tools (>= 0.9.0)
 Standards-Version: 3.9.5
 Homepage: http://www.kdevelop.org/
-Vcs-Browser: http://git.debian.org/?p=pkg-kde/kde-std/kdevplatform.git
-Vcs-Git: git://git.debian.org/pkg-kde/kde-std/kdevplatform.git
+Vcs-Browser: http://anonscm.debian.org/gitweb/?p=pkg-kde/kde-std/kdevplatform.git
+Vcs-Git: git://anonscm.debian.org/pkg-kde/kde-std/kdevplatform.git
 
 Package: kdevplatform7-libs
 Architecture: any
