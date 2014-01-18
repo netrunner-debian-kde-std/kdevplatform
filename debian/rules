@@ -1,7 +1,18 @@
 #!/usr/bin/make -f
 
-include /usr/share/pkg-kde-tools/qt-kde-team/1/debian-qt-kde.mk
+export DEB_LDFLAGS_MAINT_APPEND := -Wl,--as-needed
 
-DEB_DBG_PACKAGE_kdevplatform7-libs := kdevplatform-dbg
-DEB_DBG_PACKAGE_libsublime7 := kdevplatform-dbg
-DEB_DH_MAKESHLIBS_ARGS_ALL := -V
+%:
+	dh $@ --parallel --with kde
+
+override_dh_strip:
+	dh_strip --dbg-package=kdevplatform-dbg
+
+override_dh_makeshlibs:
+	dh_makeshlibs -V -Xusr/lib/kde4/
+
+override_dh_shlibdeps:
+	dh_shlibdeps
+	dh_sameversiondep
+
+.PHONY: override_dh_auto_test
