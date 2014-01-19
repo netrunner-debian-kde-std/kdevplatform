@@ -8,7 +8,7 @@ kdevplatform (1.6.0-0r1) UNRELEASED; urgency=medium
   * Update copyright.
   * Update install files.
   * Bump the debhelper compatibility to 9:
-    - bump compact to 9
+    - bump compat to 9
     - bump the debhelper build dependency to 9
   * Convert rules to the dh sequencer with kde addon.
   * Remove unused cdbs build dependency.
