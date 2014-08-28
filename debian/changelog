@@ -2,7 +2,10 @@ kdevplatform (1.7.0-0r1) UNRELEASED; urgency=medium
 
   * New upstream release.
 
-  * !! TODO !! figure out the ABI bump without SONAME bump
+  [ Andreas Cord-Landwehr ]
+  * Rename packages due to soname bump:
+    - kdevplatform7-libs -> kdevplatform8-libs
+    - libsublime7 -> libsublime8
 
   [ Pino Toscano ]
   * Update copyright.

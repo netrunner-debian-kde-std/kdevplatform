@@ -20,19 +20,21 @@ Homepage: http://www.kdevelop.org/
 Vcs-Browser: http://anonscm.debian.org/gitweb/?p=pkg-kde/kde-std/kdevplatform.git
 Vcs-Git: git://anonscm.debian.org/pkg-kde/kde-std/kdevplatform.git
 
-Package: kdevplatform7-libs
+Package: kdevplatform8-libs
 Architecture: any
-Depends: libsublime7 (>= ${source:Version}), ${misc:Depends}, ${shlibs:Depends}
+Depends: libsublime8 (>= ${source:Version}), ${misc:Depends}, ${shlibs:Depends}
 Replaces: kdevelop (<< 4:3.9.96-1),
           kdevelop-data (<< 4:3.9.96-1),
           kdevplatform1-libs,
           kdevplatform2-libs,
           kdevplatform3-libs,
-          kdevplatform5-libs
+          kdevplatform5-libs,
+          kdevplatform7-libs
 Breaks: kdevplatform1-libs,
         kdevplatform2-libs,
         kdevplatform3-libs,
-        kdevplatform5-libs
+        kdevplatform5-libs,
+        kdevplatform7-libs
 Suggests: cvs, git, kdevplatform-l10n, konsole
 Description: shared libraries for the KDevelop platform
  This package contains shared libraries needed to run integrated development
@@ -43,10 +45,10 @@ Description: shared libraries for the KDevelop platform
 Package: kdevplatform-dev
 Section: libdevel
 Architecture: any
-Depends: kdevplatform7-libs (= ${binary:Version}),
+Depends: kdevplatform8-libs (= ${binary:Version}),
          libsublime-dev (>= ${source:Version}),
          ${misc:Depends},
-         ${sameVersionDep:kdelibs5-dev:kdevplatform7-libs}
+         ${sameVersionDep:kdelibs5-dev:kdevplatform8-libs}
 Description: development files for the KDevelop platform
  This package contains development files for building integrated development
  environments based on the KDevelop platform.
@@ -58,8 +60,8 @@ Section: debug
 Architecture: any
 Priority: extra
 Depends: kdelibs5-dbg,
-         kdevplatform7-libs (= ${binary:Version}),
-         libsublime7 (= ${binary:Version}),
+         kdevplatform8-libs (= ${binary:Version}),
+         libsublime8 (= ${binary:Version}),
          ${misc:Depends}
 Description: debugging symbols for the KDevelop platform
  This package contains the debugging symbols associated with kdevplatform.
@@ -68,7 +70,7 @@ Description: debugging symbols for the KDevelop platform
  .
  This package is part of the KDevelop platform.
 
-Package: libsublime7
+Package: libsublime8
 Architecture: any
 Depends: ${misc:Depends}, ${shlibs:Depends}
 Description: User interface library
@@ -80,9 +82,9 @@ Description: User interface library
 Package: libsublime-dev
 Section: libdevel
 Architecture: any
-Depends: libsublime7 (= ${binary:Version}),
+Depends: libsublime8 (= ${binary:Version}),
          ${misc:Depends},
-         ${sameVersionDep:kdelibs5-dev:libsublime7}
+         ${sameVersionDep:kdelibs5-dev:libsublime8}
 Description: development files for the sublime user interface library
  This package contains development files for building applications using
  libsublime.
