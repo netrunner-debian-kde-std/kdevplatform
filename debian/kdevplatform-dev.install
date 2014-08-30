@@ -1,3 +1,4 @@
+usr/include/kdevplatform/config-kdevplatform.h
 usr/include/kdevplatform/debugger
 usr/include/kdevplatform/documentation
 usr/include/kdevplatform/execute

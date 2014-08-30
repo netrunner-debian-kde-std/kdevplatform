@@ -1,7 +1,6 @@
 usr/bin/kdev_dbus_socket_transformer
 usr/bin/kdev_format_source
 usr/bin/kdevplatform_shell_environment.sh
-usr/include/kdevplatform/config-kdevplatform.h
 usr/lib/kde4/imports/org/kde/kdevplatform/libkdevelopdashboarddeclarativeplugin.so
 usr/lib/kde4/imports/org/kde/kdevplatform/qmldir
 usr/lib/kde4/kcm_kdev_bgsettings.so
