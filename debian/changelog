@@ -6,6 +6,7 @@ kdevplatform (1.7.0-0r1) UNRELEASED; urgency=medium
   * Rename packages due to soname bump:
     - kdevplatform7-libs -> kdevplatform8-libs
     - libsublime7 -> libsublime8
+  * Update install files.
 
   [ Pino Toscano ]
   * Update copyright.
