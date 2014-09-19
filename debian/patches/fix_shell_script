@@ -1,0 +1,16 @@
+Author: Sune Vuorela
+Forwarded: no. Upstream wants the script rewritten. No time for that.
+
+Upstream decided that supporting the /bin/sh on openbsd is more important than having
+the script working in debian and derivatives.
+So Fix it by forcing bash.
+Index: b/util/kdevplatform_shell_environment.sh
+===================================================================
+--- a/util/kdevplatform_shell_environment.sh
++++ b/util/kdevplatform_shell_environment.sh
+@@ -1,4 +1,4 @@
+-#!/bin/sh
++#!/bin/bash
+ 
+ # This file is part of KDevelop
+ # Copyright 2011 David Nolden <david.nolden.kdevelop@art-master.de>

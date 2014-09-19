@@ -18,6 +18,9 @@ kdevplatform (1.7.0-0r1) UNRELEASED; urgency=medium
   * Convert rules to the dh sequencer with kde addon.
   * Remove unused cdbs build dependency.
 
+  [ Sune Vuorela ]
+  * Switch a script to /bin/bash - it uses bash specific features.
+
  -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Sat, 18 Jan 2014 13:56:19 +0100
 
 kdevplatform (1.5.2-1) unstable; urgency=low
