@@ -12,7 +12,7 @@ Upstream Authors:
     Hamish Rodda <rodda@kde.org>
     David Nolden <david.nolden.kdevelop@art-master.de>
     Alexander Dymo <adymo@kdevelop.org>
-    Aleix Pol <aleixpol@gmail.com>
+    Aleix Pol <aleixpol@gmail.com>q
     Vladimir Prus <ghost@cs.msu.su>
     Amilcar do Carmo Lucas <amilcar@kdevelop.org>
 
@@ -26,6 +26,16 @@ Files: documentation/documentationview.cpp
        interfaces/idocumentationcontroller.h
        interfaces/ipatchsource.cpp
        interfaces/ipatchsource.h
+       language/assistant/renameaction.cpp
+       language/assistant/renameaction.h
+       language/assistant/renameassistant.cpp
+       language/assistant/renameassistant.h
+       language/assistant/renamefileaction.cpp
+       language/assistant/renamefileaction.h
+       language/assistant/staticassistant.cpp
+       language/assistant/staticassistant.h
+       language/assistant/staticassistantsmanager.cpp
+       language/assistant/staticassistantsmanager.h
        language/backgroundparser/parseprojectjob.cpp
        language/backgroundparser/parseprojectjob.h
        language/checks/*
@@ -76,8 +86,6 @@ Files: documentation/documentationview.cpp
        language/duchain/duchainbase.h
        language/duchain/duchainlock.cpp
        language/duchain/duchainlock.h
-       language/duchain/duchainobserver.cpp
-       language/duchain/duchainobserver.h
        language/duchain/duchainpointer.cpp
        language/duchain/duchainpointer.h
        language/duchain/duchainregister.cpp
@@ -200,8 +208,6 @@ Files: documentation/documentationview.cpp
        plugins/filetemplates/outputpage.h
        plugins/filetemplates/overridespage.cpp
        plugins/filetemplates/overridespage.h
-       plugins/quickopen/customlistquickopen.cpp
-       plugins/quickopen/customlistquickopen.h
        plugins/quickopen/declarationlistquickopen.cpp
        plugins/quickopen/declarationlistquickopen.h
        plugins/quickopen/duchainitemquickopen.cpp
@@ -214,9 +220,10 @@ Files: documentation/documentationview.cpp
        plugins/quickopen/quickopenmodel.h
        shell/assistantpopup.cpp
        shell/assistantpopup.h
+       shell/assistantpopup.qml
+       shell/AssistantButton.qml
        shell/documentationcontroller.cpp
        shell/documentationcontroller.h
-       shell/patchdocument.cpp
        sublime/holdupdates.cpp
        sublime/holdupdates.h
        tests/json/declarationvalidator.cpp
@@ -244,7 +251,7 @@ Files: documentation/documentationview.cpp
 Copyright: 2002 Anders Lund <anders.lund@lund.tdcadsl.dk>
            2002-2006 Roberto Raggi <roberto@kdevelop.org>
            2006 Adam Treat <treat@kde.org>
-           2006-2008 Hamish Rodda <rodda@kde.org>
+           2006-2008 Hamish Rodda <rodda@kde.org>n
            2006-2010 David Nolden <david.nolden.kdevelop@art-master.de>, david.nolden@kdevelop.org>
            2007 Bernd Buschinski <b.buschinski@web.de>
            2007 Jani Huhtanen <jani.huhtanen@tut.fi>
@@ -256,10 +263,13 @@ Copyright: 2002 Anders Lund <anders.lund@lund.tdcadsl.dk>
            2009 Lior Mualem <lior.m.kde@gmail.com>
            2009 Manuel Breugelmans <mbr.nxi@gmail.com>
            2009-2010 Aleix Pol Gonzalez <aleixpol@kde.org>
-           2010 Benjamin Port <port.benjamin@gmail.com> 
-           2010 Milian Wolff <mail@milianw.de>
+           2010 Benjamin Port <port.benjamin@gmail.com>
+           2010, 2012, 2013 Milian Wolff <mail@milianw.de>
            2010, 2012 Niko Sams <niko.sams@gmai.com>
-           2012 Olivier de Gaalon <olivier.jg@gmail.com>
+           2010, 2012 Olivier de Gaalon <olivier.jg@gmail.com>
+           2014 Kevin Funk <kfunk@kde.org>
+           2014 Milian Wolff <mail@milianw.de>
+           2014 Sven Brauch <svenbrauch@gmail.com>
 License: LGPL-2
 
 
@@ -277,6 +287,7 @@ Files: debugger/breakpoint/breakpoint.cpp
        debugger/interfaces/iframestackmodel.h
        debugger/interfaces/ivariablecontroller.cpp
        debugger/interfaces/ivariablecontroller.h
+       debugger/util/pathmappings.h
        documentation/documentationexport.h
        documentation/documentationfindwidget.cpp
        documentation/documentationfindwidget.h
@@ -387,9 +398,13 @@ Files: debugger/breakpoint/breakpoint.cpp
        language/codecompletion/normaldeclarationcompletionitem.h
        language/codegen/archivetemplateloader.cpp
        language/codegen/archivetemplateloader.h
+       language/codegen/basicrefactoring.cpp
+       language/codegen/basicrefactoring.h
        language/codegen/codedescription.cpp
        language/codegen/codedescription.h
        language/codegen/codedescriptionmetatypes.h
+       language/codegen/progressdialogs/refactoringdialog.cpp
+       language/codegen/progressdialogs/refactoringdialog.h
        language/codegen/sourcefiletemplate.cpp
        language/codegen/sourcefiletemplate.h
        language/codegen/templateclassgenerator.cpp
@@ -412,15 +427,21 @@ Files: debugger/breakpoint/breakpoint.cpp
        language/duchain/duchainutils.h
        language/duchain/ducontextdata.h
        language/duchain/ducontextdynamicdata.h
+       language/duchain/builders/dynamiclanguageexpressionvisitor.cpp
+       language/duchain/builders/dynamiclanguageexpressionvisitor.h
+       language/duchain/problem.cpp
+       language/duchain/problem.h
        language/duchain/referencecounting.cpp
        language/duchain/referencecounting.h
        language/duchain/tests/benchhashes.cpp
        language/duchain/tests/benchhashes.h
-       language/duchain/tests/benchmarks.cpp
-       language/duchain/tests/benchmarks.h
+       language/duchain/tests/serialization/tst_identifier.cpp
+       language/duchain/tests/serialization/tst_identifier.h
        language/duchain/tests/test_duchain.cpp
        language/duchain/tests/test_duchain.h
        language/duchain/topducontextdata.h
+       language/duchain/types/containertypes.cpp
+       language/duchain/types/containertypes.h
        language/highlighting/codehighlighting.cpp
        language/highlighting/codehighlighting.h
        language/highlighting/colorcache.cpp
@@ -429,6 +450,8 @@ Files: debugger/breakpoint/breakpoint.cpp
        language/highlighting/configurablecolors.h
        language/highlighting/tests/test_highlighting.cpp
        language/highlighting/tests/test_highlighting.h
+       language/interfaces/abbreviations.cpp
+       language/interfaces/abbreviations.h
        language/interfaces/codecontext.cpp
        language/interfaces/codecontext.h
        language/interfaces/editorcontext.cpp
@@ -449,6 +472,7 @@ Files: debugger/breakpoint/breakpoint.cpp
        language/interfaces/quickopendataprovider.h
        language/interfaces/quickopenfilter.h
        language/languageexport.h
+       language/util/kdevhash.h
        outputview/filtereditem.cpp
        outputview/filtereditem.h
        outputview/ioutputviewmodel.cpp
@@ -533,8 +557,6 @@ Files: debugger/breakpoint/breakpoint.cpp
        plugins/filetemplates/testcasespage.h
        plugins/genericprojectmanager/genericmanager.cpp
        plugins/genericprojectmanager/genericmanager.h
-       plugins/genericprojectmanager/genericprojectmanagerpreferences.cpp
-       plugins/genericprojectmanager/genericprojectmanagerpreferences.h
        plugins/genericprojectmanager/test/reloadtest.cpp
        plugins/genericprojectmanager/test/reloadtest.h
        plugins/git/gitjob.cpp
@@ -711,23 +733,6 @@ Files: debugger/breakpoint/breakpoint.cpp
        shell/core_p.h
        shell/documentcontroller.cpp
        shell/documentcontroller.h
-       shell/kross/krossdocument.cpp
-       shell/kross/xmltokross/abstractclasses.cpp
-       shell/kross/xmltokross/cppxmlparse.cpp
-       shell/kross/xmltokross/cppxmlparse.h
-       shell/kross/xmltokross/duchainextractor.cpp
-       shell/kross/xmltokross/duchainextractor.h
-       shell/kross/xmltokross/duchainreader.cpp
-       shell/kross/xmltokross/duchainreader.h
-       shell/kross/xmltokross/dummybsm.cpp
-       shell/kross/xmltokross/dummybsm.h
-       shell/kross/xmltokross/interfacecreator.h
-       shell/kross/xmltokross/krossimpl.h
-       shell/kross/xmltokross/krosswrapper.h
-       shell/kross/xmltokross/main.cpp
-       shell/kross/xmltokross/mainduchain.cpp
-       shell/kross/xmltokross/project.cpp
-       shell/kross/xmltokross/project.h
        shell/languagecontroller.cpp
        shell/languagecontroller.h
        shell/language.cpp
@@ -750,8 +755,6 @@ Files: debugger/breakpoint/breakpoint.cpp
        shell/patchdocument.h
        shell/plugincontroller.cpp
        shell/plugincontroller.h
-       shell/progressmanager.cpp
-       shell/progressmanager.h
        shell/projectcontroller.cpp
        shell/projectcontroller.h
        shell/project.cpp
@@ -857,6 +860,7 @@ Files: debugger/breakpoint/breakpoint.cpp
        sublime/view.h
        template/filters/kdevfilters.cpp
        template/filters/kdevfilters.h
+       tests/autotestshell.cpp
        tests/autotestshell.h
        tests/json/kdevplatformjsontestsexport.h
        tests/kdevplatformtestsexport.h
@@ -872,6 +876,8 @@ Files: debugger/breakpoint/breakpoint.cpp
        tests/testproject.h
        util/activetooltip.cpp
        util/activetooltip.h
+       util/autoorientedsplitter.cpp
+       util/autoorientedsplitter.h
        util/commandexecutor.cpp
        util/commandexecutor.h
        util/dbus_socket_transformer/main.cpp
@@ -881,6 +887,8 @@ Files: debugger/breakpoint/breakpoint.cpp
        util/environmentconfigurebutton.h
        util/environmentgrouplist.cpp
        util/environmentgrouplist.h
+       environmentselectionmodel.cpp
+       environmentselectionmodel.h
        util/environmentselectionwidget.cpp
        util/environmentselectionwidget.h
        util/executecompositejob.cpp
@@ -897,8 +905,6 @@ Files: debugger/breakpoint/breakpoint.cpp
        util/projecttestjob.h
        util/richtextpushbutton.cpp
        util/richtextpushbutton.h
-       util/richtexttoolbutton.cpp
-       util/richtexttoolbutton.h
        util/sequentiallyrunjobs.cpp
        util/sequentiallyrunjobs.h
        util/shellutils.cpp
@@ -965,6 +971,7 @@ Copyright: 1999-2002 Bernd Gehrmann <bernd@kdevelop.org>
            2009 Radu Benea <radub82@gmail.com>
            2007-2013 Aleix Pol Gonzalez <aleixpol@kde.org>, <aleixpol@gmail.com>
            2009-2013 Milian Wolff <mail@milianw.de>
+           2009 Vladimir Prus  <ghost@cs.msu.su>
            2010 Benjamin Port <port.benjamin@gmail.com>
            2010 Julien Desgats <julien.desgats@gmail.com>
            2010-2011 Dmitry Risenberg <dmitry.risenberg@gmail.com>
@@ -973,12 +980,15 @@ Copyright: 1999-2002 Bernd Gehrmann <bernd@kdevelop.org>
            2011 Yannick Motta <yannick.motta@gmail.com>
            2012 Andrew Fuller <mactalla.obair@gmail.com>
            2012 André Stein <andre.stein@rwth-aachen.de>
-           2012 Ivan Shapovalov <intelfx100@gmail.com>
+           2012-2013 Ivan Shapovalov <intelfx100@gmail.com>
            2012 Miha Čančula <miha@noughmad.eu>
            2012 Morten Danielsen Volden <mvolden2@gmail.com>
-           2012 Sven Brauch <svenbrauch@googlemail.com>
+           2012 Olivier de Gaalon <olivier.jg@gmail.com>
+           2012, 2014 Sven Brauch <svenbrauch@googlemail.com>
            2013 Sebastian Kügler <sebas@kde.org>
-           2013 Sven Brauch <svenbrauch@gmail.com>
+           2011-2014 Sven Brauch <svenbrauch@gmail.com>, <svenbrauch@googlemail.com>
+           2013-2014 Kevin Funk <kfunk@kde.org>
+           2014 Miquel Sabaté <mikisabate@gmail.com>
 License: LGPL-2+
 
 
@@ -1038,7 +1048,6 @@ Files: debugger/breakpoint/breakpoint.cpp
        debugger/interfaces/ivariablecontroller.cpp
        debugger/interfaces/ivariablecontroller.h
        debugger/util/pathmappings.cpp
-       debugger/util/pathmappings.h
        debugger/util/treeitem.cpp
        debugger/util/treeitem.h
        debugger/util/treemodel.cpp
@@ -1107,7 +1116,6 @@ Files: debugger/breakpoint/breakpoint.cpp
        interfaces/iplugincontroller.cpp
        interfaces/iplugincontroller.h
        interfaces/iproject.cpp
-       interfaces/iproject.h
        interfaces/iprojectcontroller.cpp
        interfaces/iprojectcontroller.h
        interfaces/iprojectprovider.cpp
@@ -1174,8 +1182,6 @@ Files: debugger/breakpoint/breakpoint.cpp
        language/codegen/codedescription.cpp
        language/codegen/codedescription.h
        language/codegen/codedescriptionmetatypes.h
-       language/codegen/komparesupport.cpp
-       language/codegen/komparesupport.h
        language/codegen/sourcefiletemplate.cpp
        language/codegen/sourcefiletemplate.h
        language/codegen/templateclassgenerator.cpp
@@ -1233,10 +1239,10 @@ Files: debugger/breakpoint/breakpoint.cpp
        language/interfaces/icontextbrowser.h
        language/interfaces/icreateclasshelper.cpp
        language/interfaces/icreateclasshelper.h
+       language/interfaces/idefinesandincludesmanager.cpp
+       language/interfaces/idefinesandincludesmanager.h
        language/interfaces/ilanguagesupport.cpp
        language/interfaces/ilanguagesupport.h
-       language/interfaces/iproblem.cpp
-       language/interfaces/iproblem.h
        language/interfaces/iquickopen.cpp
        language/interfaces/iquickopen.h
        language/interfaces/quickopendataprovider.cpp
@@ -1673,37 +1679,6 @@ Files: debugger/breakpoint/breakpoint.cpp
        shell/debugcontroller.h
        shell/documentcontroller.cpp
        shell/documentcontroller.h
-       shell/kross/dvcsadaptors.h
-       shell/kross/krossbuildsystemmanager.cpp
-       shell/kross/krossbuildsystemmanager.h
-       shell/kross/krossdistributedversioncontrol.cpp
-       shell/kross/krossdistributedversioncontrol.h
-       shell/kross/krossdocument.cpp
-       shell/kross/krossplugin.cpp
-       shell/kross/krossplugin.h
-       shell/kross/krosstoolviewfactory.cpp
-       shell/kross/krosstoolviewfactory.h
-       shell/kross/krossvcsjob.cpp
-       shell/kross/krossvcsjob.h
-       shell/kross/projectitemadaptors.cpp
-       shell/kross/projectitemadaptors.h
-       shell/kross/xmltokross/abstractclasses.cpp
-       shell/kross/xmltokross/cppxmlparse.cpp
-       shell/kross/xmltokross/cppxmlparse.h
-       shell/kross/xmltokross/duchainextractor.cpp
-       shell/kross/xmltokross/duchainextractor.h
-       shell/kross/xmltokross/duchainreader.cpp
-       shell/kross/xmltokross/duchainreader.h
-       shell/kross/xmltokross/dummybsm.cpp
-       shell/kross/xmltokross/dummybsm.h
-       shell/kross/xmltokross/interfacecreator.h
-       shell/kross/xmltokross/krossimpl.h
-       shell/kross/xmltokross/krosswrapper.h
-       shell/kross/xmltokross/main.cpp
-       shell/kross/xmltokross/mainduchain.cpp
-       shell/kross/xmltokross/project.cpp
-       shell/kross/xmltokross/project.h
-       shell/kross/xmltokross/rppconfig.h
        shell/language.cpp
        shell/language.h
        shell/languagecontroller.cpp
@@ -1727,7 +1702,6 @@ Files: debugger/breakpoint/breakpoint.cpp
        shell/partcontroller.h
        shell/partdocument.cpp
        shell/partdocument.h
-       shell/patchdocument.h
        shell/plugincontroller.cpp
        shell/plugincontroller.h
        shell/progresswidget/progressmanager.cpp
@@ -1876,7 +1850,6 @@ Files: debugger/breakpoint/breakpoint.cpp
        sublime/view.h
        template/filters/kdevfilters.cpp
        template/filters/kdevfilters.h
-       tests/autotestshell.h
        tests/kdevplatformtestsexport.h
        tests/kdevsignalspy.cpp
        tests/kdevsignalspy.h
@@ -1933,6 +1906,8 @@ Files: debugger/breakpoint/breakpoint.cpp
        vcs/interfaces/ibasicversioncontrol.h
        vcs/interfaces/ibranchingversioncontrol.h
        vcs/interfaces/ibrowsableversioncontrol.h
+       vcs/interfaces/icontentawareversioncontrol.cpp
+       vcs/interfaces/icontentawareversioncontrol.h
        vcs/interfaces/idistributedversioncontrol.h
        vcs/interfaces/irepositoryversioncontrol.h
        vcs/models/vcsannotationmodel.cpp
@@ -1964,8 +1939,6 @@ Files: debugger/breakpoint/breakpoint.cpp
        vcs/widgets/flexibleaction.h
        vcs/widgets/standardvcslocationwidget.cpp
        vcs/widgets/standardvcslocationwidget.h
-       vcs/widgets/vcsannotationwidget.cpp
-       vcs/widgets/vcsannotationwidget.h
        vcs/widgets/vcscommitdialog.cpp
        vcs/widgets/vcscommitdialog.h
        vcs/widgets/vcsdiffwidget.cpp
@@ -2004,7 +1977,7 @@ Copyright: 1994, 1996-1998, 2001, 2002, 2003, 2004, 2005 Free Software Foundatio
            2005 Ian Reinhart Geiser <ian@geiseri.com>
            2006 Matt Rogers <mattr@kde.org
            2006-2009 Vladimir Prus <ghost@cs.msu.su>
-           2006-2010 Andreas Pakulat <apaku@gmx.de>
+           2006-2010, 2013 Andreas Pakulat <apaku@gmx.de>
            2006-2011 David Nolden <david.nolden.kde@art-master.de>, <david.nolden.kdevelop@art-master.de>
            2007 Dukju Ahn <dukjuahn@gmail.com>
            2007 Matthew Woehlke <mw_triad@users.sourceforge.net>
@@ -2036,10 +2009,11 @@ Copyright: 1994, 1996-1998, 2001, 2002, 2003, 2004, 2005 Free Software Foundatio
            2012 Ivan Shapovalov <intelfx100@gmail.com>
            2012 Miha Čančula <miha@noughmad.eu>
            2012 Morten Danielsen Volden <mvolden2@gmail.com>
-           2012 Sven Brauch <svenbrauch@googlemail.com>
+           2012-2013 Sven Brauch <svenbrauch@googlemail.com>
            2013 Jarosław Sierant <jaroslaw.sierant@gmail.com>
            2013 Vlas Puhov <vlas.puhov@mail.ru>
            2013 David E. Narvaez <david@piensalibre.net>
+           2014 Sergey Kalinichev <kalinichev.so.0@gmail.com>
 License: GPL-2+
 
 
@@ -2101,14 +2075,6 @@ Files: debugger/interfaces/iframestackmodel.cpp
        plugins/genericprojectmanager/test/stresstest.php
        plugins/grepview/grepfindthread.cpp
        plugins/grepview/grepfindthread.h
-       shell/kross/dvcsadaptors.cpp
-       shell/kross/examples/bzrkdevelop/kdevbzr/kdevbzr.py
-       shell/kross/examples/compileone/CompileOne/CompileOne.py
-       shell/kross/examples/guiexample/GUIExample/GUIExample.py
-       shell/kross/examples/msvckdevelop/KDevMSVCManager/KDevMSVCManager.py
-       shell/kross/examples/msvckdevelop/KDevMSVCManager/main.py
-       shell/kross/examples/msvckdevelop/KDevMSVCManager/SolutionReader.py
-       shell/kross/examples/msvckdevelop/KDevMSVCManager/VCProjManager.py
        util/google/sparsehash/sparseconfig_windows.h
 Copyright: no copyright holders stated
 Comment: given by default copyright file COPYING.SRC
@@ -2116,7 +2082,25 @@ License: LGPL-2
 
 
 
-Files: plugins/filetemplates/templatepreview.cpp
+Files: language/codegen/tests/test_documentchangeset.cpp
+       language/codegen/tests/test_documentchangeset.h
+       language/duchain/tests/serialization/tst_indexedstring.cpp
+       language/duchain/tests/serialization/tst_indexedstring.h
+       language/duchain/tests/serialization/tst_itemrepository.cpp
+       language/duchain/tests/serialization/tst_itemrepository.h
+       plugins/bazaar/bazaarplugin.cpp
+       plugins/bazaar/bazaarplugin.h
+       plugins/bazaar/bazaarutils.cpp
+       plugins/bazaar/bazaarutils.h
+       plugins/bazaar/bzrannotatejob.cpp
+       plugins/bazaar/bzrannotatejob.h
+       plugins/bazaar/copyjob.cpp
+       plugins/bazaar/copyjob.h
+       plugins/bazaar/diffjob.cpp
+       plugins/bazaar/diffjob.h
+       plugins/bazaar/tests/bazaartest.cpp
+       plugins/bazaar/tests/bazaartest.h
+       plugins/filetemplates/templatepreview.cpp
        plugins/filetemplates/templatepreview.h
        plugins/git/gitclonejob.cpp
        plugins/git/gitclonejob.h
@@ -2124,30 +2108,52 @@ Files: plugins/filetemplates/templatepreview.cpp
        plugins/git/gitmessagehighlighter.h
        plugins/git/gitplugin.cpp
        plugins/git/gitplugin.h
-       plugins/git/tests/initTest.cpp
-       plugins/git/tests/initTest.h
+       plugins/git/gitplugincheckinrepositoryjob.cpp
+       plugins/git/gitplugincheckinrepositoryjob.h
+       plugins/git/tests/gittest.cpp
+       plugins/git/tests/gittest.h
+       plugins/projectfilter/comboboxdelegate.cpp
+       plugins/projectfilter/comboboxdelegate.h
+       plugins/projectfilter/filter.cpp
+       plugins/projectfilter/filter.h
+       plugins/projectfilter/filtermodel.cpp
+       plugins/projectfilter/filtermodel.h
+       plugins/projectfilter/projectfilter.cpp
+       plugins/projectfilter/projectfilter.h
+       plugins/projectfilter/projectfilterdebug.cpp
+       plugins/projectfilter/projectfilterdebug.h
+       plugins/projectfilter/projectfilterkcm.cpp
+       plugins/projectfilter/projectfilterkcm.h
+       plugins/projectfilter/projectfilterprovider.cpp
+       plugins/projectfilter/projectfilterprovider.h
+       plugins/projectfilter/tests/test_projectfilter.cpp
+       plugins/projectfilter/tests/test_projectfilter.h
        plugins/quickopen/tests/quickopenbench.cpp
        plugins/quickopen/tests/quickopenbench.h
        plugins/quickopen/tests/quickopentest.cpp
        plugins/quickopen/tests/quickopentest.h
        plugins/quickopen/tests/quickopentestbase.cpp
        plugins/quickopen/tests/quickopentestbase.h
+       util/placeholderitemproxymodel.cpp
+       util/placeholderitemproxymodel.h
        util/ssh_client/main.cpp
        util/ssh_client/main.h
-       vcs/dvcs/dvcsjob.cpp  GPL
+       util/tests/test_path.cpp
+       util/tests/test_path.h
+       vcs/dvcs/dvcsjob.cpp
        vcs/dvcs/dvcsjob.h
        vcs/dvcs/dvcsplugin.cpp
        vcs/dvcs/dvcsplugin.h
        vcs/dvcs/tests/dvcsjobTest.cpp
        vcs/dvcs/tests/dvcsjobTest.h
-       vcs/dvcs/ui/branchmanager.cpp
-       vcs/dvcs/ui/branchmanager.h
-       vcs/dvcs/ui/importmetadatawidget.cpp
-       vcs/dvcs/ui/importmetadatawidget.h
        vcs/dvcs/ui/revhistory/commitView.cpp
        vcs/dvcs/ui/revhistory/commitView.h
        vcs/dvcs/ui/revhistory/commitlogmodel.cpp
        vcs/dvcs/ui/revhistory/commitlogmodel.h
+       vcs/dvcs/ui/branchmanager.cpp
+       vcs/dvcs/ui/branchmanager.h
+       vcs/dvcs/ui/dvcsimportmetadatawidget.cpp
+       vcs/dvcs/ui/dvcsimportmetadatawidget.h
        vcs/interfaces/icentralizedversioncontrol.h
        vcs/models/brancheslistmodel.cpp
        vcs/models/brancheslistmodel.h
@@ -2165,7 +2171,9 @@ Copyright: 2002-2003 Christian Loose <christian.loose@hamburg.de>
            2010,2012 Aleix Pol Gonzalez <aleixpol@kde.org>
            2011 Andrey Batyiev <batyiev@gmail.com>
            2011 Sergey Vidyuk <sir.vestnik@gmail.com>
-           2012 Milian Wolff <mail@milianw.de>
+           2012-2013 Milian Wolff <mail@milianw.de>
+           2013 Kevin Funk <kfunk@kde.org>
+           2013-2014 Maciej Poleski
 License: GPL-2+ or any later version accepted by the membership of KDE e.V.
          (or its successor approved by the membership of KDE e.V.), which shall
          act as a proxy as defined in Section 14 of version 3 of the license.
@@ -2200,9 +2208,9 @@ Files: plugins/subversion/kdevsvncpp/annotate_line.hpp
        plugins/subversion/kdevsvncpp/log_entry.cpp
        plugins/subversion/kdevsvncpp/log_entry.hpp
        plugins/subversion/kdevsvncpp/map_wrapper.hpp
-       plugins/subversion/kdevsvncpp/path.cpp 
-       plugins/subversion/kdevsvncpp/path.hpp 
-       plugins/subversion/kdevsvncpp/pool.cpp 
+       plugins/subversion/kdevsvncpp/path.cpp
+       plugins/subversion/kdevsvncpp/path.hpp
+       plugins/subversion/kdevsvncpp/pool.cpp
        plugins/subversion/kdevsvncpp/pool.hpp
        plugins/subversion/kdevsvncpp/property.cpp
        plugins/subversion/kdevsvncpp/property.hpp
@@ -2228,17 +2236,6 @@ License: GPL-3+
 
 
 
-Files: util/google/sparsehash/densehashtable.h
-       util/google/sparsehash/hashtable-common.h
-       util/google/sparsehash/libc_allocator_with_realloc.h
-       util/google/sparsehash/sparsehashtable.h
-       util/google/template_util.h
-       util/google/type_traits.h
-Copyright: 2005-2006 Google Inc.
-License: BSD-3-clause
-
-
-
 Files: language/duchain/types/typepointer.h
 Copyright: 2007-2008 David Nolden <david.nolden.kdevelop@art-master.de>
            2005 Frerich Raabe <raabe@kde.org>
@@ -2250,7 +2247,9 @@ Files: interfaces/isessionlock.cpp
        interfaces/isessionlock.h
        shell/sessionlock.cpp
        shell/sessionlock.h
-Copyright: 2013 Milian Wolff <mail@milianw.de>
+       util/path.cpp
+       util/path.h
+Copyright: 2012-2013 Milian Wolff <mail@milianw.de>
 License: LGPL-2.1 or LGPL-3 or eV exception
  This library is free software; you can redistribute it and/or
  modify it under the terms of the GNU Lesser General Public
@@ -2265,47 +2264,8 @@ License: LGPL-2.1 or LGPL-3 or eV exception
  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
  Lesser General Public License for more details.
  .
- You should have received a copy of the GNU Lesser General Public 
+ You should have received a copy of the GNU Lesser General Public
  License along with this library.  If not, see <http://www.gnu.org/licenses/>.
-
-
-
-Files: language/codegen/tests/test_documentchangeset.cpp
-       language/codegen/tests/test_documentchangeset.h
-       plugins/projectfilter/comboboxdelegate.cpp
-       plugins/projectfilter/comboboxdelegate.h
-       plugins/projectfilter/filter.cpp
-       plugins/projectfilter/filter.h
-       plugins/projectfilter/filtermodel.cpp
-       plugins/projectfilter/filtermodel.h
-       plugins/projectfilter/projectfilter.cpp
-       plugins/projectfilter/projectfilter.h
-       plugins/projectfilter/projectfilterdebug.cpp
-       plugins/projectfilter/projectfilterdebug.h
-       plugins/projectfilter/projectfilterkcm.cpp
-       plugins/projectfilter/projectfilterkcm.h
-       plugins/projectfilter/projectfilterprovider.cpp
-       plugins/projectfilter/projectfilterprovider.h
-       plugins/projectfilter/tests/test_projectfilter.cpp
-       plugins/projectfilter/tests/test_projectfilter.h
-Copyright: 2013 Milian Wolff <mail@milianw.de>
-License: GPL-2 or GPL-3 or eV exception
- This program is free software; you can redistribute it and/or
- modify it under the terms of the GNU General Public License as
- published by the Free Software Foundation; either version 2 of
- the License or (at your option) version 3 or any later version
- accepted by the membership of KDE e.V. (or its successor approved
- by the membership of KDE e.V.), which shall act as a proxy
- defined in Section 14 of version 3 of the license.
- .
- This program is distributed in the hope that it will be useful,
- but WITHOUT ANY WARRANTY; without even the implied warranty of
- MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
- GNU General Public License for more details.
- .
- You should have received a copy of the GNU General Public License
- along with this program.  If not, see <http://www.gnu.org/licenses/>.
-
 
 
 KDevelop Platform Libraries License:
@@ -2353,4 +2313,3 @@ The Debian packaging is:
     Copyright (C) 2012-2013, Andreas Cord-Landwehr <cola@uni-paderborn.de>
 
 and is licensed under the GPL, see above.
-

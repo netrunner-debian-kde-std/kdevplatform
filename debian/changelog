@@ -7,6 +7,7 @@ kdevplatform (1.7.0-0r1) UNRELEASED; urgency=medium
     - kdevplatform7-libs -> kdevplatform8-libs
     - libsublime7 -> libsublime8
   * Update install files.
+  * Update copyright.
 
   [ Pino Toscano ]
   * Update copyright.
