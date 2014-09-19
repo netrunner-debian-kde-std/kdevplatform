@@ -1,4 +1,4 @@
-kdevplatform (1.7.0-0r1) UNRELEASED; urgency=medium
+kdevplatform (1.7.0-1) experimental; urgency=medium
 
   * New upstream release.
 
@@ -21,7 +21,7 @@ kdevplatform (1.7.0-0r1) UNRELEASED; urgency=medium
   [ Sune Vuorela ]
   * Switch a script to /bin/bash - it uses bash specific features.
 
- -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Sat, 18 Jan 2014 13:56:19 +0100
+ -- Sune Vuorela <sune@debian.org>  Fri, 19 Sep 2014 23:42:58 +0200
 
 kdevplatform (1.5.2-1) unstable; urgency=low
 
