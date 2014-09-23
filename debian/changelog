@@ -1,3 +1,10 @@
+kdevplatform (1.7.0-2) unstable; urgency=medium
+
+  * Team upload.
+  * Upload to unstable (see #759494).
+
+ -- Pino Toscano <pino@debian.org>  Tue, 23 Sep 2014 21:53:54 +0200
+
 kdevplatform (1.7.0-1) experimental; urgency=medium
 
   * New upstream release.
