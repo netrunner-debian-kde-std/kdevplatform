@@ -1,6 +1,7 @@
 kdevplatform (1.7.1-1~) UNRELEASED; urgency=medium
 
   * New upstream release (1.7.1).
+  * Remove upstream applied patch: fix_shell_script
 
  -- Maximiliano Curia <maxy@debian.org>  Mon, 31 Aug 2015 13:36:03 +0200
 
