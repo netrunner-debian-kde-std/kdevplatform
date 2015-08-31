@@ -6,7 +6,7 @@ Uploaders: Fathi Boudra <fabo@debian.org>,
            Jeremy Lainé <jeremy.laine@m4x.org>,
            George Kiagiadakis <kiagiadakis.george@gmail.com>,
            Andreas Cord-Landwehr <cola@uni-paderborn.de>
-Build-Depends: cmake (>= 2.8.0),
+Build-Depends: cmake (>= 2.8.9~),
                debhelper (>= 9),
                kdelibs5-dev (>= 4:4.7.0),
                libboost-serialization-dev,
