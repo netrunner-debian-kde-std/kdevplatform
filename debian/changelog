@@ -4,6 +4,7 @@ kdevplatform (1.7.1-1~) UNRELEASED; urgency=medium
   * Remove upstream applied patch: fix_shell_script
   * Add libsoprano-dev build dep.
   * New patch: workaround_boost_ftbfs
+  * New upstream patch: upstream_make_subversion_plugin_compile
 
  -- Maximiliano Curia <maxy@debian.org>  Mon, 31 Aug 2015 13:36:03 +0200
 
