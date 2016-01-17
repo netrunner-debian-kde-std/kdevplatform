@@ -5,6 +5,9 @@ export DEB_LDFLAGS_MAINT_APPEND := -Wl,--as-needed
 %:
 	dh $@ --parallel --with kde
 
+override_dh_install:
+	dh_install --list-missing
+
 override_dh_strip:
 	dh_strip --dbg-package=kdevplatform-dbg
 

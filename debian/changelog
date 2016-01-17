@@ -9,6 +9,7 @@ kdevplatform (1.7.2-0r1) UNRELEASED; urgency=medium
   * Update lintian overrides.
   * Remove extra libsoprano-dev build dependency, which was added as workaround
     for a bug in kdelibs5-dev.
+  * Pass --list-missing to dh_install.
 
  -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Sun, 17 Jan 2016 10:03:52 +0100
 
