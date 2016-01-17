@@ -6,6 +6,7 @@ kdevplatform (1.7.2-0r1) UNRELEASED; urgency=medium
     - workaround_boost_ftbfs: drop, fixed upstream
     - upstream_make_subversion_plugin_compile: drop, backported from upstream
   * Bump Standards-Version to 3.9.6, no changes required.
+  * Update lintian overrides.
 
  -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Sun, 17 Jan 2016 10:03:52 +0100
 

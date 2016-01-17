@@ -1,0 +1,2 @@
+# license template for the codegen plugin
+extra-license-file: usr/share/kde4/apps/kdevcodegen/licenses/BSD
