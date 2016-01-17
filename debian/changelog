@@ -2,6 +2,9 @@ kdevplatform (1.7.2-0r1) UNRELEASED; urgency=medium
 
   [ Pino Toscano ]
   * New upstream release.
+  * Update the patches:
+    - workaround_boost_ftbfs: drop, fixed upstream
+    - upstream_make_subversion_plugin_compile: drop, backported from upstream
 
  -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Sun, 17 Jan 2016 10:03:52 +0100
 
