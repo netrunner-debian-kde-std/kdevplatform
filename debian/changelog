@@ -7,6 +7,8 @@ kdevplatform (1.7.2-0r1) UNRELEASED; urgency=medium
     - upstream_make_subversion_plugin_compile: drop, backported from upstream
   * Bump Standards-Version to 3.9.6, no changes required.
   * Update lintian overrides.
+  * Remove extra libsoprano-dev build dependency, which was added as workaround
+    for a bug in kdelibs5-dev.
 
  -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Sun, 17 Jan 2016 10:03:52 +0100
 
